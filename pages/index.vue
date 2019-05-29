@@ -38,7 +38,7 @@
         Eigenlijk is het telefoonnummer de voorstelling, maar dan in het klein! Probeer het zelf maar eens uit. Deze audiobeleving is gemaakt door Allard Medema.
       </div>
     </section>
-    <div class="container container-banner">
+    <div class="container container-banner container-banner-bottom">
     </div>
   </div>
 </template>
@@ -78,11 +78,40 @@ window.onscroll = function() {
 .container-banner {
   background-image: url("~assets/banner.jpg");
   width: 100vw;
-  height: calc(100vh);
+  height: 100vh;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
+}
+
+.container-banner-bottom {
+  background-position: bottom;
+}
+
+@media only screen and (max-width: 900px) {
+  .container-banner {
+    background-size: auto 500px;
+    height: 500px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container-banner {
+    background-size: auto 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container-banner {
+    background-size: auto 300px;
+    height: 300px;
+  }
 }
 
 .container-overview {
