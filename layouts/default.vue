@@ -14,11 +14,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: #605e5e;
+  color: #000000;
 }
 
 a {
-  color: #605e5e;
+  color: #000000;
 }
 
 *,
