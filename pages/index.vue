@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="image-banner" src="~/assets/banner.jpg">
+    <img id="top-banner" class="image-banner" src="~/assets/banner.jpg">
     <div id="arrow-up" class="arrow bounce"></div>
     <section id="container-agenda" class="container container-agenda">
       <div class="title">SPEELLIJST</div>
@@ -51,14 +51,25 @@ export default {
   methods: {
       toggleArrow: function () {
         var arrowup = document.getElementById("arrow-up");
-        var containerOverview = document.getElementById("container-agenda");
-        var rect = containerOverview.getBoundingClientRect();
+        var containerAgenda= document.getElementById("container-agenda");
+        var topBanner = document.getElementById("top-banner");
+        var rect = containerAgenda.getBoundingClientRect();
 
           if (rect.top <= 0 || rect.top - window.innerHeight <= 0) {
             arrowup.style.opacity = '0';
+            containerAgenda.style.marginTop = topBanner.clientHeight + 'px';
+            if (topBanner.clientHeight >= window.innerHeight) {
+              topBanner.classList.add('image-banner-paralex-big');
+            }
+            else {
+              topBanner.classList.add('image-banner-paralex');
+            }
           }
           else {
             arrowup.style.opacity = '1';
+            containerAgenda.style.marginTop = '0'
+            topBanner.classList.remove('image-banner-paralex');
+            topBanner.classList.remove('image-banner-paralex-big');
           }
       }
     },
@@ -92,6 +103,17 @@ export default {
 .image-banner {
   width: 100vw;
   margin-bottom: -6px;
+  z-index: -1;
+}
+
+.image-banner-paralex {
+  position: fixed;
+  top: 0;
+}
+
+.image-banner-paralex-big {
+  position: fixed;
+  bottom: 0;
 }
 
 .container-banner-bottom {
@@ -139,7 +161,7 @@ export default {
 }
 
 .title {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 1rem;
   font-weight: 800;
   line-height: 1;
