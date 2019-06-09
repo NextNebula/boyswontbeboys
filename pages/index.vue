@@ -18,6 +18,10 @@
         Wij kunnen laten zien dat het anders kan door hokjes te doorbreken en ruimte te maken om onszelf te zijn.
       </div>
     </section>
+    <section class="container container-instagram">
+      <div class="title" style="padding-bottom: 6px;">INSTAGRAM</div>
+      <instagram/>
+    </section>
     <section class="container container-bel">
       <div class="title">VOORPROEFJE</div>
       <div class="text">
@@ -43,10 +47,12 @@
 
 <script>
 import Agenda from "~/components/Agenda.vue";
+import Instagram from "~/components/Instagram.vue";
 
 export default {
   components: {
-    Agenda
+    Agenda,
+    Instagram
   },
   methods: {
       toggleArrow: function () {
@@ -116,34 +122,6 @@ export default {
   bottom: 0;
 }
 
-.container-banner-bottom {
-  background-position: bottom;
-}
-
-@media only screen and (max-width: 900px) {
-  .container-banner {
-    background-size: auto 500px;
-    height: 500px;
-  }
-  .arrow {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .container-banner {
-    background-size: auto 400px;
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .container-banner {
-    background-size: auto 300px;
-    height: 300px;
-  }
-}
-
 .container-agenda {
   background-color: #7AD4D4;
   border-top: 3px solid white;
@@ -154,8 +132,13 @@ export default {
   border-top: 3px solid white;
 }
 
-.container-bel {
+.container-instagram {
   background-color: #7AD4D4;
+  border-top: 3px solid white;
+}
+
+.container-bel {
+  background-color: #CAEEEE;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
 }
@@ -168,7 +151,7 @@ export default {
 }
 
 .text {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .lijst {
