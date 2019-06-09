@@ -1,55 +1,144 @@
 <template>
   <div class="agenda">
-    <div class="month">
-      <div class="month-header">AUGUSTUS</div>
-      <div class="agenda-item">8,9,10 Boulevard Festival Den Bosch (landelijke première, data nnb)</div>
-    </div>
-    <div class="month">
-      <div class="month-header">SEPTEMBER</div>
-      <div class="agenda-item">do 12 De Nieuwe Vorst Tilburg</div>
-      <div class="agenda-item">vr 13 De Nieuwe Vorst Tilburg</div>
-      <div class="agenda-item">za 14 De Nieuwe Vorst Tilburg</div>
-      <div class="agenda-item">do 19 Stadsschouwburg Utrecht</div>
-    </div>
-    <div class="month">
-      <div class="month-header">OKTOBER</div>
-      <div class="agenda-item">za 5 Walhalla Rotterdam</div>
-      <div class="agenda-item">wo 9 Wilminktheater Enschede</div>
-      <div class="agenda-item">vr 11 KAF Almere</div>
-      <div class="agenda-item">di 15 Theater Bellevue Amsterdam</div>
-      <div class="agenda-item">wo 16 Theater Bellevue Amsterdam</div>
-      <div class="agenda-item">do 17 Theater Bellevue Amsterdam</div>
-      <div class="agenda-item">vr 18 Theater Bellevue Amsterdam</div>
-      <div class="agenda-item">za 19 Theater Bellevue Amsterdam</div>
-    </div>
-    <div class="month">
-      <div class="month-header">NOVEMBER</div>
-      <div class="agenda-item">do 14 Theater aan de Rijn Arnhem</div>
-      <div class="agenda-item">za 16 Jonge Harten festival Groningen</div>
-      <div class="agenda-item">zo 17 Jonge Harten festival Groningen</div>
-      <div class="agenda-item">di 19 Zaal 3 Den Haag (promo)</div>
-    </div>
-    <div class="month">
-      <div class="month-header">DECEMBER</div>
-      <div class="agenda-item">di 3 Zaal 3 Den Haag</div>
-    </div>
-    <div class="month">
-      <div class="month-header">JANUARI 2020</div>
-      <div class="agenda-item">vr 10 Chassé theater Breda</div>
-    </div>
+    <table>
+      <tr class="month-header">
+        <td colspan="3">AUGUSTUS</td>
+      </tr>
+      <tr>
+        <td>8,9,10</td>
+        <td>Den Bosch</td>
+        <td>Boulevard Festival</td>
+      </tr>
+      <tr class="month-header">
+        <td colspan="3">SEPTEMBER</td>
+      </tr>
+      <tr>
+        <td>do 12</td>
+        <td>Tilburg</td>
+        <td>De Nieuwe Vorst</td>
+      </tr>
+      <tr>
+        <td>do 13</td>
+        <td>Tilburg</td>
+        <td>De Nieuwe Vorst</td>
+      </tr>
+      <tr>
+        <td>do 14</td>
+        <td>Tilburg</td>
+        <td>De Nieuwe Vorst</td>
+      </tr>
+      <tr>
+        <td>do 19</td>
+        <td>Utrecht</td>
+        <td>Stadsschouwburg</td>
+      </tr>
+      <tr class="month-header">
+        <td colspan="3">OKTOBER</td>
+      </tr>
+      <tr>
+        <td>za 5</td>
+        <td>Rotterdam</td>
+        <td>Walhalla</td>
+      </tr>
+      <tr>
+        <td>wo 9</td>
+        <td>Enschede</td>
+        <td>Wilminktheater</td>
+      </tr>
+      <tr>
+        <td>vr 11</td>
+        <td>Almere</td>
+        <td>KAF</td>
+      </tr>
+      <tr>
+        <td>di 15</td>
+        <td>Rotterdam</td>
+        <td>Theater Bellevue</td>
+      </tr>
+      <tr>
+        <td>di 16</td>
+        <td>Rotterdam</td>
+        <td>Theater Bellevue</td>
+      </tr>
+      <tr>
+        <td>di 17</td>
+        <td>Rotterdam</td>
+        <td>Theater Bellevue</td>
+      </tr>
+      <tr>
+        <td>di 17</td>
+        <td>Rotterdam</td>
+        <td>Theater Bellevue</td>
+      </tr>
+      <tr>
+        <td>di 19</td>
+        <td>Rotterdam</td>
+        <td>Theater Bellevue</td>
+      </tr>
+      <tr class="month-header">
+        <td colspan="3">NOVEMBER</td>
+      </tr>
+      <tr>
+        <td>do 14</td>
+        <td>Arnhem</td>
+        <td>Theater aan de Rijn</td>
+      </tr>
+      <tr>
+        <td>za 16</td>
+        <td>Groningen</td>
+        <td>Jonge Harten festival</td>
+      </tr>
+      <tr>
+        <td>zo 17</td>
+        <td>Groningen</td>
+        <td>Jonge Harten festival</td>
+      </tr>
+      <tr>
+        <td>di 19</td>
+        <td>Den Haag</td>
+        <td>Zaal 3 (promo)</td>
+      </tr>
+      <tr class="month-header">
+        <td colspan="3">DECEMBER</td>
+      </tr>
+      <tr>
+        <td>di 3</td>
+        <td>Den Haag</td>
+        <td>Zaal 3</td>
+      </tr>
+      <tr class="month-header">
+        <td colspan="3">JANUARI 2020</td>
+      </tr>
+      <tr>
+        <td>vr 10</td>
+        <td>Breda</td>
+        <td>Chassé theater</td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <style>
-  .agenda div:last-of-type {
-    margin-bottom: 0;
-  }
+.agenda div:last-of-type {
+  margin-bottom: 0;
+}
 
-  .month {
-    margin-bottom: 1rem;
-  }
+.month-header td {
+  padding-top: 1rem;
+}
 
-  .month-header {
-    font-weight: 600;
-  }
+.month-header {
+  font-weight: 600;
+  text-align: center;
+}
+
+table {
+  text-align: left;
+  margin-top: -1rem;
+}
+
+td {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 </style>
