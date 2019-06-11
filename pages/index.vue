@@ -54,6 +54,14 @@
             <li>rikkert@zoujijhetzijn.nl</li>
           </ul>
         </div>
+        <div class="social">
+          <a href="https://www.facebook.com/boyswontbeboys/" target="_blank">
+            <font-awesome-icon :icon="['fab', 'facebook-square']" style="font-size: 35px" />
+          </a>
+          <a href="https://www.instagram.com/boyswntbeboys/" target="_blank" style="margin-left: 0.25rem;">
+            <font-awesome-icon :icon="['fab', 'instagram']"  style="font-size: 35px" />
+          </a>
+        </div>
       </section>
     </div>
     <img class="image-banner" src="~/assets/banner.jpg">
@@ -167,6 +175,7 @@ export default {
   border-top: 3px solid white;
   border-bottom: 3px solid white;
   flex-direction: row;
+  align-items: flex-start;
   padding: 0;
 }
 

@@ -41,6 +41,14 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
+    ['nuxt-fontawesome', {
+      imports: [
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['faFacebookSquare', 'faInstagram']
+        }
+      ]
+    }],
     ['@nuxtjs/google-analytics', {
       id: 'UA-141894659-1'
     }]
