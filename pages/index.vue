@@ -61,15 +61,19 @@ export default {
         var topBanner = document.getElementById("top-banner");
         var rect = containerAgenda.getBoundingClientRect();
 
-          if (rect.top <= 0 || rect.top - window.innerHeight <= 0) {
+          if (window.pageYOffset > topBanner.height - window.innerHeight) {
+            var currentScrollY = window.pageYOffset;
+
             arrowup.style.opacity = '0';
-            containerAgenda.style.marginTop = topBanner.clientHeight + 'px';
-            if (topBanner.clientHeight >= window.innerHeight) {
+            containerAgenda.style.marginTop = topBanner.height + 'px';
+            if (topBanner.height >= window.innerHeight) {
               topBanner.classList.add('image-banner-paralex-big');
             }
             else {
               topBanner.classList.add('image-banner-paralex');
             }
+
+            window.scrollTo(0 ,currentScrollY);
           }
           else {
             arrowup.style.opacity = '1';
