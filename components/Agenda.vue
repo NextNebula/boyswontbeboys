@@ -32,13 +32,13 @@
         <td><a href="https://denieuwevorst.nl/programma/boys-wont-be-boys">Tickets</a></td>
       </tr>
       <tr>
-        <td>do 13</td>
+        <td>vr 13</td>
         <td>Tilburg</td>
         <td>De Nieuwe Vorst</td>
         <td><a href="https://denieuwevorst.nl/programma/boys-wont-be-boys">Tickets</a></td>
       </tr>
       <tr>
-        <td>do 14</td>
+        <td>za 14</td>
         <td>Tilburg</td>
         <td>De Nieuwe Vorst</td>
         <td><a href="https://denieuwevorst.nl/programma/boys-wont-be-boys">Tickets</a></td>
@@ -77,25 +77,25 @@
         <td><a href="https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/">Tickets</a></td>
       </tr>
       <tr>
-        <td>di 16</td>
+        <td>wo 16</td>
         <td>Amsterdam</td>
         <td>Theater Bellevue</td>
         <td><a href="https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/">Tickets</a></td>
       </tr>
       <tr>
-        <td>di 17</td>
+        <td>do 17</td>
         <td>Amsterdam</td>
         <td>Theater Bellevue</td>
         <td><a href="https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/">Tickets</a></td>
       </tr>
       <tr>
-        <td>di 18</td>
+        <td>vr 18</td>
         <td>Amsterdam</td>
         <td>Theater Bellevue</td>
         <td><a href="https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/">Tickets</a></td>
       </tr>
       <tr>
-        <td>di 19</td>
+        <td>za 19</td>
         <td>Amsterdam</td>
         <td>Theater Bellevue</td>
         <td><a href="https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/">Tickets</a></td>
