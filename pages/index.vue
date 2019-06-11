@@ -44,14 +44,14 @@
       </section>
       <section class="container-half">
         <div class="title">CONTACT</div>
-        Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen? Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en de promotionele teksten zijn hier te vinden.
+        Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen? Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en de promotionele teksten zijn hieronder te vinden.
         <br>
         <div class="lijst">
           <ul>
+            <li><a href="http://bit.ly/perskitBWBB">Download onze perskit</a></li>
             <li>pr@zoujijhetzijn.nl</li>
             <li>productie@zoujijhetzijn.nl</li>
             <li>rikkert@zoujijhetzijn.nl</li>
-            <li><a href="http://bit.ly/perskitBWBB">Download onze perskit</a></li>
           </ul>
         </div>
       </section>
