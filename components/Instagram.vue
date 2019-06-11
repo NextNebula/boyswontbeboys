@@ -1,7 +1,9 @@
 <template>
   <div class="instagram">
     <template v-for="(post, index) in posts">
-        <img class="instagram-post" v-bind:src="post.node.thumbnail_resources[3].src" :key="index">
+      <a class="instagram-post" v-bind:href="'https://www.instagram.com/p/' + post.node.id" :key="index">
+        <img v-bind:src="post.node.thumbnail_resources[3].src">
+      </a>
     </template>
   </div>
 </template>
@@ -40,5 +42,11 @@ export default {
     margin: 0 0.125rem 0.25rem 0.125rem;
     width: calc(33.33% - 0.25rem);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .instagram-post img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
   }
 </style>
