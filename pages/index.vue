@@ -22,7 +22,8 @@
       <div class="title" style="padding-bottom: 6px;">INSTAGRAM</div>
       <instagram/>
     </section>
-    <section class="container container-bel">
+    <div class="container container-contact">
+      <section class="container-half container-bel">
       <div class="title">VOORPROEFJE</div>
       <div class="text">
         We hebben een telefoonnummer: <a href="tel:0642280481">06 42 28 04 81</a>.
@@ -40,7 +41,18 @@
       <div class="text">
         Eigenlijk is het telefoonnummer de voorstelling, maar dan in het klein! Probeer het zelf maar eens uit. Deze audiobeleving is gemaakt door Allard Medema.
       </div>
-    </section>
+      </section>
+      <section class="container-half">
+        <div class="title">CONTACT</div>
+        <div class="lijst">
+          <ul>
+            <li>pr@zoujijhetzijn.nl</li>
+            <li>productie@zoujijhetzijn.nl</li>
+            <li>rikkert@zoujijhetzijn.nl</li>
+          </ul>
+        </div>
+      </section>
+    </div>
     <img class="image-banner" src="~/assets/banner.jpg">
   </div>
 </template>
@@ -110,6 +122,12 @@ export default {
   padding: 2rem 1rem 2rem 1rem;
 }
 
+.container-half {
+  width: 50%;
+  float: right;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
 .image-banner {
   width: 100vw;
   margin-bottom: -6px;
@@ -141,10 +159,16 @@ export default {
   border-top: 3px solid white;
 }
 
-.container-bel {
+.container-contact {
   background-color: #CAEEEE;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
+  flex-direction: row;
+  padding: 0;
+}
+
+.container-bel {
+  border-right: 3px solid white;
 }
 
 .title {
