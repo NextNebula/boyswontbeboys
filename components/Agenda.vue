@@ -2,7 +2,7 @@
   <div class="agenda">
     <table>
       <tr class="month-header">
-        <td colspan="3">AUGUSTUS 2019</td>
+        <td colspan="4">AUGUSTUS 2019</td>
       </tr>
       <tr>
         <td>do 8</td>
@@ -23,7 +23,7 @@
         <td><a href="https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/">Tickets</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="3">SEPTEMBER 2019</td>
+        <td colspan="4">SEPTEMBER 2019</td>
       </tr>
       <tr>
         <td>do 12</td>
@@ -50,7 +50,7 @@
         <td><a href="https://stadsschouwburg-utrecht.nl/agenda/2019-20/boys-wont-be-boys/">Tickets</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="3">OKTOBER 2019</td>
+        <td colspan="4">OKTOBER 2019</td>
       </tr>
       <tr>
         <td>za 5</td>
@@ -101,7 +101,7 @@
         <td><a href="https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/">Tickets</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="3">NOVEMBER 2019</td>
+        <td colspan="4">NOVEMBER 2019</td>
       </tr>
       <tr>
         <td>do 14</td>
@@ -116,7 +116,7 @@
         <td></td>
       </tr>
       <tr class="month-header">
-        <td colspan="3">DECEMBER 2019</td>
+        <td colspan="4">DECEMBER 2019</td>
       </tr>
       <tr>
         <td>di 3</td>
@@ -125,7 +125,7 @@
         <td><a href="https://zaal3.nl/agenda/boys-wont-be-boys/">Tickets</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="3">JANUARI 2020</td>
+        <td colspan="4">JANUARI 2020</td>
       </tr>
       <tr>
         <td>vr 10</td>
