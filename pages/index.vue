@@ -9,13 +9,17 @@
     <section class="container container-overview">
       <div class="title">OVER DE SHOW</div>
       <div class="text">
-        Boys won't be boys van Rikkert Huisstede is een maatschappelijke beweging en theatervoorstelling die een diverse groep jongens en mannen samenbrengt.
-        Een collage van dansers, zangers, rappers, dichters en theatermakers laat zien dat het stoer is om je als man kwetsbaar op te stellen.
+        BOYS WON'T BE BOYS van Rikkert van Huisstede is een maatschappelijke beweging en theatervoorstelling die een diverse groep jongens en mannen* samenbrengt. 
+        Een collage van dansers, zangers, rappers, dichters en theatermakers laat zien dat het stoer is om je (als man) kwetsbaar op te stellen. 
         Ze vertellen hun persoonlijke verhaal en vinden elkaar in het doorbreken van stereotypen.
         <br>
-        <br>We hebben lieve jongens nodig. Jongens die niet aan het mannelijkheidsideaal voldoen, denken vaak dat ze iets fout doen. Ze denken dat ze mannelijker zouden moeten zijn.
-        Maar in tijden van #metoo, homofobie, seksisme, racisme en geweld zijn zij misschien juist een oplossing? Onze wereld heeft behoefte aan liefde van mannen.
+        <br>
+        We hebben lieve jongens nodig. Jongens die niet aan het mannelijkheidsideaal voldoen, denken vaak dat ze iets fout doen. 
+        Ze denken dat ze mannelijker zouden moeten zijn. Maar in tijden van #metoo, homofobie, seksisme, racisme en geweld zijn zij misschien juist een oplossing? Onze wereld heeft behoefte aan liefde van mannen*. 
         Wij kunnen laten zien dat het anders kan door hokjes te doorbreken en ruimte te maken om onszelf te zijn.
+        <br>
+        <br>
+        <i>* waar wij de termen mannen/jongens gebruiken bedoelen we een breed scala aan mensen.</i>
       </div>
     </section>
     <section class="container container-instagram">
@@ -24,7 +28,7 @@
     </section>
     <div class="container container-contact">
       <section class="container-half container-bel">
-      <div class="title">VOORPROEFJE</div>
+      <div class="title">BEL ONS</div>
       <div class="text">
         We hebben een telefoonnummer: <a href="tel:0642280481">06 42 28 04 81</a>.
         <br>Je kunt het 24/7 bellen voor inspiratie, informatie en voorproefjes van de maatschappelijke beweging en theatervoorstelling.
