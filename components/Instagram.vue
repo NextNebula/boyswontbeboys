@@ -1,7 +1,7 @@
 <template>
   <div class="instagram">
     <template v-for="(post, index) in posts">
-      <a class="instagram-post" v-bind:href="'https://www.instagram.com/p/' + post.node.id" :key="index">
+      <a class="instagram-post" v-bind:href="'https://www.instagram.com/p/' + post.node.shortcode" :key="index" target="_blank">
         <img v-bind:src="post.node.thumbnail_resources[3].src">
       </a>
     </template>
