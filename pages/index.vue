@@ -52,7 +52,7 @@
         <br>
         <div class="lijst">
           <ul>
-            <li><a href="http://bit.ly/perskitBWBB">Download onze perskit</a></li>
+            <li><a href="http://bit.ly/perskitBWBB" target="_blank">Download onze perskit</a></li>
             <li>pr@zoujijhetzijn.nl</li>
             <li>productie@zoujijhetzijn.nl</li>
             <li>rikkert@zoujijhetzijn.nl</li>
