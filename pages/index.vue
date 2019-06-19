@@ -26,7 +26,7 @@
       <div class="title" style="padding-bottom: 6px;">INSTAGRAM</div>
       <instagram/>
     </section>
-    <div class="container container-contact">
+    <div class="container container-split">
       <section class="container-half container-bel">
       <div class="title">BEL ONS</div>
       <div class="text">
@@ -46,7 +46,7 @@
         Eigenlijk is het telefoonnummer de voorstelling, maar dan in het klein! Probeer het zelf maar eens uit. Deze audiobeleving is gemaakt door Allard Medema.
       </div>
       </section>
-      <section class="container-half">
+      <section class="container-half container-contact">
         <div class="title">CONTACT</div>
         Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen? Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en de promotionele teksten zijn hieronder te vinden.
         <br>
@@ -175,7 +175,7 @@ export default {
   border-top: 3px solid white;
 }
 
-.container-contact {
+.container-split {
   background-color: #CAEEEE;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
@@ -223,6 +223,25 @@ export default {
   margin-left: auto;
   margin-right: auto;
   transition: opacity .15s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-split {
+    flex-direction: column;
+  }
+
+  .container-half {
+    width: 100%;
+  }
+
+  .container-bel {
+    border-right: none;
+    border-bottom: 3px solid white;
+  }
+
+  .container-contact {
+    background-color: #7AD4D4;
+  }
 }
 
 @keyframes bounce {

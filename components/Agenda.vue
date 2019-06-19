@@ -1,5 +1,6 @@
 <template>
   <div class="agenda">
+    <div style="overflow-x:auto;">
     <table>
       <tr class="month-header">
         <td colspan="4">AUGUSTUS 2019</td>
@@ -153,10 +154,15 @@
         <td><a href="https://www.facebook.com/events/439338940223937/" target="_blank">Facebook</a></td>
       </tr>
     </table>
+    </div>
   </div>
 </template>
 
 <style>
+.agenda {
+  width: 100%;
+}
+
 .agenda div:last-of-type {
   margin-bottom: 0;
 }
