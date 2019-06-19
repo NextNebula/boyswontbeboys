@@ -66,6 +66,7 @@
             <font-awesome-icon :icon="['fab', 'instagram']"  style="font-size: 35px" />
           </a>
         </div>
+        <div class="credits">Vormgever <a href="https://www.burobraak.nl" target="_blank">BUROBRAAK</a>. Fotograaf <a href="https://www.ernstcoppejans.com" target="_blank">Ernst Coppejans</a>.</div>
       </section>
     </div>
     <img class="image-banner" src="~/assets/banner.jpg">
@@ -181,6 +182,11 @@ export default {
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
+  position: relative;
+}
+
+.credits {
+  margin-top: 1rem;
 }
 
 .container-bel {
