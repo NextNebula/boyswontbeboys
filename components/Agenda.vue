@@ -3,7 +3,7 @@
     <div style="overflow-x:auto;">
     <table class="agenda-table">
       <tr class="month-header">
-        <td colspan="4">AUGUSTUS 2019</td>
+        <td colspan="5">AUGUSTUS 2019</td>
       </tr>
       <tr>
         <td>do 8</td>
@@ -27,7 +27,7 @@
         <td><a href="https://www.facebook.com/events/396312284427421/" target="_blank">Facebook</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="4">SEPTEMBER 2019</td>
+        <td colspan="5">SEPTEMBER 2019</td>
       </tr>
       <tr>
         <td>do 12</td>
@@ -58,7 +58,7 @@
         <td><a href="https://www.facebook.com/events/340907676622217/" target="_blank">Facebook</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="4">OKTOBER 2019</td>
+        <td colspan="5">OKTOBER 2019</td>
       </tr>
       <tr>
         <td>za 5</td>
@@ -117,7 +117,7 @@
         <td><a href="https://www.facebook.com/events/317851759145211/" target="_blank">Facebook</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="4">NOVEMBER 2019</td>
+        <td colspan="5">NOVEMBER 2019</td>
       </tr>
       <tr>
         <td>do 14</td>
@@ -134,7 +134,7 @@
         <td></td>
       </tr>
       <tr class="month-header">
-        <td colspan="4">DECEMBER 2019</td>
+        <td colspan="5">DECEMBER 2019</td>
       </tr>
       <tr>
         <td>di 3</td>
@@ -144,7 +144,7 @@
         <td><a href="https://www.facebook.com/events/2335278703455597/" target="_blank">Facebook</a></td>
       </tr>
       <tr class="month-header">
-        <td colspan="4">JANUARI 2020</td>
+        <td colspan="5">JANUARI 2020</td>
       </tr>
       <tr>
         <td>vr 10</td>
@@ -177,7 +177,7 @@
 }
 
 .month-header {
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
