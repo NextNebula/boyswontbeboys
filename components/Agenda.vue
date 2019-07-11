@@ -1,7 +1,7 @@
 <template>
   <div class="agenda">
     <div style="overflow-x:auto;">
-    <table>
+    <table class="agenda-table">
       <tr class="month-header">
         <td colspan="4">AUGUSTUS 2019</td>
       </tr>
@@ -161,6 +161,11 @@
 <style>
 .agenda {
   width: 100%;
+}
+
+.agenda-table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .agenda div:last-of-type {
