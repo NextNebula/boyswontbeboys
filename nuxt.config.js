@@ -11,8 +11,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'google-site-verification', content: 'jKzu1ftDgioH7Z0XkZ0ZV3jXX3916Vyr3XbmL5NL4l8' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'robots', content: 'index, followx' },
+      { name: 'description', content: "BOYS WON'T BE BOYS van Rikkert van Huisstede is een maatschappelijke beweging en theatervoorstelling die een diverse groep jongens en mannen samenbrengt. Een collage van dansers, zangers, rappers, dichters en theatermakers laat zien dat het stoer is om je (als man) kwetsbaar op te stellen. Ze vertellen hun persoonlijke verhaal en vinden elkaar in het doorbreken van stereotypen." },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
