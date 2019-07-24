@@ -67,6 +67,9 @@
           </a>
         </div>
         <div class="credits">Vormgever <a href="https://www.burobraak.nl" target="_blank">BUROBRAAK</a>. Fotograaf <a href="https://www.ernstcoppejans.com" target="_blank">Ernst Coppejans</a>.</div>
+        <div class="foundations">BOYS WON'T BE BOYS BEDANKT</div>
+        <img class="vsbfonds" src="~/assets/vsbfonds.png">
+        <img class="vdef" src="~/assets/vdef.svg">
       </section>
     </div>
     <img class="image-banner" src="~/assets/banner.jpg">
@@ -175,6 +178,10 @@ export default {
   border-top: 3px solid white;
 }
 
+.container-contact {
+    border-left: 3px solid white;
+}
+
 .container-split {
   background-color: #CAEEEE;
   border-top: 3px solid white;
@@ -187,10 +194,6 @@ export default {
 
 .credits {
   margin-top: 1rem;
-}
-
-.container-bel {
-  border-right: 3px solid white;
 }
 
 .title {
@@ -223,6 +226,22 @@ export default {
   margin-left: auto;
   margin-right: auto;
   transition: opacity .15s ease-in-out;
+}
+
+.foundations {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.vsbfonds {
+  width: 170px;
+  margin-right: 0.5rem;
+}
+
+.vdef {
+  width: 170px;
 }
 
 @media only screen and (max-width: 600px) {
