@@ -26,6 +26,13 @@
         <td><a href="https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/" target="_blank">Tickets</a></td>
         <td><a href="https://www.facebook.com/events/396312284427421/" target="_blank">Facebook</a></td>
       </tr>
+      <tr>
+        <td>za 10</td>
+        <td>Den Bosch</td>
+        <td>Boulevard Festival</td>
+        <td><a href="https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/" target="_blank">Tickets</a></td>
+        <td><a href="https://www.facebook.com/events/396312284427421/" target="_blank">Facebook</a></td>
+      </tr>
       <tr class="month-header">
         <td colspan="5">SEPTEMBER 2019</td>
       </tr>
