@@ -34,7 +34,9 @@ export default {
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
-    max-width: 950px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .instagram-post {

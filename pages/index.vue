@@ -22,11 +22,33 @@
         <i>* waar wij de termen mannen/jongens gebruiken bedoelen we een breed scala aan mensen.</i>
       </div>
     </section>
-    <section class="container container-instagram">
-      <div class="title" style="padding-bottom: 6px;">INSTAGRAM</div>
-      <instagram/>
+    <section class="container container-split container-first">
+      <section class="container-half container-instagram">
+        <div class="title" style="padding-bottom: 6px;">INSTAGRAM</div>
+        <instagram/>
+      </section>
+      <section class="container-half container-media">
+        <div class="title" style="padding-bottom: 6px;">IN DE MEDIA</div>
+        <div class="quote">
+          <i>"Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede mix van sterke performers."</i>
+          <br>
+          Jury Amsterdams Fringe Festival
+        </div>
+        <div class="quote">
+          <i>"Rikkert is een innemende performer en durft zijn persoonlijke urgentie aan een breed maatschappelijk engagement te verkopen."</i>
+          <br>
+          Parool <a href="https://sanderjanssens.nl/2019/02/12/het-beste-van-dat-waar-je-niet-op-zit-te-wachten/">[Lees meer]</a>
+        </div>
+        <div class="quote">
+          Interview met regisseur Rikkert van Huisstede
+          <br>
+          <i>"Rikkert is een innemende performer en durft zijn persoonlijke urgentie aan een breed maatschappelijk engagement te verkopen."</i>
+          <br>
+          Gaykrant <a href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/">[Lees meer]</a>
+        </div>
+      </section>
     </section>
-    <div class="container container-split">
+    <div class="container container-split container-second">
       <section class="container-half container-bel">
       <div class="title">BEL ONS</div>
       <div class="text">
@@ -132,22 +154,6 @@ export default {
 </script>
 
 <style>
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 100;
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-.container-half {
-  width: 50%;
-  float: right;
-  padding: 2rem 1rem 2rem 1rem;
-}
-
 .image-banner {
   width: 100vw;
   margin-bottom: -6px;
@@ -164,6 +170,38 @@ export default {
   bottom: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.container-split {
+  border-bottom: 3px solid white;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  position: relative;
+}
+
+.container-half {
+  width: 50%;
+  float: right;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.container-first {
+  background-color: #7AD4D4;
+}
+
+.container-second {
+  background-color: #CAEEEE;
+}
+
 .container-agenda {
   background-color: #7AD4D4;
   border-top: 3px solid white;
@@ -177,20 +215,31 @@ export default {
 .container-instagram {
   background-color: #7AD4D4;
   border-top: 3px solid white;
+  border-right: 3px solid white;
+  margin-right: -3px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.container-media {
+  background-color: #7AD4D4;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+.container-bel {
+  background-color: #CAEEEE;
+  border-right: 3px solid white;
+  margin-right: -3px;
 }
 
 .container-contact {
-    border-left: 3px solid white;
+  background-color: #CAEEEE;
+  border-left: 3px solid white;
 }
 
-.container-split {
-  background-color: #CAEEEE;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0;
-  position: relative;
+.quote {
+  margin-bottom: 2rem;
 }
 
 .credits {
@@ -251,7 +300,7 @@ export default {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .container-split {
     flex-direction: column;
   }
@@ -260,12 +309,19 @@ export default {
     width: 100%;
   }
 
+  .container-instagram {
+    border-right: none;
+  }
+
+  .container-media {
+    border-left: none;
+    background-color: #CAEEEE;
+  }
+  
+
   .container-bel {
     border-right: none;
     border-bottom: 3px solid white;
-  }
-
-  .container-contact {
     background-color: #7AD4D4;
   }
 }
