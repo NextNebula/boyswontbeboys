@@ -70,6 +70,7 @@
         <div class="foundations">BOYS WON'T BE BOYS BEDANKT</div>
         <img class="vsbfonds" src="~/assets/vsbfonds.png">
         <img class="vdef" src="~/assets/vdef.svg">
+        <img class="amerborgh" src="~/assets/amerborgh.svg">
       </section>
     </div>
     <img class="image-banner" src="~/assets/banner.jpg">
@@ -242,6 +243,12 @@ export default {
 
 .vdef {
   width: 170px;
+  margin-right: 0.5rem;
+}
+
+.amerborgh {
+  width: 170px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) {
