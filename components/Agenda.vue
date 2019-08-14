@@ -18,22 +18,14 @@
 </template>
 
 <script>
+import agendaJson from '~/components/agenda.json';
+
 export default {
   data () {
     return {
-      agenda: null
+      agenda: agendaJson.months
     }
-  },
-  methods: {
-    getPosts: function () {
-      this.$axios
-        .get('agenda.json')
-        .then(response => (this.agenda = response.data.months))
-      }
-    },
-  mounted() {
-      this.getPosts();
-  },
+  }
 };
 </script>
 
