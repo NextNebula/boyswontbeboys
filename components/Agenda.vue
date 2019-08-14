@@ -8,8 +8,10 @@
             <div class="agenda-column column-date">{{ item.date }}</div>
             <div class="agenda-column column-place">{{ item.place }}</div>
             <div class="agenda-column column-venue">{{ item.venue }}</div>
-            <div class="agenda-column column-tickets"><a v-bind:href="item.tickets" target="_blank">Tickets</a></div>
-            <div class="agenda-column column-facebook"><a v-bind:href="item.facebook" target="_blank">Facebook</a></div>
+            <div class="agenda-column column-links">
+              <a class="column-tickets" v-bind:href="item.tickets" target="_blank">Tickets</a>
+              <a v-bind:href="item.facebook" target="_blank">Facebook</a>
+            </div>
           </div>
         </template>
       </div>
@@ -71,36 +73,41 @@ export default {
   width: 189px;
 }
 
-@media only screen and (max-width: 576px) {
-  .month-header {
-    margin-left: 25%;
-    text-align: left;
-  }
+.column-tickets {
+  margin-right: 0.5rem;
+}
 
+@media only screen and (max-width: 576px) {
   .agenda-item {
     margin-bottom: 0.75rem;
   }
 
+  .agenda-column {
+    padding-right: 0;
+    font-size: 16px;
+  }
+
   .column-date {
-    margin-left: calc(25% - 0.5rem);
+    padding-left: 0;
     text-align: left;
+    width: auto;
   }
 
   .column-place {
-    flex-grow: 1;
+    width: auto;
   }
 
   .column-venue {
-    margin-left: calc(25% - 0.5rem);
+    width: auto;
+  }
+
+  .column-links {
     width: 100%;
+    text-align: center
   }
 
   .column-tickets {
-    margin-left: calc(25% - 0.5rem);
-  }
-
-  .column-facebook {
-    flex-grow: 1;
+    margin-right: 0.25rem;
   }
 }
 
