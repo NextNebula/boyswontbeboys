@@ -9,8 +9,11 @@
             <div class="agenda-column column-place">{{ item.place }}</div>
             <div class="agenda-column column-venue">{{ item.venue }}</div>
             <div class="agenda-column column-links">
-              <a class="column-tickets" v-bind:href="item.tickets" target="_blank">Tickets</a>
-              <a v-bind:href="item.facebook" target="_blank">Facebook</a>
+              <div v-if="item.tickets === ''" class="column-tickets"></div>
+              <span v-else-if="item.soldOut" class="column-tickets">Uitverkocht</span>
+              <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">Tickets</a>
+              <div v-if="item.tickets === ''" class="column-facebook"></div>
+              <a v-else v-bind:href="item.facebook" class="column-facebook" target="_blank">Facebook</a>
             </div>
           </div>
         </template>
@@ -74,7 +77,15 @@ export default {
 }
 
 .column-tickets {
+  display: inline-block;
+  width: 93px;
   margin-right: 0.5rem;
+  text-align: center;
+}
+
+.column-facebook {
+  display: inline-block;
+  width: 77px;
 }
 
 @media only screen and (max-width: 576px) {

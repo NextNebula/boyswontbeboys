@@ -9,7 +9,7 @@
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
                     "facebook": "https://www.facebook.com/events/396312284427421/",
-                    "soldOut": false
+                    "soldOut": true
                 },
                 {
                     "date": "do 09",
@@ -17,7 +17,7 @@
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
                     "facebook": "https://www.facebook.com/events/396312284427421/",
-                    "soldOut": false
+                    "soldOut": true
                 },
                 {
                     "date": "za 10",
@@ -25,7 +25,7 @@
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
                     "facebook": "https://www.facebook.com/events/396312284427421/",
-                    "soldOut": false
+                    "soldOut": true
                 },
                 {
                     "date": "za 10",
@@ -33,7 +33,7 @@
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
                     "facebook": "https://www.facebook.com/events/396312284427421/",
-                    "soldOut": false
+                    "soldOut": true
                 }
             ]
         },
