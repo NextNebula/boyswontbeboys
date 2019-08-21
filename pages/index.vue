@@ -32,19 +32,19 @@
         <div class="quote">
           <i>"Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede mix van sterke performers."</i>
           <br>
-          Jury Amsterdams Fringe Festival
+          Jury Amsterdam Fringe Festival 2018
         </div>
         <div class="quote">
           <i>"Rikkert is een innemende performer en durft zijn persoonlijke urgentie aan een breed maatschappelijk engagement te verkopen."</i>
           <br>
-          Parool <a href="https://sanderjanssens.nl/2019/02/12/het-beste-van-dat-waar-je-niet-op-zit-te-wachten/">[Lees meer]</a>
+          Parool <a href="https://sanderjanssens.nl/2019/02/12/het-beste-van-dat-waar-je-niet-op-zit-te-wachten/" target="_blank">[Lees meer]</a>
         </div>
         <div class="quote">
           Interview met regisseur Rikkert van Huisstede
           <br>
-          <i>"Rikkert is een innemende performer en durft zijn persoonlijke urgentie aan een breed maatschappelijk engagement te verkopen."</i>
+          <i>"De bezoeker is een beetje verliefd geworden op de jonge theatermaker. Rikkert zingt, dicht, praat en lacht op betoverende wijze over liefde, gender en seksualiteit."</i>
           <br>
-          Gaykrant <a href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/">[Lees meer]</a>
+          Gaykrant <a href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/" target="_blank">[Lees meer]</a>
         </div>
       </section>
     </section>
