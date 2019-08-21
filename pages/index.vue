@@ -280,7 +280,6 @@ export default {
 
 .foundations {
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -288,16 +287,19 @@ export default {
 .vsbfonds {
   width: 170px;
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .vdef {
   width: 170px;
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .amerborgh {
   width: 170px;
   margin-bottom: 10px;
+  margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 768px) {
