@@ -4,13 +4,14 @@
       <div class="month" :key="indexMonth">
         <div class="month-header">{{ month.month }}</div>
         <template v-for="(item, indexItem) in month.items">
-          <div class="agenda-item" :key="indexMonth-indexItem">
-            <div class="agenda-column column-date">{{ item.date }}</div>
+          <div v-bind:class="{ 'agenda-item__passed': item.date.isBefore() }" class="agenda-item" :key="indexMonth-indexItem">
+            <div v-if="item.date.isValid()" class="agenda-column column-date">{{ item.date.format("dd DD") }}</div>
+            <div v-else class="agenda-column column-date">n.n.b</div>
             <div class="agenda-column column-place">{{ item.place }}</div>
             <div class="agenda-column column-venue">{{ item.venue }}</div>
             <div class="agenda-column column-links">
               <div v-if="item.tickets === ''" class="column-tickets"></div>
-              <span v-else-if="item.soldOut" class="column-tickets">Uitverkocht</span>
+              <div v-else-if="item.soldOut" class="column-tickets">Uitverkocht</div>
               <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">Tickets</a>
               <div v-if="item.tickets === ''" class="column-facebook"></div>
               <a v-else v-bind:href="item.facebook" class="column-facebook" target="_blank">Facebook</a>
@@ -23,6 +24,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 import agendaJson from '~/components/agenda.json';
 
 export default {
@@ -30,6 +32,15 @@ export default {
     return {
       agenda: agendaJson.months
     }
+  },
+  created: function () {
+    moment.locale('nl');
+
+    this.agenda.forEach(function (month) {
+      month.items.forEach(function (item) {
+        item.date = moment(item.date, 'DD-MM-YYYY').hour(23).minute(59);
+      });
+    });
   }
 };
 </script>
@@ -56,6 +67,15 @@ export default {
   margin-bottom: 0.25rem;
 }
 
+.agenda-item__passed {
+  opacity: 0.4;
+}
+
+.agenda-item__passed, .agenda-item__passed a, .agenda-item__passed div {
+  text-decoration: none;
+  text-decoration: line-through;
+}
+
 .agenda-column {
   flex-grow: 0;
   padding-left: 0.5rem;
@@ -76,15 +96,21 @@ export default {
   width: 189px;
 }
 
+.column-links {
+  font-size: 0;
+}
+
 .column-tickets {
-  display: inline-block;
+  float: left;
   width: 93px;
   margin-right: 0.5rem;
+  font-size: 16px;
   text-align: center;
 }
 
 .column-facebook {
-  display: inline-block;
+  float: left;
+  font-size: 16px;
   width: 77px;
 }
 
@@ -114,7 +140,7 @@ export default {
 
   .column-links {
     width: 100%;
-    text-align: center
+    text-align: center;
   }
 
   .column-tickets {

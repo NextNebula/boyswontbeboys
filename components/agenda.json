@@ -4,7 +4,7 @@
             "month": "Augustus 2019",
             "items": [
                 {
-                    "date": "do 08",
+                    "date": "08-08-2019",
                     "place": "Den Bosch",
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
@@ -12,7 +12,7 @@
                     "soldOut": true
                 },
                 {
-                    "date": "do 09",
+                    "date": "09-08-2019",
                     "place": "Den Bosch",
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
@@ -20,7 +20,7 @@
                     "soldOut": true
                 },
                 {
-                    "date": "za 10",
+                    "date": "10-08-2019",
                     "place": "Den Bosch",
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
@@ -28,7 +28,7 @@
                     "soldOut": true
                 },
                 {
-                    "date": "za 10",
+                    "date": "10-08-2019",
                     "place": "Den Bosch",
                     "venue": "Boulevard Festival",
                     "tickets": "https://www.festivalboulevard.nl/nl/programma/id-4323/boys-won't-be-boys/",
@@ -41,7 +41,7 @@
             "month": "September 2019",
             "items": [
                 {
-                    "date": "do 12",
+                    "date": "12-09-2019",
                     "place": "Tilburg",
                     "venue": "De Nieuwe Vorst",
                     "tickets": "https://denieuwevorst.nl/programma/boys-wont-be-boys/",
@@ -49,7 +49,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "vr 13",
+                    "date": "13-09-2019",
                     "place": "Tilburg",
                     "venue": "De Nieuwe Vorst",
                     "tickets": "https://denieuwevorst.nl/programma/boys-wont-be-boys/",
@@ -57,7 +57,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "za 14",
+                    "date": "14-09-2019",
                     "place": "Tilburg",
                     "venue": "De Nieuwe Vorst",
                     "tickets": "https://denieuwevorst.nl/programma/boys-wont-be-boys/",
@@ -65,7 +65,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "do 19",
+                    "date": "19-09-2019",
                     "place": "Utrecht",
                     "venue": "Stadsschouwburg",
                     "tickets": "https://stadsschouwburg-utrecht.nl/agenda/2019-20/boys-wont-be-boys/",
@@ -78,7 +78,7 @@
             "month": "Oktober 2019",
             "items": [
                 {
-                    "date": "za 05",
+                    "date": "05-10-2019",
                     "place": "Rotterdam",
                     "venue": "Walhalla",
                     "tickets": "https://www.theaterwalhalla.nl/voorstelling/boys-wont-be-boys/",
@@ -86,7 +86,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "wo 09",
+                    "date": "09-10-2019",
                     "place": "Enschede",
                     "venue": "Wilminktheater",
                     "tickets": "https://www.wilminktheater.nl/programma/!/4987/zou-jij-het-zijn-o.l.v.-rikkert-van-huisstede/boys-wont-be-boys/",
@@ -94,15 +94,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "za 14",
-                    "place": "Tilburg",
-                    "venue": "De Nieuwe Vorst",
-                    "tickets": "https://denieuwevorst.nl/programma/boys-wont-be-boys/",
-                    "facebook": "https://www.facebook.com/events/371883650111451/",
-                    "soldOut": false
-                },
-                {
-                    "date": "vr 11",
+                    "date": "11-10-2019",
                     "place": "Almere",
                     "venue": "KAF",
                     "tickets": "https://kaf.nl/podium/agenda/seizoen-2019-2020/boys-wont-be-boys/",
@@ -110,7 +102,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "di 15",
+                    "date": "15-10-2019",
                     "place": "Amsterdam",
                     "venue": "Theater Bellevue",
                     "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/",
@@ -118,7 +110,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "wo 16",
+                    "date": "16-10-2019",
                     "place": "Amsterdam",
                     "venue": "Theater Bellevue",
                     "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/",
@@ -126,7 +118,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "do 17",
+                    "date": "17-10-2019",
                     "place": "Amsterdam",
                     "venue": "Theater Bellevue",
                     "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/",
@@ -134,7 +126,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "vr 18",
+                    "date": "18-10-2019",
                     "place": "Amsterdam",
                     "venue": "Theater Bellevue",
                     "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/",
@@ -142,7 +134,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "za 19",
+                    "date": "19-10-2019",
                     "place": "Amsterdam",
                     "venue": "Theater Bellevue",
                     "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/",
@@ -155,7 +147,7 @@
             "month": "November 2019",
             "items": [
                 {
-                    "date": "do 14",
+                    "date": "14-11-2019",
                     "place": "Arnhem",
                     "venue": "Theater aan de Rijn",
                     "tickets": "https://www.theateraanderijn.nl/programma/boys-wont-be-boys-olv-rikkert-van-huisstede",
@@ -163,7 +155,7 @@
                     "soldOut": false
                 },
                 {
-                    "date": "n.n.b.",
+                    "date": "",
                     "place": "Groningen",
                     "venue": "Jonge Harten festival",
                     "tickets": "",
@@ -176,7 +168,7 @@
             "month": "December 2019",
             "items": [
                 {
-                    "date": "di 03",
+                    "date": "03-12-2019",
                     "place": "Den Haag",
                     "venue": "Zaal 3",
                     "tickets": "https://zaal3.nl/agenda/boys-wont-be-boys/",
@@ -189,10 +181,10 @@
             "month": "Januari 2020",
             "items": [
                 {
-                    "date": "vr 10",
+                    "date": "10-01-2020",
                     "place": "Breda",
                     "venue": "Chassé theater",
-                    "tickets": "https://www.chasse.nl/theater/programma/boys-won-t-be-boys/",
+                    "tickets": "https://www.chasse.nl/theater/programma/boys-won-t-be-boys",
                     "facebook": "https://www.facebook.com/events/439338940223937/",
                     "soldOut": false
                 }
