@@ -92,6 +92,8 @@
         <div class="foundations">BOYS WON'T BE BOYS BEDANKT</div>
         <img class="vsbfonds" src="~/assets/vsbfonds.png">
         <img class="vdef" src="~/assets/vdef.svg">
+        <br>
+        <img class="afk" src="~/assets/afk.png">
         <img class="amerborgh" src="~/assets/amerborgh.svg">
       </section>
     </div>
@@ -296,9 +298,15 @@ export default {
   margin-top: 0.5rem;
 }
 
+.afk {
+  width: 170px;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 .amerborgh {
   width: 170px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 0.5rem;
 }
 
