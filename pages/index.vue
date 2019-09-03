@@ -90,11 +90,11 @@
         </div>
         <div class="credits">Vormgever <a href="https://www.burobraak.nl" target="_blank">BUROBRAAK</a>. Fotograaf <a href="https://www.ernstcoppejans.com" target="_blank">Ernst Coppejans</a>.</div>
         <div class="foundations">BOYS WON'T BE BOYS BEDANKT</div>
-        <img class="vsbfonds" src="~/assets/vsbfonds.png">
-        <img class="vdef" src="~/assets/vdef.svg">
-        <br>
-        <img class="afk" src="~/assets/afk.png">
-        <img class="amerborgh" src="~/assets/amerborgh.svg">
+        <img class="creditLogo vsbfonds" src="~/assets/vsbfonds.png">
+        <img class="creditLogo vdef" src="~/assets/vdef.svg">
+        <img class="creditLogo afk" src="~/assets/afk.png">
+        <img class="creditLogo amerborgh" src="~/assets/amerborgh.svg">
+        <img class="creditLogo burobraak" src="~/assets/burobraak.png">
       </section>
     </div>
     <img class="image-banner" src="~/assets/banner.jpg">
@@ -286,28 +286,13 @@ export default {
   line-height: 1;
 }
 
-.vsbfonds {
+.creditLogo {
   width: 170px;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-}
-
-.vdef {
-  width: 170px;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.afk {
-  width: 170px;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.amerborgh {
-  width: 170px;
-  margin-bottom: 20px;
-  margin-top: 0.5rem;
+  min-height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 768px) {
@@ -333,6 +318,19 @@ export default {
     border-right: none;
     border-bottom: 3px solid white;
     background-color: #7AD4D4;
+  }
+}
+
+@media only screen and (max-width: 540px)
+{
+  .creditLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .amerborgh {
+    margin-bottom: 0;
   }
 }
 
