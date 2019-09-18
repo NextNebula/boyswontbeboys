@@ -54,7 +54,7 @@
                     "venue": "De Nieuwe Vorst",
                     "tickets": "https://denieuwevorst.nl/programma/boys-wont-be-boys/",
                     "facebook": "https://www.facebook.com/events/371883650111451/",
-                    "soldOut": false
+                    "soldOut": true
                 },
                 {
                     "date": "14-09-2019",
@@ -62,7 +62,7 @@
                     "venue": "De Nieuwe Vorst",
                     "tickets": "https://denieuwevorst.nl/programma/boys-wont-be-boys/",
                     "facebook": "https://www.facebook.com/events/371883650111451/",
-                    "soldOut": false
+                    "soldOut": true
                 },
                 {
                     "date": "19-09-2019",
