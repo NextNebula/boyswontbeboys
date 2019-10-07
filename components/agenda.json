@@ -123,7 +123,7 @@
                     "venue": "Theater Bellevue",
                     "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/",
                     "facebook": "https://www.facebook.com/events/317851759145211/",
-                    "soldOut": false
+                    "soldOut": true
                 },
                 {
                     "date": "18-10-2019",
@@ -131,7 +131,7 @@
                     "venue": "Theater Bellevue",
                     "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys/",
                     "facebook": "https://www.facebook.com/events/317851759145211/",
-                    "soldOut": false
+                    "soldOut": true
                 },
                 {
                     "date": "19-10-2019",
