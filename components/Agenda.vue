@@ -11,7 +11,7 @@
             <div class="agenda-column column-venue">{{ item.venue }}</div>
             <div class="agenda-column column-links">
               <div v-if="item.tickets === ''" class="column-tickets"></div>
-              <div v-else-if="item.soldOut" class="column-tickets">Uitverkocht</div>
+              <a v-else-if="item.soldOut" class="column-tickets" v-bind:href="item.tickets" target="_blank">Uitverkocht</a>
               <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">Tickets</a>
               <div v-if="item.tickets === ''" class="column-facebook"></div>
               <a v-else v-bind:href="item.facebook" class="column-facebook" target="_blank">Facebook</a>
