@@ -94,14 +94,6 @@
                     "soldOut": false
                 },
                 {
-                    "date": "11-10-2019",
-                    "place": "Almere",
-                    "venue": "KAF",
-                    "tickets": "https://kaf.nl/podium/agenda/seizoen-2019-2020/boys-wont-be-boys/",
-                    "facebook": "https://www.facebook.com/events/295335558038314/",
-                    "soldOut": false
-                },
-                {
                     "date": "15-10-2019",
                     "place": "Amsterdam",
                     "venue": "Theater Bellevue",
@@ -160,6 +152,14 @@
                     "venue": "Jonge Harten festival",
                     "tickets": "http://www.jongeharten.nl/programma/boys-wont-be-boys/",
                     "facebook": "https://www.facebook.com/events/499759720806001/",
+                    "soldOut": false
+                },
+                {
+                    "date": "16-11-2019",
+                    "place": "Almere",
+                    "venue": "KAF",
+                    "tickets": "https://kaf.nl/podium/agenda/seizoen-2019-2020/boys-wont-be-boys/",
+                    "facebook": "https://www.facebook.com/events/295335558038314/",
                     "soldOut": false
                 }
             ]
