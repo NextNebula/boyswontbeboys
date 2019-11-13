@@ -186,7 +186,7 @@
                     "venue": "Chassé theater",
                     "tickets": "https://www.chasse.nl/theater/programma/boys-won-t-be-boys",
                     "facebook": "https://www.facebook.com/events/439338940223937/",
-                    "soldOut": false
+                    "soldOut": true
                 }
             ]
         }
