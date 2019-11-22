@@ -1,6 +1,6 @@
 # boyswontbeboys
 
-> Boys won&#39;t be boys site
+> Staticc BOYS WON&#39;T BE BOYS site, generated with Nuxt.
 
 ## Build Setup
 
@@ -18,5 +18,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).

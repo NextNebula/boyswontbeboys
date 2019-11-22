@@ -1,17 +1,11 @@
-import pkg from './package'
-
 export default {
   mode: 'spa',
-
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'BOYS WON\'T BE BOYS',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'robots', content: 'index, followx' },
+      { name: 'robots', content: 'index, follow' },
       { name: 'description', content: "BOYS WON'T BE BOYS van Rikkert van Huisstede is een maatschappelijke beweging en theatervoorstelling die een diverse groep jongens en mannen samenbrengt. Een collage van dansers, zangers, rappers, dichters en theatermakers laat zien dat het stoer is om je (als man) kwetsbaar op te stellen. Ze vertellen hun persoonlijke verhaal en vinden elkaar in het doorbreken van stereotypen." },
     ],
     link: [
@@ -19,27 +13,6 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap' }
     ]
   },
-
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
-
-  /*
-  ** Global CSS
-  */
-  css: [
-  ],
-
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     '@nuxtjs/axios',
     ['nuxt-fontawesome', {
@@ -53,16 +26,5 @@ export default {
     ['@nuxtjs/google-analytics', {
       id: 'UA-141894659-1'
     }]
-  ],
-
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-    }
-  }
+  ]
 }
