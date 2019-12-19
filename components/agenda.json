@@ -197,6 +197,19 @@
                     "soldOut": false
                 }
             ]
+        },
+        {
+            "month": "Februari 2020",
+            "items": [
+                {
+                    "date": "07-02-2020",
+                    "place": "Amsterdam",
+                    "venue": "Theater Bellevue",
+                    "tickets": "https://www.theaterbellevue.nl/agenda/2224/Rikkert_van_Huisstede/Boys_won_039_t_be_boys_XXL_/",
+                    "facebook": "",
+                    "soldOut": false
+                }
+            ]
         }
     ]
 }
