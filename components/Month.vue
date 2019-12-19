@@ -111,12 +111,17 @@ export default {
   }
 
   .column-links {
-    width: 100%;
-    text-align: center;
+      width: 100%;
+      display: flex;
   }
 
   .column-tickets {
-    margin-right: 0.25rem;
+    flex-grow: 1;
+    text-align: right;
+  }
+  .column-facebook {
+    margin-left: 0.5rem;
+    flex-grow: 1;
   }
 }
 </style>
