@@ -97,7 +97,7 @@
         <img class="creditLogo burobraak" src="~/assets/burobraak.png">
       </section>
     </div>
-    <img class="image-banner" src="~/assets/banner.jpg">
+    <img class="image-banner image-banner-bottom" src="~/assets/banner.jpg">
   </div>
 </template>
 
@@ -112,65 +112,20 @@ export default {
   components: {
     Agenda,
     Instagram
-  },
-  methods: {
-      toggleArrow: function (scrollY) {
-        var arrowup = document.getElementById("arrow-up");
-        var containerAgenda= document.getElementById("container-agenda");
-        var topBanner = document.getElementById("top-banner");
-        var rect = containerAgenda.getBoundingClientRect();
-
-          if (scrollY > topBanner.height - window.innerHeight) {
-            arrowup.style.opacity = '0';
-            containerAgenda.style.marginTop = topBanner.height + 'px';
-            if (topBanner.height >= window.innerHeight) {
-              topBanner.classList.add('image-banner-paralex-big');
-            }
-            else {
-              topBanner.classList.add('image-banner-paralex');
-            }
-
-            window.scrollTo(0, scrollY);
-          }
-          else {
-            arrowup.style.opacity = '1';
-            containerAgenda.style.marginTop = '0'
-            topBanner.classList.remove('image-banner-paralex');
-            topBanner.classList.remove('image-banner-paralex-big');
-          }
-      }
-    },
-  mounted() {
-    window.addEventListener('load', () => {
-      last_known_scroll_position = window.pageYOffset;
-      this.toggleArrow(last_known_scroll_position);
-    });
-
-    window.addEventListener('scroll', () => {
-      last_known_scroll_position = window.pageYOffset;
-      if (!ticking) {
-        var self = this;
-        window.requestAnimationFrame(function() {
-          self.toggleArrow(last_known_scroll_position);
-          ticking = false;
-        });
-
-        ticking = true;
-      }
-    });
-
-    window.addEventListener('resize', () => {
-      self.toggleArrow(last_known_scroll_position);
-    });
-  },
+  }
 };
 </script>
 
 <style>
 .image-banner {
+  position: relative;
   width: 100vw;
   margin-bottom: -6px;
   z-index: -1;
+}
+
+.image-banner-bottom {
+  z-index: 2;
 }
 
 .image-banner-paralex {
@@ -184,6 +139,8 @@ export default {
 }
 
 .container {
+  z-index: 2;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -278,6 +235,7 @@ export default {
 
 .arrow
 {
+  z-index: 1;
   position: fixed;
   bottom: 1rem;
   right: calc(50% - 30px);
@@ -288,7 +246,6 @@ export default {
   animation: bounce 2s infinite;
   margin-left: auto;
   margin-right: auto;
-  transition: opacity .15s ease-in-out;
   filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .5));
 }
 
