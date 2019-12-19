@@ -105,21 +105,22 @@
 import Agenda from "~/components/Agenda.vue";
 import Instagram from "~/components/Instagram.vue";
 
+var last_known_scroll_position = 0;
+var ticking = false;
+
 export default {
   components: {
     Agenda,
     Instagram
   },
   methods: {
-      toggleArrow: function () {
+      toggleArrow: function (scrollY) {
         var arrowup = document.getElementById("arrow-up");
         var containerAgenda= document.getElementById("container-agenda");
         var topBanner = document.getElementById("top-banner");
         var rect = containerAgenda.getBoundingClientRect();
 
-          if (window.pageYOffset > topBanner.height - window.innerHeight) {
-            var currentScrollY = window.pageYOffset;
-
+          if (scrollY > topBanner.height - window.innerHeight) {
             arrowup.style.opacity = '0';
             containerAgenda.style.marginTop = topBanner.height + 'px';
             if (topBanner.height >= window.innerHeight) {
@@ -129,7 +130,7 @@ export default {
               topBanner.classList.add('image-banner-paralex');
             }
 
-            window.scrollTo(0 ,currentScrollY);
+            window.scrollTo(0, scrollY);
           }
           else {
             arrowup.style.opacity = '1';
@@ -141,15 +142,25 @@ export default {
     },
   mounted() {
     window.addEventListener('load', () => {
-         this.toggleArrow()
+      last_known_scroll_position = window.pageYOffset;
+      this.toggleArrow(last_known_scroll_position);
     });
 
     window.addEventListener('scroll', () => {
-         this.toggleArrow()
+      last_known_scroll_position = window.pageYOffset;
+      if (!ticking) {
+        var self = this;
+        window.requestAnimationFrame(function() {
+          self.toggleArrow(last_known_scroll_position);
+          ticking = false;
+        });
+
+        ticking = true;
+      }
     });
 
     window.addEventListener('resize', () => {
-         this.toggleArrow()
+      self.toggleArrow(last_known_scroll_position);
     });
   },
 };
