@@ -2,7 +2,7 @@
     <div class="month">
         <div class="month-header">{{ month.month }}</div>
             <template v-for="(item, indexItem) in month.items">
-                <div v-bind:class="{ 'agenda-item__passed': item.date.isBefore() }" class="agenda-item" :key="indexMonth-indexItem">
+                <div v-bind:class="{ 'agenda-item__passed': item.date.isBefore() }" class="agenda-item" :key="indexItem">
                     <div v-if="item.date.isValid()" class="agenda-column column-date">{{ item.date.format("dd DD") }}</div>
                     <div v-else class="agenda-column column-date">n.n.b</div>
                     <div class="agenda-column column-place">{{ item.place }}</div>

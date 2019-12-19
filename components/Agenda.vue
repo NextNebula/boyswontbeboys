@@ -1,11 +1,11 @@
 <template>
   <div class="agenda">
     <template v-for="(month, indexMonth) in currentAgenda">
-      <month v-bind:month="month" :key="indexMonth"/>
+      <month v-bind:month="month" :key="'1' + indexMonth"/>
     </template>
     <div class="outdated-shows" v-on:click="showOutdatedAgenda = !showOutdatedAgenda">EERDERE VOORSTELLINGEN</div>
     <template v-for="(month, indexMonth) in outdatedAgenda">
-      <month v-bind:month="month" :key="indexMonth"/>
+      <month v-bind:month="month" :key="'2' + indexMonth"/>
     </template>
   </div>
 </template>
