@@ -13,7 +13,7 @@
 <script>
 import moment from 'moment';
 import agendaJson from '~/components/agenda.json';
-import Month from '~/components/month.vue';
+import Month from './Month.vue';
 
 export default {
   components: {
