@@ -278,6 +278,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   transition: opacity .15s ease-in-out;
+  filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .5));
 }
 
 .foundations {
