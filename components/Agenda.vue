@@ -1,45 +1,44 @@
 <template>
   <div class="agenda">
-    <template v-for="(month, indexMonth) in agenda">
-      <div class="month" :key="indexMonth">
-        <div class="month-header">{{ month.month }}</div>
-        <template v-for="(item, indexItem) in month.items">
-          <div v-bind:class="{ 'agenda-item__passed': item.date.isBefore() }" class="agenda-item" :key="indexMonth-indexItem">
-            <div v-if="item.date.isValid()" class="agenda-column column-date">{{ item.date.format("dd DD") }}</div>
-            <div v-else class="agenda-column column-date">n.n.b</div>
-            <div class="agenda-column column-place">{{ item.place }}</div>
-            <div class="agenda-column column-venue">{{ item.venue }}</div>
-            <div class="agenda-column column-links">
-              <div v-if="item.tickets === ''" class="column-tickets"></div>
-              <a v-else-if="item.soldOut" class="column-tickets" v-bind:href="item.tickets" target="_blank">Uitverkocht</a>
-              <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">Tickets</a>
-              <div v-if="item.tickets === ''" class="column-facebook"></div>
-              <a v-else v-bind:href="item.facebook" class="column-facebook" target="_blank">Facebook</a>
-            </div>
-          </div>
-        </template>
-      </div>
+    <template v-for="(month, indexMonth) in currentAgenda">
+      <month v-bind:month="month" :key="indexMonth"/>
+    </template>
+    <div class="outdated-shows" v-on:click="showOutdatedAgenda = !showOutdatedAgenda">EERDERE VOORSTELLINGEN</div>
+    <template v-for="(month, indexMonth) in outdatedAgenda">
+      <month v-bind:month="month" :key="indexMonth"/>
     </template>
   </div>
 </template>
 
 <script>
-import moment from 'moment'
+import moment from 'moment';
 import agendaJson from '~/components/agenda.json';
+import Month from '~/components/month.vue';
 
 export default {
+  components: {
+    Month
+  },
   data () {
     return {
-      agenda: agendaJson.months
+      currentAgenda: [],
+      outdatedAgenda: [],
     }
   },
-  created: function () {
+  beforeCreate: function() {
     moment.locale('nl');
-
-    this.agenda.forEach(function (month) {
+  },
+  created: function() {
+    agendaJson.months.map((month) => {
       month.items.forEach(function (item) {
         item.date = moment(item.date, 'DD-MM-YYYY').hour(23).minute(59);
       });
+      if (moment(month.items[0].date, 'DD-MM-YYYY').isAfter(moment().endOf('month'))) {
+        this.currentAgenda.push(month)
+      }
+      else {
+        this.outdatedAgenda.push(month)
+      }
     });
   }
 };
@@ -50,102 +49,10 @@ export default {
   width: 100%;
   margin-top: -1rem;
 }
-
-.month-header {
+.outdated-shows {
   font-weight: 700;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
 }
-
-.agenda-item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.25rem;
-}
-
-.agenda-item__passed {
-  opacity: 0.4;
-}
-
-.agenda-item__passed, .agenda-item__passed a, .agenda-item__passed div {
-  text-decoration: none;
-  text-decoration: line-through;
-}
-
-.agenda-column {
-  flex-grow: 0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  text-align: left;
-}
-
-.column-date {
-  width: 71px;
-  text-align: right;
-}
-
-.column-place {
-  width: 107px;
-}
-
-.column-venue {
-  width: 189px;
-}
-
-.column-links {
-  font-size: 0;
-}
-
-.column-tickets {
-  float: left;
-  width: 93px;
-  margin-right: 0.5rem;
-  font-size: 16px;
-  text-align: center;
-}
-
-.column-facebook {
-  float: left;
-  font-size: 16px;
-  width: 77px;
-}
-
-@media only screen and (max-width: 576px) {
-  .agenda-item {
-    margin-bottom: 0.75rem;
-  }
-
-  .agenda-column {
-    padding-right: 0;
-    font-size: 16px;
-  }
-
-  .column-date {
-    padding-left: 0;
-    text-align: left;
-    width: auto;
-  }
-
-  .column-place {
-    width: auto;
-  }
-
-  .column-venue {
-    width: auto;
-  }
-
-  .column-links {
-    width: 100%;
-    text-align: center;
-  }
-
-  .column-tickets {
-    margin-right: 0.25rem;
-  }
-}
-
 </style>
