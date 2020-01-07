@@ -33,7 +33,7 @@ export default {
       month.items.forEach(function (item) {
         item.date = moment(item.date, 'DD-MM-YYYY').hour(23).minute(59);
       });
-      if (moment(month.items[0].date, 'DD-MM-YYYY').isAfter(moment().endOf('month'))) {
+      if (moment(month.items[0].date, 'DD-MM-YYYY').isAfter(moment().startOf('month'))) {
         this.currentAgenda.push(month)
       }
       else {
