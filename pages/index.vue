@@ -16,8 +16,7 @@
         stellen. Ze vertellen hun persoonlijke verhaal en vinden elkaar in het
         doorbreken van stereotypen.
         <br />
-        <br />
-        We hebben lieve jongens nodig. Jongens die niet aan het
+        <br />We hebben lieve jongens nodig. Jongens die niet aan het
         mannelijkheidsideaal voldoen, denken vaak dat ze iets fout doen. Ze
         denken dat ze mannelijker zouden moeten zijn. Maar in tijden van #metoo,
         homofobie, seksisme, racisme en geweld zijn zij misschien juist een
@@ -26,10 +25,10 @@
         maken om onszelf te zijn.
         <br />
         <br />
-        <i
-          >* waar wij de termen mannen/jongens gebruiken bedoelen we een breed
-          scala aan mensen.</i
-        >
+        <i>
+          * waar wij de termen mannen/jongens gebruiken bedoelen we een breed
+          scala aan mensen.
+        </i>
       </div>
     </section>
     <section class="container container-split container-first">
@@ -40,41 +39,36 @@
       <section class="container-half container-media">
         <div class="title" style="padding-bottom: 6px;">IN DE MEDIA</div>
         <div class="quote">
-          <i
-            >"Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede
-            mix van sterke performers."</i
-          >
-          <br />
-          Jury Amsterdam Fringe Festival 2018
+          <i>
+            "Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede
+            mix van sterke performers."
+          </i>
+          <br />Jury Amsterdam Fringe Festival 2018
         </div>
         <div class="quote">
-          <i
-            >"Alles bij elkaar is het een enorm project dat met veel liefde is
-            vormgegeven."</i
-          >
-          <br />
-          Theaterkrant
+          <i>
+            "Alles bij elkaar is het een enorm project dat met veel liefde is
+            vormgegeven."
+          </i>
+          <br />Theaterkrant
           <a
             href="https://www.theaterkrant.nl/recensie/boys-wont-be-boys/rikkert-van-huisstede/"
             target="_blank"
-            >[Lees meer]</a
-          >
+          >[Lees meer]</a>
         </div>
         <div class="quote">
           Interview met regisseur Rikkert van Huisstede
           <br />
-          <i
-            >"De bezoeker is een beetje verliefd geworden op de jonge
+          <i>
+            "De bezoeker is een beetje verliefd geworden op de jonge
             theatermaker. Rikkert zingt, dicht, praat en lacht op betoverende
-            wijze over liefde, gender en seksualiteit."</i
-          >
-          <br />
-          Gaykrant
+            wijze over liefde, gender en seksualiteit."
+          </i>
+          <br />Gaykrant
           <a
             href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/"
             target="_blank"
-            >[Lees meer]</a
-          >
+          >[Lees meer]</a>
         </div>
       </section>
     </section>
@@ -83,7 +77,8 @@
         <div class="title">BEL ONS</div>
         <div class="text">
           We hebben een telefoonnummer:
-          <a href="tel:0642280481">06 42 28 04 81</a>. <br />Je kunt het 24/7
+          <a href="tel:0642280481">06 42 28 04 81</a>.
+          <br />Je kunt het 24/7
           bellen voor inspiratie, informatie en voorproefjes van de
           maatschappelijke beweging en theatervoorstelling.
         </div>
@@ -103,17 +98,14 @@
         </div>
       </section>
       <section class="container-half container-contact">
-        <div class="title">CONTACT</div>
-        Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen?
+        <div class="title">CONTACT</div>Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen?
         Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en
         de promotionele teksten zijn hieronder te vinden.
         <br />
         <div class="lijst">
           <ul>
             <li>
-              <a href="http://bit.ly/perskitBWBB" target="_blank"
-                >Download onze perskit</a
-              >
+              <a href="http://bit.ly/BOYSWONTBEBOYS" target="_blank">Download onze perskit</a>
             </li>
             <li>info@wildchildagency.nl</li>
             <li>productie@zoujijhetzijn.nl</li>
@@ -122,27 +114,24 @@
         </div>
         <div class="social">
           <a href="https://www.facebook.com/boyswontbeboys/" target="_blank">
-            <font-awesome-icon
-              :icon="['fab', 'facebook-square']"
-              style="font-size: 35px"
-            />
+            <font-awesome-icon :icon="['fab', 'facebook-square']" style="font-size: 35px" />
           </a>
           <a
             href="https://www.instagram.com/boyswntbeboys/"
             target="_blank"
             style="margin-left: 0.25rem;"
           >
-            <font-awesome-icon
-              :icon="['fab', 'instagram']"
-              style="font-size: 35px"
-            />
+            <font-awesome-icon :icon="['fab', 'instagram']" style="font-size: 35px" />
           </a>
         </div>
         <div class="credits">
           Vormgever
           <a href="https://www.burobraak.nl" target="_blank">BUROBRAAK</a>.
           Fotograaf
-          <a href="https://www.ernstcoppejans.com" target="_blank">Ernst Coppejans</a>.
+          <a
+            href="https://www.ernstcoppejans.com"
+            target="_blank"
+          >Ernst Coppejans</a>.
         </div>
         <div class="foundations">BOYS WON'T BE BOYS BEDANKT</div>
         <img class="creditLogo vsbfonds" src="~/assets/vsbfonds.png" />
