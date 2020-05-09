@@ -31,46 +31,40 @@
         </i>
       </div>
     </section>
-    <section class="container container-split container-first">
-      <section class="container-half container-instagram">
-        <div class="title" style="padding-bottom: 6px;">INSTAGRAM</div>
-        <instagram />
-      </section>
-      <section class="container-half container-media">
-        <div class="title" style="padding-bottom: 6px;">IN DE MEDIA</div>
-        <div class="quote">
-          <i>
-            "Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede
-            mix van sterke performers."
-          </i>
-          <br />Jury Amsterdam Fringe Festival 2018
-        </div>
-        <div class="quote">
-          <i>
-            "Alles bij elkaar is het een enorm project dat met veel liefde is
-            vormgegeven."
-          </i>
-          <br />Theaterkrant
-          <a
-            href="https://www.theaterkrant.nl/recensie/boys-wont-be-boys/rikkert-van-huisstede/"
-            target="_blank"
-          >[Lees meer]</a>
-        </div>
-        <div class="quote">
-          Interview met regisseur Rikkert van Huisstede
-          <br />
-          <i>
-            "De bezoeker is een beetje verliefd geworden op de jonge
-            theatermaker. Rikkert zingt, dicht, praat en lacht op betoverende
-            wijze over liefde, gender en seksualiteit."
-          </i>
-          <br />Gaykrant
-          <a
-            href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/"
-            target="_blank"
-          >[Lees meer]</a>
-        </div>
-      </section>
+    <section class="container container-media">
+      <div class="title" style="padding-bottom: 6px;">IN DE MEDIA</div>
+      <div class="quote">
+        <i>
+          "Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede
+          mix van sterke performers."
+        </i>
+        <br />Jury Amsterdam Fringe Festival 2018
+      </div>
+      <div class="quote">
+        <i>
+          "Alles bij elkaar is het een enorm project dat met veel liefde is
+          vormgegeven."
+        </i>
+        <br />Theaterkrant
+        <a
+          href="https://www.theaterkrant.nl/recensie/boys-wont-be-boys/rikkert-van-huisstede/"
+          target="_blank"
+        >[Lees meer]</a>
+      </div>
+      <div class="quote">
+        Interview met regisseur Rikkert van Huisstede
+        <br />
+        <i>
+          "De bezoeker is een beetje verliefd geworden op de jonge
+          theatermaker. Rikkert zingt, dicht, praat en lacht op betoverende
+          wijze over liefde, gender en seksualiteit."
+        </i>
+        <br />Gaykrant
+        <a
+          href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/"
+          target="_blank"
+        >[Lees meer]</a>
+      </div>
     </section>
     <div class="container container-split container-second">
       <section class="container-half container-bel">
@@ -150,15 +144,9 @@
 
 <script>
 import Agenda from "~/components/Agenda.vue";
-import Instagram from "~/components/Instagram.vue";
-
-var last_known_scroll_position = 0;
-var ticking = false;
-
 export default {
   components: {
-    Agenda,
-    Instagram
+    Agenda
   }
 };
 </script>
@@ -198,6 +186,7 @@ export default {
 }
 
 .container-split {
+  border-top: 3px solid white;
   border-bottom: 3px solid white;
   flex-direction: row;
   align-items: flex-start;
@@ -229,19 +218,9 @@ export default {
   border-top: 3px solid white;
 }
 
-.container-instagram {
-  background-color: #7ad4d4;
-  border-top: 3px solid white;
-  border-right: 3px solid white;
-  margin-right: -3px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .container-media {
   background-color: #7ad4d4;
   border-top: 3px solid white;
-  border-left: 3px solid white;
 }
 
 .container-bel {
@@ -323,10 +302,6 @@ export default {
 
   .container-half {
     width: 100%;
-  }
-
-  .container-instagram {
-    border-right: none;
   }
 
   .container-media {
