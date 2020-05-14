@@ -104,6 +104,12 @@
             <li>info@wildchildagency.nl</li>
             <li>productie@zoujijhetzijn.nl</li>
             <li>rikkert@zoujijhetzijn.nl</li>
+            <li>
+              <a
+                href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf"
+                target="_blank"
+              >ANBI informatie Stichting ZOU JIJ HET ZIJN</a>
+            </li>
           </ul>
         </div>
         <div class="social">
@@ -133,9 +139,6 @@
         <img class="creditLogo afk" src="~/assets/afk.png" />
         <img class="creditLogo amerborgh" src="~/assets/amerborgh.svg" />
         <img class="creditLogo burobraak" src="~/assets/burobraak.png" />
-        <div class="creditText">
-          <a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">Stichting ZOU JIJ HET ZIJN</a>
-        </div>
       </section>
     </div>
     <img class="image-banner image-banner-bottom" src="~/assets/banner.jpg" />
@@ -287,12 +290,6 @@ export default {
   min-height: 40px;
   object-fit: contain;
   vertical-align: middle;
-}
-
-.creditText {
-  font-size: 16px;
-  margin-top: 0.5rem;
-  opacity: 0.5;
 }
 
 @media only screen and (max-width: 768px) {
