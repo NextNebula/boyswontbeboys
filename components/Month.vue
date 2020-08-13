@@ -1,30 +1,37 @@
 <template>
-    <div class="month">
-        <div class="month-header">{{ month.month }}</div>
-            <template v-for="(item, indexItem) in month.items">
-                <div v-bind:class="{ 'agenda-item__passed': item.date.isBefore() }" class="agenda-item" :key="indexItem">
-                    <div v-if="item.date.isValid()" class="agenda-column column-date">{{ item.date.format("dd DD") }}</div>
-                    <div v-else class="agenda-column column-date">n.n.b</div>
-                    <div class="agenda-column column-place">{{ item.place }}</div>
-                    <div class="agenda-column column-venue">{{ item.venue }}</div>
-                    <div class="agenda-column column-links">
-                        <div v-if="item.tickets === ''" class="column-tickets"></div>
-                        <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">
-                            <span v-if="item.soldOut">Uitverkocht</span>
-                            <span v-else>Tickets</span>
-                        </a>
-                        <div v-if="item.facebook === ''" class="column-facebook"></div>
-                        <a v-else v-bind:href="item.facebook" class="column-facebook" target="_blank">Facebook</a>
-                    </div>
-                </div>
-        </template>
-    </div>
+  <div class="month">
+    <div class="month-header">{{ month.month }}</div>
+    <template v-for="(item, indexItem) in month.items">
+      <div
+        v-bind:class="{ 'agenda-item__passed': item.date.isBefore() }"
+        class="agenda-item"
+        :key="indexItem"
+      >
+        <div
+          v-if="item.date.isValid()"
+          class="agenda-column column-date"
+        >{{ item.date.format("dd DD") }}</div>
+        <div v-else class="agenda-column column-date">n.n.b</div>
+        <div class="agenda-column column-place">{{ item.place }}</div>
+        <div class="agenda-column column-venue">{{ item.venue }}</div>
+        <div class="agenda-column column-links">
+          <div v-if="item.tickets === null" class="column-tickets"></div>
+          <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">
+            <span v-if="item.soldOut">Uitverkocht</span>
+            <span v-else>Tickets</span>
+          </a>
+          <div v-if="item.facebook === null" class="column-facebook"></div>
+          <a v-else v-bind:href="item.facebook" class="column-facebook" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </template>
+  </div>
 </template>
 
 <script>
 export default {
-    props: ['month'],
-}
+  props: ["month"],
+};
 </script>
 
 <style>
@@ -75,6 +82,7 @@ export default {
 .column-tickets {
   float: left;
   width: 93px;
+  height: 25px; /* Dirty fix to force showing of empty div */
   margin-right: 0.5rem;
   font-size: 16px;
   text-align: center;
@@ -111,8 +119,8 @@ export default {
   }
 
   .column-links {
-      width: 100%;
-      display: flex;
+    width: 100%;
+    display: flex;
   }
 
   .column-tickets {
