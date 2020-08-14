@@ -15,7 +15,7 @@
         <div class="agenda-column column-place">{{ item.place }}</div>
         <div class="agenda-column column-venue">{{ item.venue }}</div>
         <div class="agenda-column column-links">
-          <div v-if="item.tickets === null" class="column-tickets"></div>
+          <div v-if="item.tickets === null" class="column-tickets">Verkoop start later</div>
           <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">
             <span v-if="item.soldOut">Uitverkocht</span>
             <span v-else>Tickets</span>
@@ -81,8 +81,7 @@ export default {
 
 .column-tickets {
   float: left;
-  width: 93px;
-  height: 25px; /* Dirty fix to force showing of empty div */
+  width: 135px;
   margin-right: 0.5rem;
   font-size: 16px;
   text-align: center;
