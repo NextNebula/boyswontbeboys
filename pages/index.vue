@@ -319,6 +319,9 @@ export default {
 .quote {
   margin-bottom: 2rem;
 }
+.quote:last-of-type {
+  margin-bottom: 0;
+}
 
 .credits {
   margin-top: 1rem;
