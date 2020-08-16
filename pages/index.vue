@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img id="top-banner" class="image-banner" src="~/assets/banner.jpg" />
+    <img id="top-banner" class="image-banner" src="/banner.jpg" />
     <div id="arrow-up" class="arrow bounce"></div>
     <section id="container-agenda" class="container container-agenda">
       <div class="title">SPEELLIJST</div>
@@ -66,7 +66,31 @@
         >[Lees meer]</a>
       </div>
     </section>
-    <div class="container container-split container-second">
+    <div class="container container-team">
+      <div class="title">SPELERS</div>
+      <div class="team">
+        <template v-for="(artist, indexArtist) in artists">
+          <div class="person" v-bind:key="indexArtist">
+            <img :src="`/${artist.picture}`" />
+            <div>{{artist.name}}</div>
+          </div>
+        </template>
+      </div>
+      <div class="title">ORGANISATIE</div>
+      <div class="crew">
+        <template v-for="(crewPerson, crewIndex) in crew">
+          <div class="person" v-bind:key="crewIndex">
+            <img :src="`/${crewPerson.picture}`" />
+            <div>
+              <span>{{crewPerson.name}}</span>
+              <br />
+              <span>({{crewPerson.role}})</span>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div class="container container-split container-first">
       <section class="container-half container-bel">
         <div class="title">BEL ONS</div>
         <div class="text">
@@ -141,15 +165,24 @@
         <img class="creditLogo burobraak" src="~/assets/burobraak.png" />
       </section>
     </div>
-    <img class="image-banner image-banner-bottom" src="~/assets/banner.jpg" />
+    <img class="image-banner image-banner-bottom" src="/banner.jpg" />
   </div>
 </template>
 
 <script>
 import Agenda from "~/components/Agenda.vue";
+import ArtistsJson from "~/pages/artists.json";
+import CrewJson from "~/pages/crew.json";
+
 export default {
   components: {
     Agenda,
+  },
+  data() {
+    return {
+      artists: ArtistsJson,
+      crew: CrewJson,
+    };
   },
 };
 </script>
@@ -226,15 +259,61 @@ export default {
   border-top: 3px solid white;
 }
 
-.container-bel {
+.container-team {
   background-color: #caeeee;
+  border-top: 3px solid white;
+}
+
+.container-bel {
+  background-color: #7ad4d4;
   border-right: 3px solid white;
   margin-right: -3px;
 }
 
 .container-contact {
-  background-color: #caeeee;
+  background-color: #7ad4d4;
   border-left: 3px solid white;
+}
+
+.team,
+.crew {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -5px;
+}
+
+.team {
+  margin-bottom: 1rem;
+}
+
+.person {
+  margin: 5px;
+  width: 190px;
+  position: relative;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.person div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 3px 0 3px 0;
 }
 
 .quote {
