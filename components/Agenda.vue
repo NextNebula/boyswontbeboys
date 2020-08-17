@@ -1,7 +1,12 @@
 <template>
   <div class="agenda">
+    <div class="title">SPEELLIJST</div>
     <template v-for="(month, indexMonth) in currentAgenda">
-      <month v-bind:month="month" :key="'1' + indexMonth" />
+      <month v-bind:month="month" :key="'agenda-' + indexMonth" />
+    </template>
+    <div class="title title-local">SPEELLIJST LOKALE VERSIE</div>
+    <template v-for="(monthLocal, indexMonthLocal) in currentAgendaLocal">
+      <month v-bind:month="monthLocal" :key="'agendaLocal-' + indexMonthLocal" />
     </template>
     <!-- <div
       class="outdated-shows"
@@ -24,6 +29,7 @@ export default {
   data() {
     return {
       currentAgenda: [],
+      currentAgendaLocal: [],
       outdatedAgenda: [],
     };
   },
@@ -91,6 +97,64 @@ export default {
 
       this.currentAgenda = currentAgendaData;
 
+      const dataLocal = await this.$axios.$get(
+        "https://spreadsheets.google.com/feeds/cells/1c3lI5c47d6S4XNew_KNlBR0kAK5Gn8DCwLn--gutoYU/2/public/full?alt=json"
+      );
+
+      //Create agenda items
+      var itemsLocal = [];
+      dataLocal.feed.entry.forEach((entry) => {
+        //Skip first row with headers
+        if (entry.gs$cell.row === "1") {
+          return;
+        }
+
+        var value = entry.gs$cell.inputValue;
+        var index = Number(entry.gs$cell.row) - 2;
+
+        if (entry.gs$cell.col === "1") {
+          itemsLocal.push({
+            date: moment(value, "DD-MM-YYYY").hour(23).minute(59),
+            place: null,
+            venue: null,
+            tickets: null,
+            facebook: null,
+            soldOut: false,
+          });
+        } else if (entry.gs$cell.col === "2") {
+          itemsLocal[index].place = value;
+        } else if (entry.gs$cell.col === "3") {
+          itemsLocal[index].venue = value;
+        } else if (entry.gs$cell.col === "4") {
+          itemsLocal[index].tickets = value;
+        } else if (entry.gs$cell.col === "5") {
+          itemsLocal[index].facebook = value;
+        } else if (entry.gs$cell.col === "6") {
+          itemsLocal[index].soldOut = value === "ja";
+        }
+      });
+
+      //Group in months
+      var currentAgendaLocalData = [];
+      itemsLocal.forEach((item) => {
+        var key = item.date.month().toString() + item.date.year().toString();
+
+        if (currentAgendaLocalData.find((_) => _.key === key) === undefined) {
+          currentAgendaLocalData.push({
+            month: item.date.format("MMMM yyyy"),
+            key: key,
+            items: [],
+          });
+        }
+
+        var monthIndexLocal = currentAgendaLocalData.findIndex(
+          (_) => _.key === key
+        );
+        currentAgendaLocalData[monthIndexLocal].items.push(item);
+      });
+
+      this.currentAgendaLocal = currentAgendaLocalData;
+
       //TODO: outdatedAgenda
       //moment(month.items[0].date, "DD-MM-YYYY").isAfter(moment().startOf("month"))
     },
@@ -99,9 +163,8 @@ export default {
 </script>
 
 <style>
-.agenda {
-  width: 100%;
-  margin-top: -1rem;
+.title-local {
+  margin-top: 2rem;
 }
 .outdated-shows {
   font-weight: 700;

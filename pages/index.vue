@@ -3,7 +3,6 @@
     <img id="top-banner" class="image-banner" src="/banner.jpg" />
     <div id="arrow-up" class="arrow bounce"></div>
     <section id="container-agenda" class="container container-agenda">
-      <div class="title">SPEELLIJST</div>
       <agenda />
     </section>
     <section class="container container-overview">
