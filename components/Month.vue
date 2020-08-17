@@ -20,8 +20,12 @@
             <span v-if="item.soldOut">Uitverkocht</span>
             <span v-else>Tickets</span>
           </a>
-          <div v-if="item.facebook === null" class="column-facebook"></div>
-          <a v-else v-bind:href="item.facebook" class="column-facebook" target="_blank">Facebook</a>
+          <a
+            v-if="item.facebook !== null"
+            v-bind:href="item.facebook"
+            class="column-facebook"
+            target="_blank"
+          >Facebook</a>
         </div>
       </div>
     </template>
@@ -93,7 +97,7 @@ export default {
   width: 77px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 715px) {
   .agenda-item {
     margin-bottom: 0.75rem;
   }
@@ -124,7 +128,6 @@ export default {
 
   .column-tickets {
     flex-grow: 1;
-    text-align: right;
   }
   .column-facebook {
     margin-left: 0.5rem;
