@@ -142,14 +142,23 @@
             target="_blank"
           >Ernst Coppejans</a>.
         </div>
-        <div class="foundations">BOYS WON'T BE BOYS BEDANKT</div>
-        <img class="creditLogo vsbfonds" src="~/assets/vsbfonds.png" />
-        <img class="creditLogo vdef" src="~/assets/vdef.svg" />
-        <img class="creditLogo afk" src="~/assets/afk.png" />
-        <img class="creditLogo amerborgh" src="~/assets/amerborgh.svg" />
-        <img class="creditLogo burobraak" src="~/assets/burobraak.png" />
       </section>
     </div>
+    <section class="container container-foundations">
+      <div class="title">BOYS WON'T BE BOYS BEDANKT</div>
+      <div class="foundations">
+        <img class="creditLogo vsbfonds" src="~/assets/vsbfonds.png" />
+        <img
+          class="creditLogo prinsbernhardcultuurfonds"
+          src="~/assets/prinsbernhardcultuurfonds.png"
+        />
+        <img class="creditLogo vdef" src="~/assets/vdef.png" />
+        <img class="creditLogo fonds21" src="~/assets/fonds21.png" />
+        <img class="creditLogo janvino" src="~/assets/janvino.png" />
+        <img class="creditLogo kickstartcultuurfonds" src="~/assets/kickstartcultuurfonds.png" />
+        <img class="creditLogo fondspodiumkunsten" src="~/assets/fondspodiumkunsten.png" />
+      </div>
+    </section>
     <img class="image-banner image-banner-bottom" src="/banner.jpg" />
   </div>
 </template>
@@ -260,6 +269,18 @@ export default {
   border-left: 3px solid white;
 }
 
+.container-foundations {
+  background-color: #caeeee;
+  border-bottom: 3px solid white;
+}
+
+.foundations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
 .team,
 .crew {
   display: flex;
@@ -349,16 +370,12 @@ export default {
   fill: #ffffff !important;
 }
 
-.foundations {
-  margin-top: 1rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
 .creditLogo {
-  width: 170px;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
+  max-width: 170px;
+  max-height: 80px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
   min-height: 40px;
   object-fit: contain;
   vertical-align: middle;
