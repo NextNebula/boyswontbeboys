@@ -23,6 +23,16 @@
         <br />
         <i>* waar wij de termen mannen/jongens gebruiken bedoelen we een breed scala aan mensen.</i>
       </div>
+      <div class="photo-slider">
+        <vueper-slides fade :slide-ratio="2 / 4">
+          <vueper-slide
+            v-for="(slide, i) in slides"
+            :key="i"
+            :image="slide.image"
+            content="foto door Bas de Brouwer"
+          />
+        </vueper-slides>
+      </div>
     </section>
     <section class="container container-media">
       <div class="title" style="padding-bottom: 6px;">IN DE MEDIA</div>
@@ -173,15 +183,45 @@
 import Agenda from "~/components/Agenda.vue";
 import ArtistsJson from "~/pages/artists.json";
 import CrewJson from "~/pages/crew.json";
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
 
 export default {
   components: {
     Agenda,
+    VueperSlides,
+    VueperSlide,
   },
   data() {
     return {
       artists: ArtistsJson,
       crew: CrewJson,
+      slides: [
+        {
+          image: "/slide1.jpg",
+        },
+        {
+          image: "/slide2.jpg",
+        },
+        {
+          image: "/slide3.jpg",
+        },
+        {
+          image: "/slide4.jpg",
+        },
+        {
+          image: "/slide5.jpg",
+        },
+        {
+          image: "/slide6.jpg",
+        },
+        {
+          image: "/slide7.jpg",
+        },
+        {
+          image: "/slide8.jpg",
+        },
+      ],
     };
   },
 };
@@ -312,6 +352,24 @@ export default {
   font-weight: 600;
   line-height: 16px;
   padding: 3px 0 3px 0;
+}
+
+.photo-slider {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 750px;
+}
+
+.vueperslides__bullet .default {
+  border-color: #fff;
+}
+
+.vueperslide__content {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
 }
 
 .quote {
