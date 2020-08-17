@@ -147,6 +147,7 @@
     <section class="container container-foundations">
       <div class="title">BOYS WON'T BE BOYS BEDANKT</div>
       <div class="foundations">
+        <img class="creditLogo fondspodiumkunsten" src="~/assets/fondspodiumkunsten.png" />
         <img class="creditLogo vsbfonds" src="~/assets/vsbfonds.png" />
         <img
           class="creditLogo prinsbernhardcultuurfonds"
@@ -156,7 +157,6 @@
         <img class="creditLogo fonds21" src="~/assets/fonds21.png" />
         <img class="creditLogo janvino" src="~/assets/janvino.png" />
         <img class="creditLogo kickstartcultuurfonds" src="~/assets/kickstartcultuurfonds.png" />
-        <img class="creditLogo fondspodiumkunsten" src="~/assets/fondspodiumkunsten.png" />
       </div>
     </section>
     <img class="image-banner image-banner-bottom" src="/banner.jpg" />
