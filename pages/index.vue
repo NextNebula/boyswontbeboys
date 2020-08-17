@@ -327,8 +327,10 @@ export default {
 }
 
 .person {
-  margin: 5px;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
   width: 190px;
+  min-width: 190px;
   position: relative;
   border: 2px solid white;
   z-index: 2;
@@ -442,13 +444,35 @@ export default {
 
   .container-media {
     border-left: none;
-    background-color: #caeeee;
+    background-color: #7ad4d4;
   }
 
   .container-bel {
     border-right: none;
     border-bottom: 3px solid white;
     background-color: #7ad4d4;
+  }
+
+  .container-contact {
+    border-left: none;
+    background-color: #caeeee;
+  }
+
+  .container-foundations {
+    background-color: #7ad4d4;
+  }
+
+  .team,
+  .crew {
+    flex-wrap: nowrap;
+    justify-content: left;
+    overflow-x: scroll;
+    width: 100vw;
+  }
+
+  .team .person:first-child,
+  .crew .person:first-child {
+    margin-left: 0.5rem;
   }
 }
 
