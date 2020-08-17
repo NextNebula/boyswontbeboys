@@ -1,5 +1,10 @@
 [
   {
+    "name": "Rikkert van Huisstede",
+    "role": "Artistiek leider",
+    "picture": "Rikkert van Huisstede.jpg"
+  },
+  {
     "name": "Benjamin Boer",
     "role": "Zakelijke leider",
     "picture": "Benjamin Boer.jpg"
@@ -8,6 +13,11 @@
     "name": "Willem van Rossum",
     "role": "Productieleider",
     "picture": "Willem van Rossum.jpg"
+  },
+  {
+    "name": "Sonne Scheermakers",
+    "role": "Hoofd Techniek",
+    "picture": "Sonne Scheermakers.jpg"
   },
   {
     "name": "Celine Bosman",
