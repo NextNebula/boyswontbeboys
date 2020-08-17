@@ -159,7 +159,6 @@
         <img class="creditLogo kickstartcultuurfonds" src="~/assets/kickstartcultuurfonds.png" />
       </div>
     </section>
-    <img class="image-banner image-banner-bottom" src="/banner.jpg" />
   </div>
 </template>
 
@@ -187,20 +186,6 @@ export default {
   width: 100vw;
   margin-bottom: -6px;
   z-index: -1;
-}
-
-.image-banner-bottom {
-  z-index: 2;
-}
-
-.image-banner-paralex {
-  position: fixed;
-  top: 0;
-}
-
-.image-banner-paralex-big {
-  position: fixed;
-  bottom: 0;
 }
 
 .container {
