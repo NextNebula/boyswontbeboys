@@ -4,7 +4,7 @@
     <template v-for="(month, indexMonth) in currentAgenda">
       <month v-bind:month="month" :key="'agenda-' + indexMonth" />
     </template>
-    <div class="title title-local">SPEELLIJST LOKALE VERSIE</div>
+    <div class="title title-local">SPEELLIJST LOKALE VERSIES</div>
     <div
       class="description-local"
     >Dit jaar maken we vier nieuwe versies van de voorstelling met een volledig lokale cast. Wil je ook meedoen? Binnenkort kun je je aanmelden.</div>
