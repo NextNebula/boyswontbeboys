@@ -147,16 +147,13 @@
     <section class="container container-foundations">
       <div class="title">BOYS WON'T BE BOYS BEDANKT</div>
       <div class="foundations">
-        <img class="creditLogo fondspodiumkunsten" src="~/assets/fondspodiumkunsten.png" />
-        <img class="creditLogo vsbfonds" src="~/assets/vsbfonds.png" />
-        <img
-          class="creditLogo prinsbernhardcultuurfonds"
-          src="~/assets/prinsbernhardcultuurfonds.png"
-        />
-        <img class="creditLogo vdef" src="~/assets/vdef.png" />
-        <img class="creditLogo fonds21" src="~/assets/fonds21.png" />
-        <img class="creditLogo janvino" src="~/assets/janvino.png" />
-        <img class="creditLogo kickstartcultuurfonds" src="~/assets/kickstartcultuurfonds.png" />
+        <img class="credit-logo" src="/fondspodiumkunsten.png" />
+        <img class="credit-logo" src="/vsbfonds.png" />
+        <img class="credit-logo" src="/prinsbernhardcultuurfonds.png" />
+        <img class="credit-logo" src="/vdef.png" />
+        <img class="credit-logo" src="/fonds21.png" />
+        <img class="credit-logo" src="/janvino.png" />
+        <img class="credit-logo" src="/kickstartcultuurfonds.png" />
       </div>
     </section>
   </div>
@@ -355,7 +352,7 @@ export default {
   fill: #ffffff !important;
 }
 
-.creditLogo {
+.credit-logo {
   max-width: 170px;
   max-height: 80px;
   margin-right: 1rem;
@@ -388,14 +385,9 @@ export default {
 }
 
 @media only screen and (max-width: 540px) {
-  .creditLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .amerborgh {
-    margin-bottom: 0;
+  .credit-logo {
+    max-width: 130px;
+    max-height: 60px;
   }
 }
 
