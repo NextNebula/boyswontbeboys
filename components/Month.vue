@@ -15,8 +15,18 @@
         <div class="agenda-column column-place">{{ item.place }}</div>
         <div class="agenda-column column-venue">{{ item.venue }}</div>
         <div class="agenda-column column-links">
-          <div v-if="item.tickets === null" class="column-tickets">Verkoop start later</div>
-          <a v-else class="column-tickets" v-bind:href="item.tickets" target="_blank">
+          <div
+            v-if="item.tickets === null"
+            class="column-tickets"
+            v-bind:class="{ 'column-tickets__with-facebook': item.facebook !== null}"
+          >Verkoop start later</div>
+          <a
+            v-else
+            class="column-tickets"
+            v-bind:class="{ 'column-tickets__with-facebook': item.facebook !== null}"
+            v-bind:href="item.tickets"
+            target="_blank"
+          >
             <span v-if="item.soldOut">Uitverkocht</span>
             <span v-else>Tickets</span>
           </a>
@@ -76,11 +86,12 @@ export default {
 }
 
 .column-venue {
-  width: 262px;
+  width: 215px;
 }
 
 .column-links {
   font-size: 0;
+  width: 239px;
 }
 
 .column-tickets {
@@ -129,9 +140,15 @@ export default {
   .column-tickets {
     flex-grow: 1;
   }
+
+  .column-tickets__with-facebook {
+    width: 50%;
+    text-align: right;
+  }
+
   .column-facebook {
     margin-left: 0.5rem;
-    flex-grow: 1;
+    width: 50%;
   }
 }
 </style>
