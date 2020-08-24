@@ -86,7 +86,7 @@ export default {
 }
 
 .column-venue {
-  width: 215px;
+  width: 245px;
 }
 
 .column-links {
