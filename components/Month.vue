@@ -8,7 +8,7 @@
         :key="indexItem"
       >
         <div
-          v-if="item.date.isValid()"
+          v-if="!item.dateUnknown"
           class="agenda-column column-date"
         >{{ item.date.format("dd DD") }}</div>
         <div v-else class="agenda-column column-date">n.n.b</div>

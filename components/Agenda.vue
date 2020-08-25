@@ -62,6 +62,7 @@ export default {
         if (entry.gs$cell.col === "1") {
           items.push({
             date: moment(value, "DD-MM-YYYY").hour(23).minute(59),
+            dateUnknown: false,
             place: null,
             venue: null,
             tickets: null,
@@ -78,6 +79,8 @@ export default {
           items[index].facebook = value;
         } else if (entry.gs$cell.col === "6") {
           items[index].soldOut = value === "ja";
+        } else if (entry.gs$cell.col === "7") {
+          items[index].dateUnknown = value === "ja";
         }
       });
 
@@ -118,6 +121,7 @@ export default {
         if (entry.gs$cell.col === "1") {
           itemsLocal.push({
             date: moment(value, "DD-MM-YYYY").hour(23).minute(59),
+            dateUnknown: false,
             place: null,
             venue: null,
             tickets: null,
@@ -134,6 +138,8 @@ export default {
           itemsLocal[index].facebook = value;
         } else if (entry.gs$cell.col === "6") {
           itemsLocal[index].soldOut = value === "ja";
+        } else if (entry.gs$cell.col === "7") {
+          itemsLocal[index].dateUnknown = value === "ja";
         }
       });
 
