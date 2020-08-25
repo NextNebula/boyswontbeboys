@@ -306,7 +306,6 @@ html {
 
 .container-team {
   background-color: #caeeee;
-  border-top: 3px solid white;
 }
 
 .container-bel {
@@ -446,7 +445,7 @@ html {
   vertical-align: middle;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
   .container-split {
     flex-direction: column;
   }
@@ -471,7 +470,6 @@ html {
   }
 
   .container-team {
-    border-top: none;
     background-color: #7ad4d4;
   }
 
