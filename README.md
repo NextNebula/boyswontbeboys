@@ -1,6 +1,6 @@
 # boyswontbeboys
 
-> Staticc BOYS WON&#39;T BE BOYS site, generated with Nuxt.
+> Static BOYS WON&#39;T BE BOYS site, generated with Nuxt.
 
 ## Build Setup
 
