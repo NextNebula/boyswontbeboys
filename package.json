@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@nuxtjs/axios": "^5.12.1",
+    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/google-analytics": "^2.4.0",
     "cross-env": "^7.0.2",
     "moment": "^2.27.0",
     "nuxt": "^2.14.3",
     "nuxt-fontawesome": "^0.4.0",
-    "vueperslides": "^2.10.2"
+    "vueperslides": "^2.10.3"
   },
   "devDependencies": {}
 }
