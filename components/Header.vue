@@ -14,9 +14,9 @@
       <span>|</span>
       <a href="#overview">Over de show</a>
       <span>|</span>
-      <a href="#team">Het team</a>
-      <span>|</span>
       <a href="#call">Bel ons</a>
+      <span>|</span>
+      <a href="#team">Het team</a>
       <span>|</span>
       <a href="#contact">Contact</a>
       <span>|</span>

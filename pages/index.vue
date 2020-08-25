@@ -35,67 +35,6 @@
         </vueper-slides>
       </div>
     </section>
-    <section class="container container-media">
-      <div class="title" style="padding-bottom: 6px;">IN DE MEDIA</div>
-      <div class="quote">
-        <i>
-          "Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede
-          mix van sterke performers."
-        </i>
-        <br />Jury Amsterdam Fringe Festival
-      </div>
-      <div class="quote">
-        <i>
-          "Alles bij elkaar is het een enorm project dat met veel liefde is vormgegeven. Van Huisstede
-          voelde zich drie jaar geleden eenzaam met zijn worsteling, en maakt er nu zijn missie van om
-          gelijkgestemden bij elkaar te brengen. Met zijn collage/maatschappelijke beweging/happening/theatervoorstelling
-          heeft hij daarvoor een krachtig middel in handen."
-        </i>
-        <br />Theaterkrant
-        <a
-          href="https://www.theaterkrant.nl/recensie/boys-wont-be-boys/rikkert-van-huisstede/"
-          target="_blank"
-        >[Lees meer]</a>
-      </div>
-      <div class="quote">
-        Interview met regisseur Rikkert van Huisstede
-        <br />
-        <i>
-          "De bezoeker is een beetje verliefd geworden op de jonge
-          theatermaker. Rikkert zingt, dicht, praat en lacht op betoverende
-          wijze over liefde, gender en seksualiteit."
-        </i>
-        <br />Gaykrant
-        <a
-          href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/"
-          target="_blank"
-        >[Lees meer]</a>
-      </div>
-    </section>
-    <div id="team" class="container container-team">
-      <div class="title">SPELERS</div>
-      <div class="team">
-        <template v-for="(artist, indexArtist) in artists">
-          <div class="person" v-bind:key="indexArtist">
-            <img :src="`/${artist.picture}`" />
-            <div>{{artist.name}}</div>
-          </div>
-        </template>
-      </div>
-      <div class="title">ORGANISATIE</div>
-      <div class="crew">
-        <template v-for="(crewPerson, crewIndex) in crew">
-          <div class="person" v-bind:key="crewIndex">
-            <img :src="`/${crewPerson.picture}`" />
-            <div>
-              <span>{{crewPerson.name}}</span>
-              <br />
-              <span>({{crewPerson.role}})</span>
-            </div>
-          </div>
-        </template>
-      </div>
-    </div>
     <div class="container container-split container-first">
       <section id="call" class="container-half container-bel">
         <div class="title">BEL ONS</div>
@@ -121,50 +60,121 @@
           door Allard Medema.
         </div>
       </section>
-      <section id="contact" class="container-half container-contact">
-        <div class="title">CONTACT</div>Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen?
-        Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en
-        de promotionele teksten zijn hieronder te vinden.
-        <br />
-        <div class="lijst">
-          <ul>
-            <li>
-              <a href="http://bit.ly/BOYSWONTBEBOYS" target="_blank">Download onze perskit</a>
-            </li>
-            <li>info@wildchildagency.nl</li>
-            <li>productie@zoujijhetzijn.nl</li>
-            <li>rikkert@zoujijhetzijn.nl</li>
-            <li>
+      <section class="container-half container-media">
+        <div class="title">IN DE MEDIA</div>
+        <vueper-slides
+          class="no-shadow"
+          :arrows="false"
+          fixed-height="230px"
+          bullets-outside
+          autoplay
+        >
+          <vueper-slide>
+            <template v-slot:content>
+              <i>
+                "Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede
+                mix van sterke performers."
+              </i>
+              <br />
+              <br />Jury Amsterdam Fringe Festival
+            </template>
+          </vueper-slide>
+          <vueper-slide>
+            <template v-slot:content>
+              <i>
+                "Alles bij elkaar is het een enorm project dat met veel liefde is vormgegeven. Van Huisstede
+                voelde zich drie jaar geleden eenzaam met zijn worsteling, en maakt er nu zijn missie van om
+                gelijkgestemden bij elkaar te brengen. Met zijn collage/maatschappelijke beweging/happening/theatervoorstelling
+                heeft hij daarvoor een krachtig middel in handen."
+              </i>
+              <br />
+              <br />Theaterkrant
+            </template>
+          </vueper-slide>
+          <vueper-slide>
+            <template v-slot:content>
+              Interview met regisseur Rikkert van Huisstede
+              <br />
+              <i>
+                "De bezoeker is een beetje verliefd geworden op de jonge
+                theatermaker. Rikkert zingt, dicht, praat en lacht op betoverende
+                wijze over liefde, gender en seksualiteit."
+              </i>
+              <br />
+              <br />Gaykrant
               <a
-                href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf"
+                href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/"
                 target="_blank"
-              >ANBI informatie Stichting ZOU JIJ HET ZIJN</a>
-            </li>
-          </ul>
-        </div>
-        <div class="social">
-          <a href="https://www.facebook.com/boyswontbeboys/" target="_blank">
-            <font-awesome-icon :icon="['fab', 'facebook-square']" style="font-size: 35px" />
-          </a>
-          <a
-            href="https://www.instagram.com/boyswntbeboys/"
-            target="_blank"
-            style="margin-left: 0.25rem;"
-          >
-            <font-awesome-icon :icon="['fab', 'instagram']" style="font-size: 35px" />
-          </a>
-        </div>
-        <div class="credits">
-          Vormgever
-          <a href="https://www.burobraak.nl" target="_blank">BUROBRAAK</a>.
-          Fotograaf
-          <a
-            href="https://www.ernstcoppejans.com"
-            target="_blank"
-          >Ernst Coppejans</a>.
-        </div>
+              >[Lees meer]</a>
+            </template>
+          </vueper-slide>
+        </vueper-slides>
       </section>
     </div>
+    <section id="team" class="container container-team">
+      <div class="title">SPELERS</div>
+      <div class="team">
+        <template v-for="(artist, indexArtist) in artists">
+          <div class="person" v-bind:key="indexArtist">
+            <img :src="`/${artist.picture}`" />
+            <div>{{artist.name}}</div>
+          </div>
+        </template>
+      </div>
+      <div class="title">ORGANISATIE</div>
+      <div class="crew">
+        <template v-for="(crewPerson, crewIndex) in crew">
+          <div class="person" v-bind:key="crewIndex">
+            <img :src="`/${crewPerson.picture}`" />
+            <div>
+              <span>{{crewPerson.name}}</span>
+              <br />
+              <span>({{crewPerson.role}})</span>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <section id="contact" class="container container-contact">
+      <div class="title">CONTACT</div>Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen?
+      Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en
+      de promotionele teksten zijn hieronder te vinden.
+      <br />
+      <div class="lijst">
+        <ul>
+          <li>
+            <a href="http://bit.ly/BOYSWONTBEBOYS" target="_blank">Download onze perskit</a>
+          </li>
+          <li>info@wildchildagency.nl</li>
+          <li>productie@zoujijhetzijn.nl</li>
+          <li>rikkert@zoujijhetzijn.nl</li>
+          <li>
+            <a
+              href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf"
+              target="_blank"
+            >ANBI informatie Stichting ZOU JIJ HET ZIJN</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/boyswontbeboys/" target="_blank">
+          <font-awesome-icon :icon="['fab', 'facebook-square']" style="font-size: 35px" />
+        </a>
+        <a
+          href="https://www.instagram.com/boyswntbeboys/"
+          target="_blank"
+          style="margin-left: 0.25rem;"
+        >
+          <font-awesome-icon :icon="['fab', 'instagram']" style="font-size: 35px" />
+        </a>
+      </div>
+      <div class="credits">
+        Vormgever
+        <a href="https://www.burobraak.nl" target="_blank">BUROBRAAK</a>.
+        Fotograaf
+        <a href="https://www.ernstcoppejans.com" target="_blank">Ernst Coppejans</a>.
+      </div>
+    </section>
     <section class="container container-foundations">
       <div class="title">BOYS WON'T BE BOYS BEDANKT</div>
       <div class="foundations">
@@ -237,6 +247,7 @@ html {
 }
 
 .image-banner {
+  margin-top: 45px;
   position: relative;
   width: 100vw;
   margin-bottom: -6px;
@@ -290,7 +301,7 @@ html {
 
 .container-media {
   background-color: #7ad4d4;
-  border-top: 3px solid white;
+  border-left: 3px solid white;
 }
 
 .container-team {
@@ -306,11 +317,12 @@ html {
 
 .container-contact {
   background-color: #7ad4d4;
-  border-left: 3px solid white;
+  border-top: 3px solid white;
 }
 
 .container-foundations {
   background-color: #caeeee;
+  border-top: 3px solid white;
   border-bottom: 3px solid white;
 }
 
@@ -370,23 +382,16 @@ html {
   max-width: 750px;
 }
 
-.vueperslides__bullet .default {
+.container-overview .vueperslides__bullet .default {
   border-color: #fff;
 }
 
-.vueperslide__content {
+.container-overview .vueperslide__content {
   color: white;
   font-size: 12px;
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
-}
-
-.quote {
-  margin-bottom: 2rem;
-}
-.quote:last-of-type {
-  margin-bottom: 0;
 }
 
 .credits {
@@ -461,13 +466,25 @@ html {
     background-color: #7ad4d4;
   }
 
+  .container-media {
+    background-color: #caeeee;
+  }
+
+  .container-team {
+    border-top: none;
+    background-color: #7ad4d4;
+  }
+
   .container-contact {
-    border-left: none;
     background-color: #caeeee;
   }
 
   .container-foundations {
     background-color: #7ad4d4;
+  }
+
+  .vueperslides--fixed-height.vueperslides--bullets-outside {
+    margin-bottom: 2em;
   }
 
   .team,
