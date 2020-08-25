@@ -9,6 +9,7 @@
       </a>
     </div>
     <nav class="navigation">
+      <span>|</span>
       <a href="#agenda">Speellijst</a>
       <span>|</span>
       <a href="#overview">Over de show</a>
@@ -18,6 +19,7 @@
       <a href="#call">Bel ons</a>
       <span>|</span>
       <a href="#contact">Contact</a>
+      <span>|</span>
     </nav>
   </header>
 </template>
@@ -95,6 +97,8 @@ header.hide {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
