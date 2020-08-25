@@ -1,11 +1,12 @@
 <template>
   <div>
+    <StickyHeader />
     <img id="top-banner" class="image-banner" src="/banner.jpg" />
     <div id="arrow-up" class="arrow bounce"></div>
-    <section id="container-agenda" class="container container-agenda">
-      <agenda />
+    <section id="agenda" class="container container-agenda">
+      <Agenda />
     </section>
-    <section class="container container-overview">
+    <section id="overview" class="container container-overview">
       <div class="title">OVER DE SHOW</div>
       <div class="text">
         Boys Won't Be Boys is een wervelende collage van jongens en mannen*.
@@ -71,7 +72,7 @@
         >[Lees meer]</a>
       </div>
     </section>
-    <div class="container container-team">
+    <div id="team" class="container container-team">
       <div class="title">SPELERS</div>
       <div class="team">
         <template v-for="(artist, indexArtist) in artists">
@@ -96,7 +97,7 @@
       </div>
     </div>
     <div class="container container-split container-first">
-      <section class="container-half container-bel">
+      <section id="call" class="container-half container-bel">
         <div class="title">BEL ONS</div>
         <div class="text">
           We hebben een telefoonnummer:
@@ -120,7 +121,7 @@
           door Allard Medema.
         </div>
       </section>
-      <section class="container-half container-contact">
+      <section id="contact" class="container-half container-contact">
         <div class="title">CONTACT</div>Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen?
         Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en
         de promotionele teksten zijn hieronder te vinden.
@@ -184,12 +185,14 @@
 import Agenda from "~/components/Agenda.vue";
 import ArtistsJson from "~/pages/artists.json";
 import CrewJson from "~/pages/crew.json";
+import StickyHeader from "~/components/Header.vue";
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
 
 export default {
   components: {
     Agenda,
+    StickyHeader,
     VueperSlides,
     VueperSlide,
   },
@@ -229,6 +232,10 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 .image-banner {
   position: relative;
   width: 100vw;
