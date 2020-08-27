@@ -15,11 +15,6 @@
     "picture": "Willem van Rossum.jpg"
   },
   {
-    "name": "Sonne Scheermakers",
-    "role": "Hoofd Techniek",
-    "picture": "Sonne Scheermakers.jpg"
-  },
-  {
     "name": "Celine Bosman",
     "role": "Fondsenwerving",
     "picture": "Celine Bosman.jpg"
@@ -28,6 +23,16 @@
     "name": "Arjan Braaksma",
     "role": "Vormgeving",
     "picture": "Arjan Braaksma.jpg"
+  },
+  {
+    "name": "Sonne Scheermakers",
+    "role": "Hoofd Techniek",
+    "picture": "Sonne Scheermakers.jpg"
+  },
+  {
+    "name": "Edith Molmans",
+    "role": "Licht Techniek",
+    "picture": "Edith Molmans.jpg"
   },
   {
     "name": "WildChild Agency",
