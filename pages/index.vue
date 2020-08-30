@@ -1,7 +1,11 @@
 <template>
   <div>
     <StickyHeader />
-    <img class="image-banner" src="/banner.jpg" />
+    <picture>
+      <source :srcSet="require('~/assets/banner.jpg?webp')" type="image/webp" />
+      <source :srcSet="require('~/assets/banner.jpg')" type="image/jpeg" />
+      <img class="image-banner" :src="require('~/assets/banner.jpg')" />
+    </picture>
     <div id="arrow-up" class="arrow bounce"></div>
     <section id="agenda" class="container container-agenda">
       <Agenda />
@@ -26,12 +30,15 @@
       </div>
       <div class="photo-slider">
         <vueper-slides fade :slide-ratio="2 / 4">
-          <vueper-slide
-            v-for="(slide, i) in slides"
-            :key="i"
-            :image="slide.image"
-            content="foto door Bas de Brouwer"
-          />
+          <vueper-slide v-for="(slide, i) in slides" :key="i" content="foto door Bas de Brouwer">
+            <template v-slot:content>
+              <picture>
+                <source :srcSet="require(`~/assets/${slide.image}?webp`)" type="image/webp" />
+                <source :srcSet="require(`~/assets/${slide.image}`)" type="image/jpeg" />
+                <img :src="require(`~/assets/${slide.image}`)" />
+              </picture>
+            </template>
+          </vueper-slide>
         </vueper-slides>
       </div>
     </section>
@@ -116,7 +123,11 @@
       <div class="team">
         <template v-for="(artist, indexArtist) in artists">
           <div class="person" v-bind:key="indexArtist">
-            <img :src="`/${artist.picture}`" />
+            <picture>
+              <source :srcSet="require(`~/assets/${artist.picture}?webp`)" type="image/webp" />
+              <source :srcSet="require(`~/assets/${artist.picture}`)" type="image/jpeg" />
+              <img :src="require(`~/assets/${artist.picture}`)" />
+            </picture>
             <div>{{artist.name}}</div>
           </div>
         </template>
@@ -125,7 +136,11 @@
       <div class="crew">
         <template v-for="(crewPerson, crewIndex) in crew">
           <div class="person" v-bind:key="crewIndex">
-            <img :src="`/${crewPerson.picture}`" />
+            <picture>
+              <source :srcSet="require(`~/assets/${crewPerson.picture}?webp`)" type="image/webp" />
+              <source :srcSet="require(`~/assets/${crewPerson.picture}`)" type="image/jpeg" />
+              <img :src="require(`~/assets/${crewPerson.picture}`)" />
+            </picture>
             <div>
               <span>{{crewPerson.name}}</span>
               <br />
@@ -212,28 +227,28 @@ export default {
       crew: CrewJson,
       slides: [
         {
-          image: "/slide1.jpg",
+          image: "slide1.jpg",
         },
         {
-          image: "/slide2.jpg",
+          image: "slide2.jpg",
         },
         {
-          image: "/slide3.jpg",
+          image: "slide3.jpg",
         },
         {
-          image: "/slide4.jpg",
+          image: "slide4.jpg",
         },
         {
-          image: "/slide5.jpg",
+          image: "slide5.jpg",
         },
         {
-          image: "/slide6.jpg",
+          image: "slide6.jpg",
         },
         {
-          image: "/slide7.jpg",
+          image: "slide7.jpg",
         },
         {
-          image: "/slide8.jpg",
+          image: "slide8.jpg",
         },
       ],
     };
@@ -390,6 +405,10 @@ html {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
+}
+
+.vueperslide img {
+  width: 100%;
 }
 
 .credits {
