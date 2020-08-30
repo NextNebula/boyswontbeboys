@@ -1,11 +1,7 @@
 <template>
   <div>
     <StickyHeader />
-    <picture>
-      <source :srcSet="require('~/assets/banner.jpg?webp')" type="image/webp" />
-      <source :srcSet="require('~/assets/banner.jpg')" type="image/jpeg" />
-      <img class="image-banner" :src="require('~/assets/banner.jpg')" />
-    </picture>
+    <img class="image-banner" src="banner.jpg" />
     <div id="arrow-up" class="arrow bounce"></div>
     <section id="agenda" class="container container-agenda">
       <Agenda />
