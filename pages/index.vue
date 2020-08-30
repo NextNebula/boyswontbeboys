@@ -35,7 +35,7 @@
               <picture>
                 <source :srcSet="require(`~/assets/${slide.image}?webp`)" type="image/webp" />
                 <source :srcSet="require(`~/assets/${slide.image}`)" type="image/jpeg" />
-                <img :src="require(`~/assets/${slide.image}`)" />
+                <img :src="require(`~/assets/${slide.image}`)" loading="lazy" />
               </picture>
             </template>
           </vueper-slide>
@@ -126,7 +126,7 @@
             <picture>
               <source :srcSet="require(`~/assets/${artist.picture}?webp`)" type="image/webp" />
               <source :srcSet="require(`~/assets/${artist.picture}`)" type="image/jpeg" />
-              <img :src="require(`~/assets/${artist.picture}`)" />
+              <img :src="require(`~/assets/${artist.picture}`)" loading="lazy" />
             </picture>
             <div>{{artist.name}}</div>
           </div>
@@ -139,7 +139,7 @@
             <picture>
               <source :srcSet="require(`~/assets/${crewPerson.picture}?webp`)" type="image/webp" />
               <source :srcSet="require(`~/assets/${crewPerson.picture}`)" type="image/jpeg" />
-              <img :src="require(`~/assets/${crewPerson.picture}`)" />
+              <img :src="require(`~/assets/${crewPerson.picture}`)" lloading="lazy" />
             </picture>
             <div>
               <span>{{crewPerson.name}}</span>
