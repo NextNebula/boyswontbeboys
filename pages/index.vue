@@ -1,7 +1,7 @@
 <template>
   <div>
     <StickyHeader />
-    <img id="top-banner" class="image-banner" src="/banner.jpg" />
+    <img class="image-banner" src="/banner.jpg" />
     <div id="arrow-up" class="arrow bounce"></div>
     <section id="agenda" class="container container-agenda">
       <Agenda />
@@ -247,7 +247,6 @@ html {
 }
 
 .image-banner {
-  margin-top: 45px;
   position: relative;
   width: 100vw;
   margin-bottom: -6px;

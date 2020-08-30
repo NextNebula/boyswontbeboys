@@ -9,17 +9,11 @@
       </a>
     </div>
     <nav class="navigation">
-      <span>|</span>
       <a href="#agenda">Speellijst</a>
-      <span>|</span>
       <a href="#overview">Over de show</a>
-      <span>|</span>
       <a href="#call">Bel ons</a>
-      <span>|</span>
       <a href="#team">Het team</a>
-      <span>|</span>
       <a href="#contact">Contact</a>
-      <span>|</span>
     </nav>
   </header>
 </template>
@@ -64,6 +58,15 @@ export default {
     };
 
     window.addEventListener("scroll", checkScroll);
+
+    var setBannerMargin = function () {
+      var header = document.getElementsByTagName("header")[0];
+      var banner = document.getElementsByClassName("image-banner")[0];
+      banner.style.marginTop = header.clientHeight + "px";
+    };
+
+    window.addEventListener("resize", setBannerMargin);
+    setBannerMargin();
   },
 };
 </script>
@@ -86,7 +89,8 @@ header.hide {
 }
 
 .social-nav {
-  flex-grow: 1;
+  width: 94px;
+  align-self: center;
   font-size: 26px;
   margin: 0.25rem 0.5rem 0.25rem 1rem;
 }
@@ -96,6 +100,7 @@ header.hide {
 }
 
 nav {
+  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -105,9 +110,16 @@ nav {
 }
 
 nav a {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
   text-decoration: none;
+}
+
+nav a:after {
+  content: "|";
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+nav a:last-of-type:after {
+  content: "";
 }
 
 nav a:hover {
