@@ -26,6 +26,7 @@
             v-bind:class="{ 'column-tickets__with-facebook': item.facebook !== null}"
             v-bind:href="item.tickets"
             target="_blank"
+            rel="noopener"
           >
             <span v-if="item.soldOut">Uitverkocht</span>
             <span v-else>Tickets</span>
@@ -35,6 +36,7 @@
             v-bind:href="item.facebook"
             class="column-facebook"
             target="_blank"
+            rel="noopener"
           >Facebook</a>
         </div>
       </div>
