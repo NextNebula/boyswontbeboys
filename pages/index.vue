@@ -7,19 +7,11 @@
       <Agenda />
     </section>
     <section id="overview" class="container container-overview">
-      <div class="title">OVER DE SHOW</div>
+      <div class="title">WERVELENDE THEATERHAPPENING MET ECHTE MENSEN</div>
       <div class="text">
-        Boys Won't Be Boys is een wervelende collage van jongens en mannen*.
-        Ze zingen, dansen, dichten, grappen, rappen of vertellen, in wisselende samenstelling,
-        over hun persoonlijke levens. Want het is stoer om je (als man) kwetsbaar op te stellen.
-        Deze theaterhappening met echte mensen was vorig seizoen overal uitverkocht en opende vele ogen.
-        "We mogen er trots op zijn dat we open zijn, lief of flamboyant. De verschillen tussen mannen en
-        vrouwen zijn lang niet zo groot als we onszelf wijsmaken." aldus de ontwapenende initiator Rikkert van Huisstede.
+        BOYS WON’T BE BOYS is een wervelende collage van jongens en mannen*. Ze zingen, dansen, dichten, grappen, rappen of vertellen in wisselende samenstelling over hun persoonlijke levens. Want het is stoer om je (als man) kwetsbaar op te stellen. Mannelijkheid is iets waar iedereen dagelijks mee te maken heeft. Homo, hetero, man, vrouw of anders, iedereen verhoudt zich tot wat er van mannen (en vrouwen) wordt verwacht. Het is daarom gek dat nadenken over ‘gender’ wordt gezien als iets voor gemarginaliseerde groepen. Is het niet juist succesvol om als man je mannelijkheid te bevragen?
         <br />
-        <br />Of je nou hetero of homo bent, a-seksueel of bi-seksueel, bouwplaats manager of musicalster,
-        intersekse of transgender, jonge vader of dragqueen, niemand past precies in het hokje man.
-        De spelers van Boys Won't Be Boys weten inmiddels hoe bevrijdend het is om je open te stellen.
-        Door al die verschillende verhalen doorbreken we vooroordelen en stereotypen en komen we dichter bij elkaar.
+        <br />Of je nou hetero of homo, a-seksueel of bi-seksueel, bouwplaatsmanager of musicalster, intersekse of transgender, jonge vader of dragqueen bent, niemand past precies in het hokje “man”. De spelers van BOYS WON’T BE BOYS weten inmiddels hoe bevrijdend het is om je open te stellen. Door al die verschillende verhalen doorbreken we vooroordelen en stereotypen en komen we dichter bij elkaar.
         <br />
         <br />
         <i>* waar wij de termen mannen/jongens gebruiken bedoelen we een breed scala aan mensen.</i>
@@ -92,6 +84,11 @@
               </i>
               <br />
               <br />Theaterkrant
+              <br />
+              <a
+                href="https://www.theaterkrant.nl/recensie/boys-wont-be-boys/rikkert-van-huisstede/"
+                target="_blank"
+              >[Lees meer]</a>
             </template>
           </vueper-slide>
           <vueper-slide>
@@ -105,6 +102,7 @@
               </i>
               <br />
               <br />Gaykrant
+              <br />
               <a
                 href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/"
                 target="_blank"
@@ -148,17 +146,14 @@
     </section>
     <section id="contact" class="container container-contact">
       <div class="title">CONTACT</div>Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen?
-      Dat kan allemaal. Het beeldmerk, portretten van (een aantal) spelers en
-      de promotionele teksten zijn hieronder te vinden.
+      Dat kan allemaal.
       <br />
       <div class="lijst">
         <ul>
-          <li>
-            <a href="http://bit.ly/BOYSWONTBEBOYS" target="_blank">Download onze perskit</a>
-          </li>
-          <li>info@wildchildagency.nl</li>
-          <li>productie@zoujijhetzijn.nl</li>
-          <li>rikkert@zoujijhetzijn.nl</li>
+          <li>Productioneel: productie@zoujijhetzijn.nl</li>
+          <li>Over de spelers: rikkert@zoujijhetzijn.nl</li>
+          <li>Zakelijk: benjamin@zoujijhetzijn.nl</li>
+          <li>Publiciteit en pers: info@wildchildagency.nl / 020-2386079</li>
           <li>
             <a
               href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf"
@@ -168,6 +163,9 @@
         </ul>
       </div>
       <div class="social">
+        <div>
+          <b>Volg ons op</b>
+        </div>
         <a href="https://www.facebook.com/boyswontbeboys/" target="_blank">
           <font-awesome-icon :icon="['fab', 'facebook-square']" style="font-size: 35px" />
         </a>
@@ -180,10 +178,9 @@
         </a>
       </div>
       <div class="credits">
-        Vormgever
-        <a href="https://www.burobraak.nl" target="_blank">BUROBRAAK</a>.
-        Fotograaf
-        <a href="https://www.ernstcoppejans.com" target="_blank">Ernst Coppejans</a>.
+        Vormgeving: BUROBRAAK.
+        <br />Fotografie: Ernst Coppejans (publiciteitsbeeld en blauwe portretten), Bas de Brouwer (scènefoto’s).
+        <br />Overige fotografie: Klemens Patijn.
       </div>
     </section>
     <section class="container container-foundations">

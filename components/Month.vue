@@ -17,7 +17,7 @@
         <div class="agenda-column column-links">
           <div
             v-if="item.tickets === null"
-            class="column-tickets"
+            class="column-tickets column-tickets-soon"
             v-bind:class="{ 'column-tickets__with-facebook': item.facebook !== null}"
           >Verkoop start later</div>
           <a
@@ -29,7 +29,7 @@
             rel="noopener"
           >
             <span v-if="item.soldOut">Uitverkocht</span>
-            <span v-else>Tickets</span>
+            <span v-else>Kaarten</span>
           </a>
           <a
             v-if="item.facebook !== null"
@@ -37,7 +37,7 @@
             class="column-facebook"
             target="_blank"
             rel="noopener"
-          >Facebook</a>
+          >Facebook event</a>
         </div>
       </div>
     </template>
@@ -93,21 +93,25 @@ export default {
 
 .column-links {
   font-size: 0;
-  width: 239px;
+  width: 196px;
 }
 
 .column-tickets {
   float: left;
-  width: 135px;
+  width: 56px;
   margin-right: 0.5rem;
   font-size: 16px;
   text-align: center;
 }
 
+.column-tickets-soon {
+  width: auto;
+}
+
 .column-facebook {
   float: left;
   font-size: 16px;
-  width: 77px;
+  width: 113px;
 }
 
 @media only screen and (max-width: 715px) {
