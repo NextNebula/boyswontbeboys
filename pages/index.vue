@@ -180,7 +180,7 @@
       <div class="credits">
         Vormgeving: BUROBRAAK.
         <br />Fotografie: Ernst Coppejans (publiciteitsbeeld en blauwe portretten), Bas de Brouwer (scènefoto’s).
-        <br />Overige fotografie: Klemens Patijn.
+        <br />Overige fotografie: o.a. Klemens Patijn.
       </div>
     </section>
     <section class="container container-foundations">
