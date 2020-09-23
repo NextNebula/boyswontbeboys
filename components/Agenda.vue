@@ -7,7 +7,8 @@
     <div class="title title-local">SPEELLIJST LOKALE VERSIES</div>
     <div class="description-local">
       Dit jaar maken we vier nieuwe versies van de voorstelling met een volledig lokale cast.
-      <br />Wil je ook meedoen? Binnenkort kun je je aanmelden.
+      <br />Wil je ook meedoen?
+      <a href="https://forms.gle/dQAiwWDj8gL6LRTF8">Je kunt je hier aanmelden</a>.
     </div>
     <template v-for="(monthLocal, indexMonthLocal) in currentAgendaLocal">
       <month v-bind:month="monthLocal" :key="'agendaLocal-' + indexMonthLocal" />
