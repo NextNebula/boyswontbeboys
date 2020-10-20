@@ -155,10 +155,10 @@
           <li>Zakelijk: benjamin@zoujijhetzijn.nl</li>
           <li>Publiciteit en pers: info@wildchildagency.nl / 020-2386079</li>
           <li>
-            <a
-              href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf"
-              target="_blank"
-            >ANBI informatie Stichting ZOU JIJ HET ZIJN</a>
+            <a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
+            en
+            <a href="/Jaarrekening 2019.pdf" target="_blank">Jaarrekening</a>
+             Stichting ZOU JIJ HET ZIJN
           </li>
         </ul>
       </div>
