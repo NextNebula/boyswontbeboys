@@ -194,6 +194,8 @@
         <img class="credit-logo" src="/fonds21.png" />
         <img class="credit-logo" src="/janvino.png" />
         <img class="credit-logo" src="/kickstartcultuurfonds.png" />
+        <img class="credit-logo" src="/dno.png" />
+        <img class="credit-logo" src="/vriendenvantheater.png" />
       </div>
     </section>
   </div>
