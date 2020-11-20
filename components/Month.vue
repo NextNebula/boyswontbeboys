@@ -19,7 +19,7 @@
             v-if="item.tickets === null"
             class="column-tickets column-tickets-soon"
             v-bind:class="{ 'column-tickets__with-facebook': item.facebook !== null}"
-          ></div>
+          >Verkoop start later</div>
           <a
             v-else
             class="column-tickets"
