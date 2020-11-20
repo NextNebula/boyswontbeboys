@@ -63,7 +63,7 @@ export default {
 
         if (entry.gs$cell.col === "1") {
           items.push({
-            date: moment(value, "DD-MM-YYYY").hour(23).minute(59),
+            date: value !== "onbekend" ? moment(value, "DD-MM-YYYY").hour(23).minute(59) : null,
             dateUnknown: false,
             place: null,
             venue: null,
@@ -89,18 +89,32 @@ export default {
       //Group in months
       var currentAgendaData = [];
       items.forEach((item) => {
-        var key = item.date.month().toString() + item.date.year().toString();
+        if (item.date === null) {
+          if (currentAgendaData.find((_) => _.key === "onbekend") === undefined) {
+            currentAgendaData.push({
+              month: "onbekend",
+              key: "onbekend",
+              items: [],
+            });
+          }
 
-        if (currentAgendaData.find((_) => _.key === key) === undefined) {
-          currentAgendaData.push({
-            month: item.date.format("MMMM yyyy"),
-            key: key,
-            items: [],
-          });
+          var monthIndexOnbekend = currentAgendaData.findIndex((_) => _.key === "onbekend");
+          currentAgendaData[monthIndexOnbekend].items.push(item);
         }
+        else {
+          var key = item.date.month().toString() + item.date.year().toString();
 
-        var monthIndex = currentAgendaData.findIndex((_) => _.key === key);
-        currentAgendaData[monthIndex].items.push(item);
+          if (currentAgendaData.find((_) => _.key === key) === undefined) {
+            currentAgendaData.push({
+              month: item.date.format("MMMM yyyy"),
+              key: key,
+              items: [],
+            });
+          }
+
+          var monthIndex = currentAgendaData.findIndex((_) => _.key === key);
+          currentAgendaData[monthIndex].items.push(item);
+        }
       });
 
       this.currentAgenda = currentAgendaData;
@@ -122,7 +136,7 @@ export default {
 
         if (entry.gs$cell.col === "1") {
           itemsLocal.push({
-            date: moment(value, "DD-MM-YYYY").hour(23).minute(59),
+            date: value !== "onbekend" ? moment(value, "DD-MM-YYYY").hour(23).minute(59) : null,
             dateUnknown: false,
             place: null,
             venue: null,
@@ -148,20 +162,32 @@ export default {
       //Group in months
       var currentAgendaLocalData = [];
       itemsLocal.forEach((item) => {
-        var key = item.date.month().toString() + item.date.year().toString();
+        if (item.date === null) {
+          if (currentAgendaLocalData.find((_) => _.key === "onbekend") === undefined) {
+            currentAgendaLocalData.push({
+              month: "onbekend",
+              key: "onbekend",
+              items: [],
+            });
+          }
 
-        if (currentAgendaLocalData.find((_) => _.key === key) === undefined) {
-          currentAgendaLocalData.push({
-            month: item.date.format("MMMM yyyy"),
-            key: key,
-            items: [],
-          });
+          var monthIndexOnbekend = currentAgendaLocalData.findIndex((_) => _.key === "onbekend");
+          currentAgendaLocalData[monthIndexOnbekend].items.push(item);
         }
+        else {
+          var key = item.date.month().toString() + item.date.year().toString();
 
-        var monthIndexLocal = currentAgendaLocalData.findIndex(
-          (_) => _.key === key
-        );
-        currentAgendaLocalData[monthIndexLocal].items.push(item);
+          if (currentAgendaLocalData.find((_) => _.key === key) === undefined) {
+            currentAgendaLocalData.push({
+              month: item.date.format("MMMM yyyy"),
+              key: key,
+              items: [],
+            });
+          }
+
+          var monthIndex = currentAgendaLocalData.findIndex((_) => _.key === key);
+          currentAgendaLocalData[monthIndex].items.push(item);
+        }
       });
 
       this.currentAgendaLocal = currentAgendaLocalData;

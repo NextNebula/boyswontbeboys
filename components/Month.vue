@@ -3,7 +3,7 @@
     <div class="month-header">{{ month.month }}</div>
     <template v-for="(item, indexItem) in month.items">
       <div
-        v-bind:class="{ 'agenda-item__passed': item.date.isBefore() }"
+        v-bind:class="{ 'agenda-item__passed': item.date && item.date.isBefore() }"
         class="agenda-item"
         :key="indexItem"
       >
