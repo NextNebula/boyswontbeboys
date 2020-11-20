@@ -1,6 +1,6 @@
 <template>
   <div class="month">
-    <div class="month-header">{{ month.month }}</div>
+    <div class="month-header">{{ month.month !== "onbekend" ? month.month : "nog niet bekend" }}</div>
     <template v-for="(item, indexItem) in month.items">
       <div
         v-bind:class="{ 'agenda-item__passed': item.date && item.date.isBefore() }"
@@ -11,6 +11,7 @@
           v-if="!item.dateUnknown"
           class="agenda-column column-date"
         >{{ item.date.format("dd DD") }}</div>
+        <div v-else-if="item.date === null" class="agenda-column column-date"></div>
         <div v-else class="agenda-column column-date">n.n.b</div>
         <div class="agenda-column column-place">{{ item.place }}</div>
         <div class="agenda-column column-venue">{{ item.venue }}</div>
