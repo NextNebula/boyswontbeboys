@@ -1,5 +1,6 @@
 export default {
   ssr: false,
+  target: 'static',
   head: {
     title: 'BOYS WON\'T BE BOYS',
     meta: [
@@ -15,7 +16,6 @@ export default {
   },
   modules: [
     '@nuxtjs/axios',
-    '@aceforth/nuxt-optimized-images',
     ['nuxt-fontawesome', {
       imports: [
         {
@@ -27,9 +27,5 @@ export default {
     ['@nuxtjs/google-analytics', {
       id: 'UA-141894659-1'
     }]
-
   ],
-  optimizedImages: {
-    optimizeImages: false
-  }
 }

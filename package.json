@@ -14,15 +14,10 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@nuxtjs/axios": "^5.13.0",
     "@nuxtjs/google-analytics": "^2.4.0",
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.1",
     "moment": "^2.29.1",
     "nuxt": "^2.14.12",
     "nuxt-fontawesome": "^0.4.0",
     "vueperslides": "^2.12.1"
   },
-  "devDependencies": {
-    "@aceforth/nuxt-optimized-images": "^1.4.0",
-    "webp-loader": "^0.6.0"
-  }
+  "devDependencies": {}
 }
