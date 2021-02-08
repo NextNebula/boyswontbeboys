@@ -1,5 +1,5 @@
 export default {
-  mode: 'spa',
+  ssr: false,
   head: {
     title: 'BOYS WON\'T BE BOYS',
     meta: [
