@@ -197,6 +197,8 @@
         <img class="credit-logo" src="/kickstartcultuurfonds.png" />
         <img class="credit-logo" src="/dno.png" />
         <img class="credit-logo" src="/vriendenvantheater.png" />
+        <img class="credit-logo" src="/kunstraadgroningen.png" />
+        <img class="credit-logo" src="/kobra.png" />
       </div>
     </section>
   </div>
