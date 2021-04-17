@@ -29,6 +29,7 @@
           </vueper-slide>
         </vueper-slides>
       </div>
+      <iframe class="youtube" src="https://www.youtube.com/embed/hqKh1DtqKwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <div class="container container-split container-first">
       <section id="call" class="container-half container-bel">
@@ -248,6 +249,25 @@ export default {
       ],
     };
   },
+  created() {
+    window.addEventListener("resize", this.setYouTubeAspectRatio);
+  },
+  mounted() {
+    this.setYouTubeAspectRatio();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.setYouTubeAspectRatio);
+  },
+  methods: {
+    setYouTubeAspectRatio(e) {
+      const videos = document.getElementsByClassName("youtube");
+      videos.forEach(v => {
+        const height = Math.floor((v.offsetWidth * 9) / 16);
+        console.log(height);
+        v.style.height = `${height}px`;
+      })
+    }
+  }
 };
 </script>
 
@@ -382,6 +402,12 @@ html {
   font-weight: 600;
   line-height: 16px;
   padding: 3px 0 3px 0;
+}
+
+.youtube {
+  width: 100%;
+  max-width: 750px;
+  margin-top: 2rem;
 }
 
 .photo-slider {
