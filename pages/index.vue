@@ -56,61 +56,11 @@
           door Allard Medema.
         </div>
       </section>
-      <section class="container-half container-media">
-        <div class="title">IN DE MEDIA</div>
-        <vueper-slides
-          class="no-shadow"
-          :arrows="false"
-          fixed-height="230px"
-          bullets-outside
-          autoplay
-        >
-          <vueper-slide>
-            <template v-slot:content>
-              <i>
-                "Herkenbaar, eigentijds, prikkelend, en eerlijk. [...] Een goede
-                mix van sterke performers."
-              </i>
-              <br />
-              <br />Jury Amsterdam Fringe Festival
-            </template>
-          </vueper-slide>
-          <vueper-slide>
-            <template v-slot:content>
-              <i>
-                "Alles bij elkaar is het een enorm project dat met veel liefde is vormgegeven. Van Huisstede
-                voelde zich drie jaar geleden eenzaam met zijn worsteling, en maakt er nu zijn missie van om
-                gelijkgestemden bij elkaar te brengen. Met zijn collage/maatschappelijke beweging/happening/theatervoorstelling
-                heeft hij daarvoor een krachtig middel in handen."
-              </i>
-              <br />
-              <br />Theaterkrant
-              <br />
-              <a
-                href="https://www.theaterkrant.nl/recensie/boys-wont-be-boys/rikkert-van-huisstede/"
-                target="_blank"
-              >[Lees meer]</a>
-            </template>
-          </vueper-slide>
-          <vueper-slide>
-            <template v-slot:content>
-              Interview met regisseur Rikkert van Huisstede
-              <br />
-              <i>
-                "De bezoeker is een beetje verliefd geworden op de jonge
-                theatermaker. Rikkert zingt, dicht, praat en lacht op betoverende
-                wijze over liefde, gender en seksualiteit."
-              </i>
-              <br />
-              <br />Gaykrant
-              <br />
-              <a
-                href="https://www.degaykrant.nl/2018/08/22/waarom-ook-mannen-jurken-mogen-dragen/"
-                target="_blank"
-              >[Lees meer]</a>
-            </template>
-          </vueper-slide>
-        </vueper-slides>
+      <section id="education" class="container-half container-educatie">
+        <div class="title">EDUCATIE</div>
+        <div>
+          Bij de voorstelling bieden wij ook een op maat gemaakt educatie programma. We doen inleidingen en nagesprekken rondom de voorstelling, komen op school voor een workshop, maken in één dag een eigen versie van de voorstelling met leerlingen of spelen de voorstelling op school. De voorstelling en het educatieve programma sluiten goed aan bij de vakken CKV, maatschappijleer, filosofie en mentoruren. We gaan graag in gesprek om de wensen en mogelijkheden te onderzoeken. Neem een kijkje in ons educatieaanbod of neem contact op met Rikkert via educatie@zoujijhetzijn.nl.
+        </div>
       </section>
     </div>
     <section id="team" class="container container-team">
@@ -330,7 +280,7 @@ html {
   border-top: 3px solid white;
 }
 
-.container-media {
+.container-educatie {
   background-color: #7ad4d4;
   border-left: 3px solid white;
 }
@@ -495,7 +445,7 @@ html {
     width: 100%;
   }
 
-  .container-media {
+  .container-educatie {
     border-left: none;
     background-color: #7ad4d4;
   }
@@ -506,7 +456,7 @@ html {
     background-color: #7ad4d4;
   }
 
-  .container-media {
+  .container-educatie {
     background-color: #caeeee;
   }
 

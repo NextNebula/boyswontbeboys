@@ -12,6 +12,7 @@
       <a href="#agenda">Speellijst</a>
       <a href="#overview">Over de show</a>
       <a href="#call">Bel ons</a>
+      <a href="#education">Educatie</a>
       <a href="#team">Het team</a>
       <a href="#contact">Contact</a>
     </nav>
