@@ -3,6 +3,31 @@
     <StickyHeader />
     <img class="image-banner" src="banner.jpg" />
     <div id="arrow-up" class="arrow bounce"></div>
+    <section class="container container-media">
+    <vueper-slides
+      class="no-shadow vueper-media"
+      :arrows="false"
+      fixed-height="25px"
+      :bullets="false"
+      autoplay
+    >
+      <vueper-slide>
+        <template v-slot:content>
+          <span><i>'Een enorm project dat met veel liefde is vormgegeven.'</i> - De Theaterkrant</span>
+        </template>
+      </vueper-slide>
+      <vueper-slide>
+        <template v-slot:content>
+          <span><i>'Herkenbaar, eigentijds, prikkelend en eerlijk. Een goede mix van sterke performers.'</i> - Jury Amsterdam Fringe Festival</span>
+        </template>
+      </vueper-slide>
+      <vueper-slide>
+        <template v-slot:content>
+          <span><i>'Een heel laagdrempelige avond met ook heel veel humor.'</i> - Programmeur Chassé Theater Breda</span>
+        </template>
+      </vueper-slide>
+    </vueper-slides>
+    </section>
     <section id="agenda" class="container container-agenda">
       <Agenda />
     </section>
@@ -270,6 +295,13 @@ html {
   background-color: #caeeee;
 }
 
+.container-media {
+  background-color: #caeeee;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 3px solid white;
+}
+
 .container-agenda {
   background-color: #7ad4d4;
   border-top: 3px solid white;
@@ -304,6 +336,10 @@ html {
   background-color: #caeeee;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
+}
+
+.vueper-media {
+  width: 100%;
 }
 
 .foundations {
