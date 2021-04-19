@@ -9,6 +9,7 @@
       :arrows="false"
       fixed-height="25px"
       :bullets="false"
+      :breakpoints="breakpoints"
       autoplay
     >
       <vueper-slide>
@@ -224,6 +225,14 @@ export default {
           image: "slide8.jpg",
         },
       ],
+      breakpoints: {
+        750: {
+          fixedHeight: "50px",
+        },
+        500: {
+          fixedHeight: "75px",
+        },
+      },
     };
   },
   created() {
