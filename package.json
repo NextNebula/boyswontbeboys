@@ -11,17 +11,17 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@nuxtjs/axios": "^5.13.0",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/google-analytics": "^2.4.0",
     "moment": "^2.29.1",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.4",
     "nuxt-fontawesome": "^0.4.0",
-    "vueperslides": "^2.12.1"
+    "vueperslides": "^2.13.0"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "webp-loader": "^0.6.0",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.6.0"
   }
 }
