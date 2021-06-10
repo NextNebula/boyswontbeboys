@@ -134,7 +134,7 @@
           <li>
             <a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
             en
-            <a href="/Jaarrekening 2019.pdf" target="_blank">Jaarrekening</a>
+            <a href="/Jaarrekening 2020.pdf" target="_blank">Jaarrekening</a>
              Stichting ZOU JIJ HET ZIJN
           </li>
         </ul>
