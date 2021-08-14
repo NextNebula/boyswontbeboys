@@ -26,6 +26,7 @@
 <script>
 import moment from "moment";
 import Month from "./Month.vue";
+const parse = require('csv-parse/lib/sync')
 
 export default {
   components: {
@@ -47,43 +48,26 @@ export default {
   methods: {
     async fetchAgenda() {
       const data = await this.$axios.$get(
-        "https://spreadsheets.google.com/feeds/cells/1c3lI5c47d6S4XNew_KNlBR0kAK5Gn8DCwLn--gutoYU/1/public/full?alt=json"
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=0&single=true&output=csv"
       );
+
+      const records = parse(data, {
+        columns: true,
+        skip_empty_lines: true
+      });
 
       //Create agenda items
       var items = [];
-      data.feed.entry.forEach((entry) => {
-        //Skip first row with headers
-        if (entry.gs$cell.row === "1") {
-          return;
-        }
-
-        var value = entry.gs$cell.inputValue;
-        var index = Number(entry.gs$cell.row) - 2;
-
-        if (entry.gs$cell.col === "1") {
-          items.push({
-            date: value !== "onbekend" ? moment(value, "DD-MM-YYYY").hour(23).minute(59) : null,
-            dateUnknown: false,
-            place: null,
-            venue: null,
-            tickets: null,
-            facebook: null,
-            soldOut: false,
-          });
-        } else if (entry.gs$cell.col === "2") {
-          items[index].place = value;
-        } else if (entry.gs$cell.col === "3") {
-          items[index].venue = value;
-        } else if (entry.gs$cell.col === "4") {
-          items[index].tickets = value;
-        } else if (entry.gs$cell.col === "5") {
-          items[index].facebook = value;
-        } else if (entry.gs$cell.col === "6") {
-          items[index].soldOut = value === "ja";
-        } else if (entry.gs$cell.col === "7") {
-          items[index].dateUnknown = value === "ja";
-        }
+      records.forEach((record) => {
+        items.push({
+          date: record["Datum"] !== "onbekend" ? moment(record["Datum"], "DD-MM-YYYY").hour(23).minute(59) : null,
+          dateUnknown: record["Datum onbekend"] === "ja",
+          place: record["Stad"],
+          venue: record["Locatie"],
+          tickets: record["Ticket link"],
+          facebook: record["Facebook link"],
+          soldOut: record["Uitverkocht"] === "ja",
+        });
       });
 
       //Group in months
@@ -120,43 +104,26 @@ export default {
       this.currentAgenda = currentAgendaData;
 
       const dataLocal = await this.$axios.$get(
-        "https://spreadsheets.google.com/feeds/cells/1c3lI5c47d6S4XNew_KNlBR0kAK5Gn8DCwLn--gutoYU/2/public/full?alt=json"
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=1747042318&single=true&output=csv"
       );
+
+      const recordsLocal = parse(dataLocal, {
+        columns: true,
+        skip_empty_lines: true
+      });
 
       //Create agenda items
       var itemsLocal = [];
-      dataLocal.feed.entry.forEach((entry) => {
-        //Skip first row with headers
-        if (entry.gs$cell.row === "1") {
-          return;
-        }
-
-        var value = entry.gs$cell.inputValue;
-        var index = Number(entry.gs$cell.row) - 2;
-
-        if (entry.gs$cell.col === "1") {
-          itemsLocal.push({
-            date: value !== "onbekend" ? moment(value, "DD-MM-YYYY").hour(23).minute(59) : null,
-            dateUnknown: false,
-            place: null,
-            venue: null,
-            tickets: null,
-            facebook: null,
-            soldOut: false,
-          });
-        } else if (entry.gs$cell.col === "2") {
-          itemsLocal[index].place = value;
-        } else if (entry.gs$cell.col === "3") {
-          itemsLocal[index].venue = value;
-        } else if (entry.gs$cell.col === "4") {
-          itemsLocal[index].tickets = value;
-        } else if (entry.gs$cell.col === "5") {
-          itemsLocal[index].facebook = value;
-        } else if (entry.gs$cell.col === "6") {
-          itemsLocal[index].soldOut = value === "ja";
-        } else if (entry.gs$cell.col === "7") {
-          itemsLocal[index].dateUnknown = value === "ja";
-        }
+      recordsLocal.forEach((record) => {
+        itemsLocal.push({
+          date: record["Datum"] !== "onbekend" ? moment(record["Datum"], "DD-MM-YYYY").hour(23).minute(59) : null,
+          dateUnknown: record["Datum onbekend"] === "ja",
+          place: record["Stad"],
+          venue: record["Locatie"],
+          tickets: record["Ticket link"],
+          facebook: record["Facebook link"],
+          soldOut: record["Uitverkocht"] === "ja",
+        });
       });
 
       //Group in months
