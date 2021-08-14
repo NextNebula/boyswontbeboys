@@ -94,12 +94,12 @@ export default {
 
 .column-links {
   font-size: 0;
-  width: 196px;
+  width: 220px;
 }
 
 .column-tickets {
   float: left;
-  width: 56px;
+  width: 80px;
   margin-right: 0.5rem;
   font-size: 16px;
   text-align: center;
