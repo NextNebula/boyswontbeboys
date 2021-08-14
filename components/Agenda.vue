@@ -64,8 +64,8 @@ export default {
           dateUnknown: record["Datum onbekend"] === "ja",
           place: record["Stad"],
           venue: record["Locatie"],
-          tickets: record["Ticket link"],
-          facebook: record["Facebook link"],
+          tickets: record["Ticket link"] ? record["Ticket link"] : null,
+          facebook: record["Facebook link"] ? record["Facebook link"] : null,
           soldOut: record["Uitverkocht"] === "ja",
         });
       });
@@ -120,8 +120,8 @@ export default {
           dateUnknown: record["Datum onbekend"] === "ja",
           place: record["Stad"],
           venue: record["Locatie"],
-          tickets: record["Ticket link"],
-          facebook: record["Facebook link"],
+          tickets: record["Ticket link"] ? record["Ticket link"] : null,
+          facebook: record["Facebook link"] ? record["Facebook link"] : null,
           soldOut: record["Uitverkocht"] === "ja",
         });
       });
