@@ -93,15 +93,12 @@ export default {
 }
 
 .column-links {
-  font-size: 0;
   width: 220px;
 }
 
 .column-tickets {
   float: left;
-  width: 80px;
   margin-right: 0.5rem;
-  font-size: 16px;
   text-align: center;
 }
 
@@ -111,8 +108,6 @@ export default {
 
 .column-facebook {
   float: left;
-  font-size: 16px;
-  width: 113px;
 }
 
 @media only screen and (max-width: 715px) {
