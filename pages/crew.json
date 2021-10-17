@@ -10,11 +10,6 @@
     "picture": "BenjaminBoer.jpg"
   },
   {
-    "name": "Willem van Rossum",
-    "role": "Productieleider",
-    "picture": "WillemVanRossum.jpg"
-  },
-  {
     "name": "Celine Bosman",
     "role": "Fondsenwerving",
     "picture": "CelineBosman.jpg"
@@ -25,19 +20,39 @@
     "picture": "ArjanBraaksma.jpg"
   },
   {
+    "name": "Maartje Nieuwint",
+    "role": "Productieleider",
+    "picture": "MaartjeNieuwint.jpg"
+  },
+  {
     "name": "Sonne Scheermakers",
-    "role": "Hoofd Techniek",
+    "role": "Hoofd techniek",
     "picture": "SonneScheermakers.jpg"
   },
   {
     "name": "Edith Molmans",
-    "role": "Licht Techniek",
+    "role": "Lichttechniek",
     "picture": "EdithMolmans.jpg"
   },
   {
-    "name": "WildChild Agency",
-    "role": "Publiciteit & marketing",
-    "picture": "WildChildAgency.jpg"
+    "name": "Ellen Knops",
+    "role": "Lichttechniek",
+    "picture": "GeenFoto.jpg"
+  },
+  {
+    "name": "Tobias Specker",
+    "role": "Workshop docent",
+    "picture": "TobiasSpecker.jpg"
+  },
+  {
+    "name": "Marieke Koolhaas",
+    "role": "Workshop docent",
+    "picture": "MariekeKoolhaas.jpg"
+  },
+  {
+    "name": "Elles Leferink",
+    "role": "Educatie",
+    "picture": "EllesLeferink.jpg"
   },
   {
     "name": "Richard Leurs",
@@ -46,7 +61,7 @@
   },
   {
     "name": "Allard",
-    "role": "0642280481",
+    "role": "06-42280481",
     "picture": "Allard.jpg"
   }
 ]
