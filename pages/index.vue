@@ -35,12 +35,10 @@
     <section id="overview" class="container container-overview">
       <div class="title">WERVELENDE THEATERHAPPENING MET ECHTE MENSEN</div>
       <div class="text">
-        BOYS WON’T BE BOYS is een wervelende collage van jongens en mannen*. Ze zingen, dansen, dichten, grappen, rappen of vertellen in wisselende samenstelling over hun persoonlijke levens. Want het is stoer om je (als man) kwetsbaar op te stellen. Mannelijkheid is iets waar iedereen dagelijks mee te maken heeft. Homo, hetero, man, vrouw of anders, iedereen verhoudt zich tot wat er van mannen (en vrouwen) wordt verwacht. Het is daarom gek dat nadenken over ‘gender’ wordt gezien als iets voor gemarginaliseerde groepen. Is het niet juist succesvol om als man je mannelijkheid te bevragen?
-        <br />
-        <br />Of je nou hetero of homo, a-seksueel of bi-seksueel, bouwplaatsmanager of musicalster, intersekse of transgender, jonge vader of dragqueen bent, niemand past precies in het hokje “man”. De spelers van BOYS WON’T BE BOYS weten inmiddels hoe bevrijdend het is om je open te stellen. Door al die verschillende verhalen doorbreken we vooroordelen en stereotypen en komen we dichter bij elkaar.
+        BOYS WON’T BE BOYS is een wervelende collage van mannen die zingen, dansen, dichten, grappen, musiceren en vertellen over hun persoonlijke levens. Ze stellen zich kwetsbaar op in hun verhalen rond het thema mannelijkheid. Iedereen heeft dagelijks te maken met verwachtingen die horen bij het hokje waar je in geplaatst bent. Het is daarom opvallend dat nadenken over gender wordt gezien als iets voor gemarginaliseerde groepen. Is het niet voor iedereen fijn om los van stereotypen te leven? "We mogen er trots op zijn dat we open zijn, lief of flamboyant”, aldus initiator Rikkert van Huisstede. 
         <br />
         <br />
-        <i>* waar wij de termen mannen/jongens gebruiken bedoelen we een breed scala aan mensen.</i>
+        Of je nou bouwplaatsmanager of musicalster, hetero of homo, jonge vader of dragqueen, non-binair, transgender of intersekse bent, niemand past precies in de krappe hokjes “man” of “vrouw”. De spelers van BOYS WON’T BE BOYS weten inmiddels hoe bevrijdend het is om je open te stellen. Door al die verschillende verhalen doorbreken we vooroordelen en komen we dichter bij elkaar.
       </div>
       <div class="photo-slider">
         <vueper-slides fade :slide-ratio="2 / 4">
@@ -85,7 +83,7 @@
       <section id="education" class="container-half container-educatie">
         <div class="title">EDUCATIE</div>
         <div>
-          Bij de voorstelling bieden wij ook een op maat gemaakt educatie programma. We doen inleidingen en nagesprekken rondom de voorstelling, komen op school voor een workshop, maken in één dag een eigen versie van de voorstelling met leerlingen of spelen de voorstelling op school. De voorstelling en het educatieve programma sluiten goed aan bij de vakken CKV, maatschappijleer, filosofie en mentoruren. We gaan graag in gesprek om de wensen en mogelijkheden te onderzoeken. Neem een kijkje in ons educatieaanbod of neem contact op met Rikkert via educatie@zoujijhetzijn.nl.
+          Bij de voorstelling bieden wij ook een op maat gemaakt educatie programma. We doen inleidingen en nagesprekken rondom de voorstelling en kunnen op school langs komen voor een workshop. Sinds 2012 zijn lessen om op respectvolle wijze aandacht te besteden aan LHBTQ+-acceptatie onderdeel geworden van het lesprogramma. De voorstelling en het educatieve programma zijn voor alle leerlingen relevant en herkenbaar. Het project sluit goed aan bij de vakken CKV, maatschappijleer, filosofie en mentoruren. We gaan graag in gesprek om de wensen en mogelijkheden te onderzoeken. Neem contact op met Elles Leferink via educatie@zoujijhetzijn.nl.
         </div>
       </section>
     </div>
@@ -130,7 +128,7 @@
           <li>Productioneel: productie@zoujijhetzijn.nl</li>
           <li>Over de spelers: rikkert@zoujijhetzijn.nl</li>
           <li>Zakelijk: benjamin@zoujijhetzijn.nl</li>
-          <li>Publiciteit en pers: info@wildchildagency.nl / 020-2386079</li>
+          <li>Publiciteit en pers: info@zoujijhetzijn.nl / 06-13037605</li>
           <li>
             <a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
             en
@@ -157,7 +155,6 @@
       <div class="credits">
         Vormgeving: BUROBRAAK.
         <br />Fotografie: Ernst Coppejans (publiciteitsbeeld en blauwe portretten), Bas de Brouwer (scènefoto’s).
-        <br />Overige fotografie: o.a. Klemens Patijn.
       </div>
     </section>
     <section class="container container-foundations">
