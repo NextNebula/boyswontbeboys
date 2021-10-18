@@ -35,7 +35,7 @@
     <section id="overview" class="container container-overview">
       <div class="title">WERVELENDE THEATERHAPPENING MET ECHTE MENSEN</div>
       <div class="text">
-        BOYS WON’T BE BOYS is een wervelende collage van mannen die zingen, dansen, dichten, grappen, musiceren en vertellen over hun persoonlijke levens. Ze stellen zich kwetsbaar op in hun verhalen rond het thema mannelijkheid. Iedereen heeft dagelijks te maken met verwachtingen die horen bij het hokje waar je in geplaatst bent. Het is daarom opvallend dat nadenken over gender wordt gezien als iets voor gemarginaliseerde groepen. Is het niet voor iedereen fijn om los van stereotypen te leven? "We mogen er trots op zijn dat we open zijn, lief of flamboyant”, aldus initiator Rikkert van Huisstede. 
+        BOYS WON’T BE BOYS is een wervelende collage van mensen die zingen, dansen, dichten, grappen, musiceren en vertellen over hun persoonlijke levens. Ze stellen zich kwetsbaar op in hun verhalen rond het thema mannelijkheid. Iedereen heeft dagelijks te maken met verwachtingen die horen bij het hokje waar je in geplaatst bent. Het is daarom opvallend dat nadenken over gender wordt gezien als iets voor gemarginaliseerde groepen. Is het niet voor iedereen fijn om los van stereotypen te leven? "We mogen er trots op zijn dat we open zijn, lief of flamboyant”, aldus initiator Rikkert van Huisstede. 
         <br />
         <br />
         Of je nou bouwplaatsmanager of musicalster, hetero of homo, jonge vader of dragqueen, non-binair, transgender of intersekse bent, niemand past precies in de krappe hokjes “man” of “vrouw”. De spelers van BOYS WON’T BE BOYS weten inmiddels hoe bevrijdend het is om je open te stellen. Door al die verschillende verhalen doorbreken we vooroordelen en komen we dichter bij elkaar.
@@ -128,7 +128,7 @@
           <li>Productioneel: productie@zoujijhetzijn.nl</li>
           <li>Over de spelers: rikkert@zoujijhetzijn.nl</li>
           <li>Zakelijk: benjamin@zoujijhetzijn.nl</li>
-          <li>Publiciteit en pers: info@zoujijhetzijn.nl / 06-13037605</li>
+          <li>Publiciteit en pers: maaykegrootscholten@gmail.com / 06-36193711</li>
           <li>
             <a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
             en
