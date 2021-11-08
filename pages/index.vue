@@ -221,6 +221,15 @@ export default {
         {
           image: "slide8.jpg",
         },
+        {
+          image: "slide9.jpg",
+        },
+        {
+          image: "slide10.jpg",
+        },
+        {
+          image: "slide11.jpg",
+        },
       ],
       breakpoints: {
         750: {
