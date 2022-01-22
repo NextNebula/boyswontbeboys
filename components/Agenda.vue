@@ -26,7 +26,7 @@
 <script>
 import moment from "moment";
 import Month from "./Month.vue";
-const parse = require('csv-parse/lib/sync')
+const { parse } = require('csv-parse/lib/sync');
 
 export default {
   components: {
