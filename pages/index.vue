@@ -162,7 +162,7 @@
       <div class="foundations">
         <img class="credit-logo" src="/fondspodiumkunsten.png" />
         <img class="credit-logo" src="/vsbfonds.png" />
-        <img class="credit-logo" src="/bankgiro.png" />
+        <img class="credit-logo" src="/vriendenlotterijfonds.png" />
         <img class="credit-logo" src="/prinsbernhardcultuurfonds.png" />
         <img class="credit-logo" src="/vdef.png" />
         <img class="credit-logo" src="/fonds21.png" />
