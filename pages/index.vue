@@ -120,15 +120,16 @@
       </div>
     </section>
     <section id="contact" class="container container-contact">
-      <div class="title">CONTACT</div>Wil je meer weten over BOYS WON'T BE BOYS? Of een interview inplannen?
-      Dat kan allemaal.
+      <div class="title">CONTACT</div>
+      Wil je een voorstelling boeken? Een interview inplannen? Of meer informatie over Boys Won't Be Boys?
       <br />
       <div class="lijst">
         <ul>
           <li>Productioneel: productie@zoujijhetzijn.nl</li>
-          <li>Over de spelers: rikkert@zoujijhetzijn.nl</li>
-          <li>Zakelijk: benjamin@zoujijhetzijn.nl</li>
+          <li>Artistiek, spelers en organisatie: rikkert@zoujijhetzijn.nl</li>
+          <li>Zakelijk en verkoop: benjamin@zoujijhetzijn.nl</li>
           <li>Publiciteit en pers: maaykegrootscholten@gmail.com / 06-36193711</li>
+          <li>Educatie: educatie@zoujijhetzijn.nl</li>
           <li>
             <a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
             en
