@@ -4,15 +4,12 @@
     <template v-for="(month, indexMonth) in currentAgenda">
       <month v-bind:month="month" :key="'agenda-' + indexMonth" />
     </template>
-    <div class="title title-local">SPEELLIJST LOKALE VERSIES</div>
+    <div class="title title-local">LOKALE VERSIES</div>
     <div class="description-local">
       Op dit moment maken we vier nieuwe versies van de voorstelling met een volledig lokale cast.
       <br />Wil je ook meedoen?
       <a href="https://forms.gle/dQAiwWDj8gL6LRTF8">Je kunt je hier aanmelden</a>.
     </div>
-    <template v-for="(monthLocal, indexMonthLocal) in currentAgendaLocal">
-      <month v-bind:month="monthLocal" :key="'agendaLocal-' + indexMonthLocal" />
-    </template>
     <!-- <div
       class="outdated-shows"
       v-on:click="showOutdatedAgenda = !showOutdatedAgenda"
@@ -64,6 +61,7 @@ export default {
           dateUnknown: record["Datum onbekend"] === "ja",
           place: record["Stad"],
           venue: record["Locatie"],
+          extra: record["Extra informatie"],
           tickets: record["Ticket link"] ? record["Ticket link"] : null,
           facebook: record["Facebook link"] ? record["Facebook link"] : null,
           soldOut: record["Uitverkocht"] === "ja",
@@ -102,62 +100,6 @@ export default {
       });
 
       this.currentAgenda = currentAgendaData;
-
-      const dataLocal = await this.$axios.$get(
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=1747042318&single=true&output=csv"
-      );
-
-      const recordsLocal = parse(dataLocal, {
-        columns: true,
-        skip_empty_lines: true
-      });
-
-      //Create agenda items
-      var itemsLocal = [];
-      recordsLocal.forEach((record) => {
-        itemsLocal.push({
-          date: record["Datum"] !== "onbekend" ? moment(record["Datum"], "DD-MM-YYYY").hour(23).minute(59) : null,
-          dateUnknown: record["Datum onbekend"] === "ja",
-          place: record["Stad"],
-          venue: record["Locatie"],
-          tickets: record["Ticket link"] ? record["Ticket link"] : null,
-          facebook: record["Facebook link"] ? record["Facebook link"] : null,
-          soldOut: record["Uitverkocht"] === "ja",
-        });
-      });
-
-      //Group in months
-      var currentAgendaLocalData = [];
-      itemsLocal.forEach((item) => {
-        if (item.date === null) {
-          if (currentAgendaLocalData.find((_) => _.key === "onbekend") === undefined) {
-            currentAgendaLocalData.push({
-              month: "onbekend",
-              key: "onbekend",
-              items: [],
-            });
-          }
-
-          var monthIndexOnbekend = currentAgendaLocalData.findIndex((_) => _.key === "onbekend");
-          currentAgendaLocalData[monthIndexOnbekend].items.push(item);
-        }
-        else {
-          var key = item.date.month().toString() + item.date.year().toString();
-
-          if (currentAgendaLocalData.find((_) => _.key === key) === undefined) {
-            currentAgendaLocalData.push({
-              month: item.date.format("MMMM yyyy"),
-              key: key,
-              items: [],
-            });
-          }
-
-          var monthIndex = currentAgendaLocalData.findIndex((_) => _.key === key);
-          currentAgendaLocalData[monthIndex].items.push(item);
-        }
-      });
-
-      this.currentAgendaLocal = currentAgendaLocalData;
 
       //TODO: outdatedAgenda
       //moment(month.items[0].date, "DD-MM-YYYY").isAfter(moment().startOf("month"))

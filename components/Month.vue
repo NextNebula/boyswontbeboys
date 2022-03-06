@@ -14,7 +14,7 @@
         <div v-else-if="item.date === null" class="agenda-column column-date"></div>
         <div v-else class="agenda-column column-date">n.n.b</div>
         <div class="agenda-column column-place">{{ item.place }}</div>
-        <div class="agenda-column column-venue">{{ item.venue }}</div>
+        <div class="agenda-column column-venue">{{ item.venue }} <br> <span class="column-extra">{{ item.extra }}</span></div>
         <div class="agenda-column column-links">
           <div
             v-if="item.tickets === null"
@@ -65,7 +65,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.25rem;
+  margin-bottom: 8px;
 }
 
 .agenda-item__passed {
@@ -90,6 +90,12 @@ export default {
 
 .column-venue {
   width: 245px;
+  line-height: 100%;
+}
+
+.column-extra {
+  font-size: 15px;
+  font-style: italic;
 }
 
 .column-links {
@@ -112,7 +118,7 @@ export default {
 
 @media only screen and (max-width: 715px) {
   .agenda-item {
-    margin-bottom: 0.75rem;
+    margin-bottom: 12px;
   }
 
   .agenda-column {
