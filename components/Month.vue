@@ -13,8 +13,8 @@
         >{{ item.date.format("dd DD") }}</div>
         <div v-else-if="item.date === null" class="agenda-column column-date"></div>
         <div v-else class="agenda-column column-date">n.n.b</div>
-        <div class="agenda-column column-place">{{ item.place }}</div>
-        <div class="agenda-column column-venue">{{ item.venue }} <br> <span class="column-extra">{{ item.extra }}</span></div>
+        <div class="agenda-column column-place">{{ item.place }} <br> <span class="column-extra">{{ item.extra }}</span></div>
+        <div class="agenda-column column-venue">{{ item.venue }}</div>
         <div class="agenda-column column-links">
           <div
             v-if="item.tickets === null"
@@ -85,16 +85,16 @@ export default {
 }
 
 .column-place {
-  width: 107px;
+  width: 115px;
+  line-height: 100%;
 }
 
 .column-venue {
   width: 245px;
-  line-height: 100%;
 }
 
 .column-extra {
-  font-size: 15px;
+  font-size: 14px;
   font-style: italic;
 }
 
