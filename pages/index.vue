@@ -143,14 +143,14 @@
           <b>Volg ons op</b>
         </div>
         <a href="https://www.facebook.com/boyswontbeboys/" target="_blank">
-          <font-awesome-icon :icon="['fab', 'facebook-square']" style="font-size: 35px" />
+          <i class="fa-brands fa-facebook-square social-icon"></i>
         </a>
         <a
           href="https://www.instagram.com/boyswntbeboys/"
           target="_blank"
           style="margin-left: 0.25rem;"
         >
-          <font-awesome-icon :icon="['fab', 'instagram']" style="font-size: 35px" />
+          <i class="fa-brands fa-instagram social-icon"></i>
         </a>
       </div>
       <div class="credits">
@@ -540,6 +540,10 @@ html {
   .crew .person:first-child {
     margin-left: 0.5rem;
   }
+}
+
+.social-icon {
+  font-size: 35px;
 }
 
 @media only screen and (max-width: 540px) {

@@ -11,20 +11,17 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap' }
-    ]
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap' },
+    ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/61d047e87c.js', crossorigin: 'anonymous',
+      },
+    ],
   },
   modules: [
     '@nuxtjs/axios',
     '@aceforth/nuxt-optimized-images',
-    ['nuxt-fontawesome', {
-      imports: [
-        {
-          set: '@fortawesome/free-brands-svg-icons',
-          icons: ['faFacebookSquare', 'faInstagram']
-        }
-      ]
-    }],
     ['@nuxtjs/google-analytics', {
       id: 'UA-141894659-1'
     }]

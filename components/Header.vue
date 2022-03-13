@@ -2,10 +2,10 @@
   <header>
     <div class="social-nav">
       <a href="https://www.facebook.com/boyswontbeboys/" target="_blank">
-        <font-awesome-icon :icon="['fab', 'facebook-square']" />
+        <i class="fa-brands fa-facebook-square"></i>
       </a>
       <a href="https://www.instagram.com/boyswntbeboys/" target="_blank">
-        <font-awesome-icon :icon="['fab', 'instagram']" />
+        <i class="fa-brands fa-instagram"></i>
       </a>
     </div>
     <nav class="navigation">
