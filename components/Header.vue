@@ -76,7 +76,7 @@ export default {
 header {
   display: flex;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   align-items: stretch;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);

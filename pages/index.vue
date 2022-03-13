@@ -271,7 +271,7 @@ html {
 
 .image-banner {
   position: relative;
-  width: 100vw;
+  width: 100%;
   margin-bottom: -6px;
   z-index: -1;
 }
@@ -533,7 +533,7 @@ html {
     flex-wrap: nowrap;
     justify-content: left;
     overflow-x: scroll;
-    width: 100vw;
+    width: 100%;
   }
 
   .team .person:first-child,
