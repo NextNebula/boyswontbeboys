@@ -173,6 +173,8 @@
         <img class="credit-logo" src="/vriendenvantheater.png" />
         <img class="credit-logo" src="/kunstraadgroningen.png" />
         <img class="credit-logo" src="/kobra.png" />
+        <img class="credit-logo" src="/enschede.png" />
+        <img class="credit-logo" src="/overijsel.png" />
       </div>
     </section>
   </div>
