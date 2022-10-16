@@ -88,8 +88,6 @@
       </section>
     </div>
     <section id="team" class="container container-team">
-      <div class="title">VACATURES</div>
-      <div class="vacancy">BOYS WON’T BE BOYS heeft dit moment 1 vacature. Een vacature voor <a href="/Vacature Zakelijk Producent.pdf" target="_blank">Zakelijk Producent</a>.</div>
       <div class="title">SPELERS</div>
       <div class="team">
         <template v-for="(artist, indexArtist) in artists">
@@ -367,10 +365,6 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: -1rem;
-}
-
-.vacancy {
-  margin-bottom: 1rem;
 }
 
 .team,
