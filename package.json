@@ -13,14 +13,14 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/google-analytics": "^2.4.0",
-    "csv-parse": "^5.0.4",
-    "moment": "^2.29.1",
+    "csv-parse": "^5.3.1",
+    "moment": "^2.29.4",
     "nuxt": "^2.15.8",
-    "vueperslides": "^2.15.2"
+    "vueperslides": "^2.15.3"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "webp-loader": "^0.6.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.10.0"
   }
 }
