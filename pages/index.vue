@@ -125,17 +125,12 @@
       <br />
       <div class="lijst">
         <ul>
-          <li>Productioneel: productie@zoujijhetzijn.nl</li>
-          <li>Artistiek, spelers en organisatie: rikkert@zoujijhetzijn.nl</li>
-          <li>Zakelijk en verkoop: benjamin@zoujijhetzijn.nl</li>
-          <li>Publiciteit en pers: maaykegrootscholten@gmail.com / 06-36193711</li>
-          <li>Educatie: educatie@zoujijhetzijn.nl</li>
-          <li>
-            <a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
-            en
-            <a href="/Jaarrekening 2020.pdf" target="_blank">Jaarrekening</a>
-             Stichting ZOU JIJ HET ZIJN
-          </li>
+          <li>Artistieke leiding: Rikkert van Huisstede rikkert@zoujijhetzijn.nl</li>
+          <li>Zakelijke leiding: Tijmen Kerkhof tijmen@zoujijhetzijn.nl</li>
+          <li>Tourneeplanning / community manager: Patrick Engels patrick@zoujijhetzijn.nl</li>
+          <li>Hoofd Productie: Lisette Zeegers lisette@zoujijhetzijn.nl</li>
+          <li>Marketing en communicatie: Casper Koster marketing@zoujijhetzijn.nl</li>
+          <li>Coordinator The Next Generation / regieassistent: Tamar Lagas tamar@zoujijhetzijn.nl</li>
         </ul>
       </div>
       <div class="social">
@@ -156,6 +151,10 @@
       <div class="credits">
         Vormgeving: BUROBRAAK.
         <br />Fotografie: Ernst Coppejans (publiciteitsbeeld en blauwe portretten), Bas de Brouwer (scènefoto’s).
+        <br /><br /><a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
+        en
+        <a href="/Jaarrekening 2020.pdf" target="_blank">Jaarrekening</a>
+        Stichting ZOU JIJ HET ZIJN.
       </div>
     </section>
     <section class="container container-foundations">
