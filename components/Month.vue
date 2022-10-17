@@ -72,6 +72,11 @@ export default {
   opacity: 0.5;
 }
 
+.agenda-item__passed .column-links {
+  visibility: hidden;
+  height: 0;
+}
+
 .agenda-column {
   flex-grow: 0;
   padding-left: 0.5rem;
