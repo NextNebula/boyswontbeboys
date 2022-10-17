@@ -1,7 +1,7 @@
 <template>
   <div>
     <StickyHeader />
-    <img class="image-banner" src="banner.jpg" />
+    <img class="image-banner" src="banner-xmas.jpg" />
     <div id="arrow-up" class="arrow bounce"></div>
     <section class="container container-media">
     <vueper-slides
@@ -305,52 +305,52 @@ html {
 }
 
 .container-first {
-  background-color: #7ad4d4;
+  background-color: #f69eaf;
 }
 
 .container-second {
-  background-color: #caeeee;
+  background-color: #fde7eb;
 }
 
 .container-media {
-  background-color: #caeeee;
+  background-color: #fde7eb;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-top: 3px solid white;
 }
 
 .container-agenda {
-  background-color: #7ad4d4;
+  background-color: #f69eaf;
   border-top: 3px solid white;
 }
 
 .container-overview {
-  background-color: #caeeee;
+  background-color: #fde7eb;
   border-top: 3px solid white;
 }
 
 .container-educatie {
-  background-color: #7ad4d4;
+  background-color: #f69eaf;
   border-left: 3px solid white;
 }
 
 .container-team {
-  background-color: #caeeee;
+  background-color: #fde7eb;
 }
 
 .container-bel {
-  background-color: #7ad4d4;
+  background-color: #f69eaf;
   border-right: 3px solid white;
   margin-right: -3px;
 }
 
 .container-contact {
-  background-color: #7ad4d4;
+  background-color: #f69eaf;
   border-top: 3px solid white;
 }
 
 .container-foundations {
-  background-color: #caeeee;
+  background-color: #fde7eb;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
 }
@@ -500,29 +500,29 @@ html {
 
   .container-educatie {
     border-left: none;
-    background-color: #7ad4d4;
+    background-color: #f69eaf;
   }
 
   .container-bel {
     border-right: none;
     border-bottom: 3px solid white;
-    background-color: #7ad4d4;
+    background-color: #f69eaf;
   }
 
   .container-educatie {
-    background-color: #caeeee;
+    background-color: #fde7eb;
   }
 
   .container-team {
-    background-color: #7ad4d4;
+    background-color: #f69eaf;
   }
 
   .container-contact {
-    background-color: #caeeee;
+    background-color: #fde7eb;
   }
 
   .container-foundations {
-    background-color: #7ad4d4;
+    background-color: #f69eaf;
   }
 
   .vueperslides--fixed-height.vueperslides--bullets-outside {
