@@ -1,6 +1,7 @@
 <template>
   <div class="agenda">
     <div class="title">SPEELLIJST<br>THE CHOSEN FAMILY SHOW-HO-HO</div>
+    <div class="title-text">Een nieuwe show in Theater Bellevue in de week voor kerst.</div>
     <template v-for="(month, indexMonth) in specalAgenda">
       <month v-bind:month="month" :key="'special-agenda-' + indexMonth" />
     </template>
@@ -9,7 +10,7 @@
       <month v-bind:month="month" :key="'tour-agenda-' + indexMonth" />
     </template>
     <div class="title title-margin">AANMELDEN</div>
-    <div class="description-local">
+    <div class="title-text">
       Wil je ook meedoen?
       <a href="https://forms.gle/dQAiwWDj8gL6LRTF8">Je kunt je hier aanmelden</a>.
     </div>
@@ -107,7 +108,7 @@ export default {
 .title-margin {
   margin-top: 32px;
 }
-.description-local {
+.title-text {
   margin-top: -16px;
 }
 .outdated-shows {
