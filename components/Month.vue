@@ -13,33 +13,22 @@
         >{{ item.date.format("dd DD") }}</div>
         <div v-else-if="item.date === null" class="agenda-column column-date"></div>
         <div v-else class="agenda-column column-date">n.n.b</div>
-        <div class="agenda-column column-place">{{ item.place }} <br> <span class="column-extra">{{ item.extra }}</span></div>
-        <div class="agenda-column column-venue">{{ item.venue }}</div>
-        <div class="agenda-column column-links">
-          <div
-            v-if="item.tickets === null"
-            class="column-tickets column-tickets-soon"
-            v-bind:class="{ 'column-tickets__with-facebook': item.facebook !== null}"
-          >Verkoop start later</div>
-          <a
-            v-else
-            class="column-tickets"
-            v-bind:class="{ 'column-tickets__with-facebook': item.facebook !== null}"
-            v-bind:href="item.tickets"
-            target="_blank"
-            rel="noopener"
-          >
-            <span v-if="item.soldOut">Uitverkocht</span>
-            <span v-else>Kaarten</span>
-          </a>
-          <a
-            v-if="item.facebook !== null"
-            v-bind:href="item.facebook"
-            class="column-facebook"
-            target="_blank"
-            rel="noopener"
-          >Facebook event</a>
-        </div>
+        <div class="agenda-column column-place">{{ item.place }} <br> <span class="column-extra">{{ item.venue }}</span></div>
+        <div class="agenda-column column-type">{{ item.type }}<br> <span class="column-extra">{{ item.extra }}</span></div>
+        <div
+          v-if="item.tickets === null"
+          class="column-tickets column-tickets-soon"
+        >Verkoop start later</div>
+        <a
+          v-else
+          class="column-tickets"
+          v-bind:href="item.tickets"
+          target="_blank"
+          rel="noopener"
+        >
+          <span v-if="item.soldOut">Uitverkocht</span>
+          <span v-else>Kaarten</span>
+        </a>
       </div>
     </template>
   </div>
@@ -72,7 +61,7 @@ export default {
   opacity: 0.5;
 }
 
-.agenda-item__passed .column-links {
+.agenda-item__passed .column-tickets {
   visibility: hidden;
   height: 0;
 }
@@ -90,21 +79,18 @@ export default {
 }
 
 .column-place {
-  width: 115px;
+  width: 165px;
   line-height: 100%;
 }
 
-.column-venue {
-  width: 245px;
+.column-type {
+  width: 270px;
+  font-size: 16px;
 }
 
 .column-extra {
   font-size: 14px;
   font-style: italic;
-}
-
-.column-links {
-  width: 220px;
 }
 
 .column-tickets {
@@ -115,10 +101,6 @@ export default {
 
 .column-tickets-soon {
   width: auto;
-}
-
-.column-facebook {
-  float: left;
 }
 
 @media only screen and (max-width: 715px) {
@@ -141,27 +123,12 @@ export default {
     width: auto;
   }
 
-  .column-venue {
+  .column-type {
     width: auto;
-  }
-
-  .column-links {
-    width: 100%;
-    display: flex;
   }
 
   .column-tickets {
     flex-grow: 1;
-  }
-
-  .column-tickets__with-facebook {
-    width: 50%;
-    text-align: right;
-  }
-
-  .column-facebook {
-    margin-left: 0.5rem;
-    width: 50%;
   }
 }
 </style>

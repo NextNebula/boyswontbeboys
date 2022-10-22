@@ -1,22 +1,18 @@
 <template>
   <div class="agenda">
-    <div class="title">SPEELLIJST</div>
-    <template v-for="(month, indexMonth) in currentAgenda">
-      <month v-bind:month="month" :key="'agenda-' + indexMonth" />
+    <div class="title">SPEELLIJST<br>THE CHOSEN FAMILY SHOW-HO-HO</div>
+    <template v-for="(month, indexMonth) in specalAgenda">
+      <month v-bind:month="month" :key="'special-agenda-' + indexMonth" />
     </template>
-    <div class="title title-local">LOKALE VERSIES</div>
+    <div class="title title-margin">SPEELLIJST<br>BOYS WON'T BE BOYS</div>
+    <template v-for="(month, indexMonth) in tourAgenda">
+      <month v-bind:month="month" :key="'tour-agenda-' + indexMonth" />
+    </template>
+    <div class="title title-margin">AANMELDEN</div>
     <div class="description-local">
-      Op dit moment maken we vier nieuwe versies van de voorstelling met een volledig lokale cast.
-      <br />Wil je ook meedoen?
+      Wil je ook meedoen?
       <a href="https://forms.gle/dQAiwWDj8gL6LRTF8">Je kunt je hier aanmelden</a>.
     </div>
-    <!-- <div
-      class="outdated-shows"
-      v-on:click="showOutdatedAgenda = !showOutdatedAgenda"
-    >EERDERE VOORSTELLINGEN</div>
-    <template v-for="(month, indexMonth) in outdatedAgenda">
-      <month v-bind:month="month" :key="'2' + indexMonth" />
-    </template>-->
   </div>
 </template>
 
@@ -31,22 +27,20 @@ export default {
   },
   data() {
     return {
-      currentAgenda: [],
-      currentAgendaLocal: [],
-      outdatedAgenda: [],
+      tourAgenda: [],
+      specalAgenda: []
     };
   },
   beforeCreate: function () {
     moment.locale("nl");
   },
   created: function () {
-    this.fetchAgenda();
+    this.fetchAgenda("https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=0&single=true&output=csv", false);
+    this.fetchAgenda("https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=1907847438&single=true&output=csv", true)
   },
   methods: {
-    async fetchAgenda() {
-      const data = await this.$axios.$get(
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=0&single=true&output=csv"
-      );
+    async fetchAgenda(url, isSpecial) {
+      const data = await this.$axios.$get(url);
 
       const records = parse(data, {
         columns: true,
@@ -61,9 +55,9 @@ export default {
           dateUnknown: record["Datum onbekend"] === "ja",
           place: record["Stad"],
           venue: record["Locatie"],
+          type: record['Type'] ?  record['Type'] : null,
           extra: record["Extra informatie"],
           tickets: record["Ticket link"] ? record["Ticket link"] : null,
-          facebook: record["Facebook link"] ? record["Facebook link"] : null,
           soldOut: record["Uitverkocht"] === "ja",
         });
       });
@@ -99,21 +93,22 @@ export default {
         }
       });
 
-      this.currentAgenda = currentAgendaData;
-
-      //TODO: outdatedAgenda
-      //moment(month.items[0].date, "DD-MM-YYYY").isAfter(moment().startOf("month"))
+      if(isSpecial) {
+        this.specalAgenda = currentAgendaData;
+      } else {
+        this.tourAgenda = currentAgendaData;
+      }
     },
   },
 };
 </script>
 
 <style>
-.title-local {
-  margin-top: 2rem;
+.title-margin {
+  margin-top: 32px;
 }
 .description-local {
-  margin-top: -1rem;
+  margin-top: -16px;
 }
 .outdated-shows {
   font-weight: 700;
