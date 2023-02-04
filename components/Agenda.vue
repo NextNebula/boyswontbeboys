@@ -1,11 +1,6 @@
 <template>
   <div class="agenda">
-    <div class="title">SPEELLIJST<br>THE CHOSEN FAMILY SHOW-HO-HO</div>
-    <div class="title-text">Een nieuwe show in Theater Bellevue in de week voor kerst.</div>
-    <template v-for="(month, indexMonth) in specalAgenda">
-      <month v-bind:month="month" :key="'special-agenda-' + indexMonth" />
-    </template>
-    <div class="title title-margin">SPEELLIJST<br>BOYS WON'T BE BOYS</div>
+    <div class="title">SPEELLIJST<br>BOYS WON'T BE BOYS</div>
     <template v-for="(month, indexMonth) in tourAgenda">
       <month v-bind:month="month" :key="'tour-agenda-' + indexMonth" />
     </template>
@@ -28,19 +23,17 @@ export default {
   },
   data() {
     return {
-      tourAgenda: [],
-      specalAgenda: []
+      tourAgenda: []
     };
   },
   beforeCreate: function () {
     moment.locale("nl");
   },
   created: function () {
-    this.fetchAgenda("https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=0&single=true&output=csv", false);
-    this.fetchAgenda("https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=1907847438&single=true&output=csv", true)
+    this.fetchAgenda("https://docs.google.com/spreadsheets/d/e/2PACX-1vSu9PwxbfvpIGh_DPQFb3Z6PVtNzHwOfStzj73XdRvxAQ8qBVxbacLgYn75m0Zsc7qUdoEXhUz8iN7f/pub?gid=0&single=true&output=csv")
   },
   methods: {
-    async fetchAgenda(url, isSpecial) {
+    async fetchAgenda(url) {
       const data = await this.$axios.$get(url);
 
       const records = parse(data, {
@@ -94,11 +87,7 @@ export default {
         }
       });
 
-      if(isSpecial) {
-        this.specalAgenda = currentAgendaData;
-      } else {
-        this.tourAgenda = currentAgendaData;
-      }
+      this.tourAgenda = currentAgendaData;
     },
   },
 };
