@@ -130,7 +130,7 @@
           <li>Hoofd productie: Maartje Nieuwint productie@boyswontbeboys.nl</li>
           <li>Zakelijke leiding: Tijmen Kerkhof  zakelijk@boyswontbeboys.nl</li>
           <li>Marketing en communicatie: Casper Koster marketing@boyswontbeboys.nl</li>
-          <li>Educatie, spelers en artistiek: Tamar Lagas: Tamar@boyswontbeboys.nl</li>
+          <li>Educatie, spelers en artistiek: Tamar Lagas: tamar@boyswontbeboys.nl</li>
           <li>Aanmelden om mee te spelen: meedoen@boyswontbeboys.nl</li>
         </ul>
       </div>
