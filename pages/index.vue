@@ -125,12 +125,13 @@
       <br />
       <div class="lijst">
         <ul>
-          <li>Artistieke leiding: Rikkert van Huisstede rikkert@zoujijhetzijn.nl</li>
-          <li>Zakelijke leiding: Tijmen Kerkhof tijmen@zoujijhetzijn.nl</li>
-          <li>Tourneeplanning / community manager: Patrick Engels patrick@zoujijhetzijn.nl</li>
-          <li>Hoofd Productie: Lisette Zeegers lisette@zoujijhetzijn.nl</li>
-          <li>Marketing en communicatie: Casper Koster marketing@zoujijhetzijn.nl</li>
-          <li>Coordinator The Next Generation / regieassistent: Tamar Lagas tamar@zoujijhetzijn.nl</li>
+          <li>Artistieke leiding: Rikkert van Huisstede rikkert@boyswontbeboys.nl</li>
+          <li>Tourneeplanning en verkoop: Patrick Engels tournee@boyswontbeboys.nl</li>
+          <li>Hoofd productie: Maartje Nieuwint productie@boyswontbeboys.nl</li>
+          <li>Zakelijke leiding: Tijmen Kerkhof  zakelijk@boyswontbeboys.nl</li>
+          <li>Marketing en communicatie: Casper Koster marketing@boyswontbeboys.nl</li>
+          <li>Educatie, spelers en artistiek: Tamar Lagas: Tamar@boyswontbeboys.nl</li>
+          <li>Aanmelden om mee te spelen: meedoen@boyswontbeboys.nl</li>
         </ul>
       </div>
       <div class="social">
