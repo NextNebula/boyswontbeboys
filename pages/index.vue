@@ -83,7 +83,7 @@
       <section id="education" class="container-half container-educatie">
         <div class="title">EDUCATIE</div>
         <div>
-          Bij de voorstelling bieden wij ook een op maat gemaakt educatie programma. We doen inleidingen en nagesprekken rondom de voorstelling en kunnen op school langs komen voor een workshop. Sinds 2012 zijn lessen om op respectvolle wijze aandacht te besteden aan LHBTQ+-acceptatie onderdeel geworden van het lesprogramma. De voorstelling en het educatieve programma zijn voor alle leerlingen relevant en herkenbaar. Het project sluit goed aan bij de vakken CKV, maatschappijleer, filosofie en mentoruren. We gaan graag in gesprek om de wensen en mogelijkheden te onderzoeken. Neem contact op met Elles Leferink via educatie@zoujijhetzijn.nl.
+          Bij de voorstelling bieden wij ook een op maat gemaakt educatie programma. We doen inleidingen en nagesprekken rondom de voorstelling en kunnen op school langs komen voor een workshop. Sinds 2012 zijn lessen om op respectvolle wijze aandacht te besteden aan LHBTQ+-acceptatie onderdeel geworden van het lesprogramma. De voorstelling en het educatieve programma zijn voor alle leerlingen relevant en herkenbaar. Het project sluit goed aan bij de vakken CKV, maatschappijleer, filosofie en mentoruren. We gaan graag in gesprek om de wensen en mogelijkheden te onderzoeken. Neem contact op met Tamar Lagas via educatie@boyswontbeboys.nl.
         </div>
       </section>
     </div>
@@ -125,13 +125,13 @@
       <br />
       <div class="lijst">
         <ul>
-          <li>Artistieke leiding: Rikkert van Huisstede rikkert@boyswontbeboys.nl</li>
+          <li>Artistieke leiding: Rikkert van Huisstede rikkert@boyswontbeboys.nl (met verlof t/m mei 2023)</li>
+          <li>Artistieke vragen: Tamar Lagas tamar@boyswontbeboys.nl</li>
           <li>Tourneeplanning en verkoop: Patrick Engels tournee@boyswontbeboys.nl</li>
           <li>Hoofd productie: Maartje Nieuwint productie@boyswontbeboys.nl</li>
-          <li>Zakelijke leiding: Tijmen Kerkhof  zakelijk@boyswontbeboys.nl</li>
+          <li>Zakelijke leiding: Tijmen Kerkhof  zakelijk@boyswontbeboys.nl</li> 
           <li>Marketing en communicatie: Casper Koster marketing@boyswontbeboys.nl</li>
-          <li>Educatie, spelers en artistiek: Tamar Lagas: tamar@boyswontbeboys.nl</li>
-          <li>Aanmelden om mee te spelen: meedoen@boyswontbeboys.nl</li>
+          <li>Educatie: Tamar Lagas educatie@boyswontbeboys.nl</li>
         </ul>
       </div>
       <div class="social">
