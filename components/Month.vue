@@ -50,6 +50,7 @@ export default {
 
 .agenda-item {
   display: flex;
+  gap: 0 16px;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -68,8 +69,6 @@ export default {
 
 .agenda-column {
   flex-grow: 0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   text-align: left;
 }
 
@@ -94,8 +93,6 @@ export default {
 }
 
 .column-tickets {
-  float: left;
-  margin-right: 0.5rem;
   text-align: center;
 }
 
@@ -114,21 +111,21 @@ export default {
   }
 
   .column-date {
-    padding-left: 0;
-    text-align: left;
-    width: auto;
+    width: calc(50% - 16px);
   }
 
   .column-place {
-    width: auto;
+    width: calc(50% - 16px);
   }
 
   .column-type {
-    width: auto;
+    width: calc(50% - 16px);
+    text-align: right;
   }
 
   .column-tickets {
-    flex-grow: 1;
+    width: calc(50% - 16px);
+    text-align: left;
   }
 }
 </style>
