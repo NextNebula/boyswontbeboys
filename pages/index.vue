@@ -101,23 +101,6 @@
           </div>
         </template>
       </div>
-      <div class="title">ORGANISATIE</div>
-      <div class="crew">
-        <template v-for="(crewPerson, crewIndex) in crew">
-          <div class="person" v-bind:key="crewIndex">
-            <picture>
-              <source :srcSet="require(`~/assets/${crewPerson.picture}?webp`)" type="image/webp" />
-              <source :srcSet="require(`~/assets/${crewPerson.picture}`)" type="image/jpeg" />
-              <img :src="require(`~/assets/${crewPerson.picture}`)" lloading="lazy" />
-            </picture>
-            <div>
-              <span>{{crewPerson.name}}</span>
-              <br />
-              <span>({{crewPerson.role}})</span>
-            </div>
-          </div>
-        </template>
-      </div>
     </section>
     <section id="contact" class="container container-contact">
       <div class="title">CONTACT</div>
@@ -183,7 +166,6 @@
 <script>
 import Agenda from "~/components/Agenda.vue";
 import ArtistsJson from "~/pages/artists.json";
-import CrewJson from "~/pages/crew.json";
 import StickyHeader from "~/components/Header.vue";
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
@@ -198,7 +180,6 @@ export default {
   data() {
     return {
       artists: ArtistsJson,
-      crew: CrewJson,
       slides: [
         {
           image: "slide1.jpg",
@@ -367,8 +348,7 @@ html {
   margin-top: -1rem;
 }
 
-.team,
-.crew {
+.team {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -531,16 +511,14 @@ html {
     margin-bottom: 2em;
   }
 
-  .team,
-  .crew {
+  .team {
     flex-wrap: nowrap;
     justify-content: left;
     overflow-x: scroll;
     width: 100%;
   }
 
-  .team .person:first-child,
-  .crew .person:first-child {
+  .team .person:first-child {
     margin-left: 0.5rem;
   }
 }
