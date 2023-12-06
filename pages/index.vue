@@ -33,12 +33,15 @@
       <Agenda />
     </section>
     <section id="overview" class="container container-overview">
-      <div class="title">WERVELENDE THEATERHAPPENING MET ECHTE MENSEN</div>
+      <div class="title">Een theatrale happening met echte mensen</div>
       <div class="text">
-        BOYS WON’T BE BOYS is een wervelende collage van mensen die zingen, dansen, dichten, grappen, musiceren en vertellen over hun persoonlijke levens. Ze stellen zich kwetsbaar op in hun verhalen rond het thema mannelijkheid. Iedereen heeft dagelijks te maken met verwachtingen die horen bij het hokje waar je in geplaatst bent. Het is daarom opvallend dat nadenken over gender wordt gezien als iets voor gemarginaliseerde groepen. Is het niet voor iedereen fijn om los van stereotypen te leven? "We mogen er trots op zijn dat we open zijn, lief of flamboyant”, aldus initiator Rikkert van Huisstede. 
+        BOYS WON’T BE BOYS is een theatrale en maatschappelijke beweging op het gebied van mannelijke emancipatie, waarin diverse mensen (m/v/x) zich op kunstzinnige wijze uitspreken over hun relatie tot mannelijkheid, identiteit en seksualiteit. 
         <br />
         <br />
-        Of je nou bouwplaatsmanager of musicalster, hetero of homo, jonge vader of dragqueen, non-binair, transgender of intersekse bent, niemand past precies in de krappe hokjes “man” of “vrouw”. De spelers van BOYS WON’T BE BOYS weten inmiddels hoe bevrijdend het is om je open te stellen. Door al die verschillende verhalen doorbreken we vooroordelen en komen we dichter bij elkaar.
+        We verschillen, nou en? Niemand past precies in een hokje, en precies dat willen wij vieren. Door al die verschillende verhalen met elkaar te delen doorbreken we vooroordelen en stereotypen en komen we dichter bij elkaar. BOYS WON’T BE BOYS is een vrolijke aanklacht en ode aan het begrip man.
+        <br />
+        <br />
+        De met killerheels gewapende host Rikkert van Huisstede presenteert een kleurrijke parade van spelers die vertellen, zingen, (g)rappen, dansen, kortom: we trekken deze avond alles uit de kast. En hokjes? Die zijn er om je in om te kleden tot wie je echt bent.
       </div>
       <div class="photo-slider">
         <vueper-slides fade :slide-ratio="2 / 4">
@@ -57,7 +60,7 @@
     </section>
     <div class="container container-split container-first">
       <section id="call" class="container-half container-bel">
-        <div class="title">BEL ONS</div>
+        <div class="title">Bel ons</div>
         <div class="text">
           We hebben een telefoonnummer:
           <a href="tel:0642280481">06 42 28 04 81</a>.
@@ -80,10 +83,13 @@
           door Allard Medema.
         </div>
       </section>
-      <section id="education" class="container-half container-educatie">
-        <div class="title">EDUCATIE</div>
+      <section id="about" class="container-half container-educatie">
+        <div class="title">Over BOYS WON'T BE BOYS</div>
         <div>
-          Bij de voorstelling bieden wij ook een op maat gemaakt educatie programma. We doen inleidingen en nagesprekken rondom de voorstelling en kunnen op school langs komen voor een workshop. Sinds 2012 zijn lessen om op respectvolle wijze aandacht te besteden aan LHBTQ+-acceptatie onderdeel geworden van het lesprogramma. De voorstelling en het educatieve programma zijn voor alle leerlingen relevant en herkenbaar. Het project sluit goed aan bij de vakken CKV, maatschappijleer, filosofie en mentoruren. We gaan graag in gesprek om de wensen en mogelijkheden te onderzoeken. Neem contact op met Tamar Lagas via educatie@boyswontbeboys.nl.
+          BOYS WON’T BE BOYS doorbreekt al vijf jaar de mannelijke norm. Initiatiefnemer Rikkert van Huisstede (1993) zingt liefdevol en confronterend grenzen en hokjes omver. Hij heeft een vernieuwende kijk op thema’s als gender, seksualiteit en liefde en een zangstem met een bereik van vier octaven. Op zijn zolderkamer ontstond de wens meer ruimte te creëren voor jongens en mannen om buiten het krappe ideaalbeeld van de man te stappen.
+          <br>
+          <br>
+          BOYS WON’T BE BOYS groeide in no time uit tot een groot maatschappelijk theaterproject waar inmiddels meer dan 100 spelers en vele jongeren de ruimte krijgen om zich in vrijheid uit te spreken als mens en theatermaker.
         </div>
       </section>
     </div>
@@ -103,18 +109,16 @@
       </div>
     </section>
     <section id="contact" class="container container-contact">
-      <div class="title">CONTACT</div>
+      <div class="title">Contact</div>
       Wil je een voorstelling boeken? Een interview inplannen? Of meer informatie over Boys Won't Be Boys?
       <br />
       <div class="lijst">
         <ul>
           <li>Artistieke leiding: Rikkert van Huisstede rikkert@boyswontbeboys.nl</li>
           <li>Tourneeplanning en verkoop: Patrick Engels tournee@boyswontbeboys.nl</li>
-          <li>Hoofd productie: Maartje Nieuwint productie@boyswontbeboys.nl</li>
-          <li>Productie: Rick Zijlstra / Luuk van de Ven productie@boyswontbeboys.nl</li>
-          <li>Zakelijke leiding: Tijmen Kerkhof  zakelijk@boyswontbeboys.nl</li> 
+          <li>Productie: Rick Zijlstra productie@boyswontbeboys.nl</li>
+          <li>Zakelijke leiding: Tijmen Kerkhof zakelijk@boyswontbeboys.nl</li> 
           <li>Marketing en communicatie: Casper Koster marketing@boyswontbeboys.nl</li>
-          <li>Educatie: Tamar Lagas educatie@boyswontbeboys.nl</li>
         </ul>
       </div>
       <div class="social">
@@ -428,6 +432,7 @@ html {
   margin-bottom: 1rem;
   font-weight: 800;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .text {

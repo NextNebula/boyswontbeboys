@@ -10,9 +10,9 @@
     </div>
     <nav class="navigation">
       <a href="#agenda">Speellijst</a>
-      <a href="#overview">Over de show</a>
+      <a href="#overview">De show</a>
       <a href="#call">Bel ons</a>
-      <a href="#education">Educatie</a>
+      <a href="#about">Over</a>
       <a href="#team">Het team</a>
       <a href="#contact">Contact</a>
     </nav>
