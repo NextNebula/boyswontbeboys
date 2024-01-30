@@ -139,10 +139,11 @@
       <div class="credits">
         Vormgeving: BUROBRAAK.
         <br />Fotografie: Ernst Coppejans (publiciteitsbeeld en blauwe portretten), Bas de Brouwer (scènefoto’s).
-        <br /><br /><a href="/Stichting-ZOU-JIJ-HET-ZIJN.pdf" target="_blank">ANBI informatie</a>
-        en
-        <a href="/Jaarrekening 2020.pdf" target="_blank">Jaarrekening</a>
-        Stichting ZOU JIJ HET ZIJN.
+        <br /><br />BOYS WON’T BE BOYS is een project van Stichting ZOU JIJ HET ZIJN.
+        <br />Stichting ZOU JIJ HET ZIJN betaalt conform CAO Toneel & Dans
+        <br /><a href="/Publicatieplicht BWBB 2023.pdf" target="_blank">ANBI informatie</a>
+        - <a href="/Jaarverslag BWBB 2023.pdf" target="_blank">Jaarverslag 2023</a>
+        - <a href="/Bestuursverslag BWBB 2022.pdf" target="_blank">Bestuursverslag 2022</a>
       </div>
     </section>
     <section class="container container-foundations">
