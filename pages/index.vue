@@ -115,9 +115,10 @@
       <div class="lijst">
         <ul>
           <li>Artistieke leiding: Rikkert van Huisstede rikkert@boyswontbeboys.nl</li>
+          <li>Artistieke coördinatie: Tamar Lagas tamar@boyswontbeboys.nl</li>
           <li>Tourneeplanning en verkoop: Patrick Engels tournee@boyswontbeboys.nl</li>
           <li>Productie: Rick Zijlstra productie@boyswontbeboys.nl</li>
-          <li>Zakelijke leiding: Tijmen Kerkhof zakelijk@boyswontbeboys.nl</li> 
+          <li>Zakelijke leiding: Benjamin Boer (interim) zakelijk@boyswontbeboys.nl</li> 
           <li>Marketing en communicatie: Casper Koster marketing@boyswontbeboys.nl</li>
         </ul>
       </div>
