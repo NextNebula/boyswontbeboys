@@ -143,8 +143,8 @@
         <br /><br />BOYS WON’T BE BOYS is een project van Stichting ZOU JIJ HET ZIJN.
         <br />Stichting ZOU JIJ HET ZIJN betaalt conform CAO Toneel & Dans
         <br /><a href="/Publicatieplicht BWBB 2023.pdf" target="_blank">ANBI informatie</a>
-        - <a href="/Financieel verslag BWBB 2023.pdf" target="_blank">Financieel verslag 2023</a>
-        - <a href="/Bestuursverslag BWBB 2022.pdf" target="_blank">Bestuursverslag 2022</a>
+        - <a href="/Jaarverslag BWBB 2023.pdf" target="_blank">Jaarverslag 2023</a>
+        - <a href="/Bestuursverslag BWBB 2023.pdf" target="_blank">Bestuursverslag 2023</a>
       </div>
     </section>
     <section class="container container-foundations">
